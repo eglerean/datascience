@@ -34,7 +34,14 @@ Example: - Neuroscience: Prepare all documents for ethical review and personal d
 
 ````{discussion} 
 
-The cooking analogy for working with data and software - Software \<-\> recipe - Data \<-\> ingredients - Libraries \<-\> pots/tools - Operating system \<-\> style of kitchen we are working with - Hardware \<-\> the actual kitchen with the stove, fridge, cupboards
+The cooking analogy for working with data and software 
+
+* Software \<-\> recipe
+* Data \<-\> ingredients
+* Libraries \<-\> pots/tools
+* Operating system \<-\> style of kitchen we are working with
+* Hardware \<-\> the actual kitchen with the stove, fridge, cupboards
+
 
 ```{figure} https://coderefinery.github.io/reproducible-research/_images/recipe.png 
 :alt: Cooking recipe in an unfamiliar language 
@@ -77,7 +84,7 @@ Typical activities in the planning phase include:
 
 ![Workflow of data collection and analysis for "Bodily Maps of Emotion (2014)"](https://www.pnas.org/cms/10.1073/pnas.1321664111/asset/dcc3da97-2288-4f1c-a175-cad39b111aab/assets/graphic/pnas.1321664111fig01.jpeg)
 
-From *Nummenmaa, L., Glerean, E., Hari, R., & Hietanen, J. K. (2014). Bodily maps of emotions. Proceedings of the National Academy of Sciences, 111(2), 646-651. https://www.pnas.org/doi/abs/10.1073/pnas.1321664111*
+From [*Nummenmaa, L., Glerean, E., Hari, R., & Hietanen, J. K. (2014). Bodily maps of emotions. Proceedings of the National Academy of Sciences, 111(2), 646-651.*](https://www.pnas.org/doi/abs/10.1073/pnas.1321664111)
 :::
 
 ## Collecting data
@@ -273,7 +280,7 @@ Unlike traditional statistical testing, which relies on predefined hypotheses an
 ::: {note}
 ## How do large language models work? How can I use them responsibly in my work?
 
-A comprehensive introduction on the topic with focus on responsible conduct of research is available at https://zenodo.org/records/14032261 and as video at https://www.youtube.com/watch?v=RTHtfGz0-sY
+A comprehensive introduction on the topic with focus on responsible conduct of research is available at [this zenodo link](https://zenodo.org/records/14032261) and as video at Aalto [University Research Services YouTube channel](https://www.youtube.com/watch?v=RTHtfGz0-sY)
 :::
 
 ## Data analysis III: qualitative research methods
