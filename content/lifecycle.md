@@ -23,7 +23,7 @@ Each stage in the lifecycle is computationally enabled — from writing code for
 ::: {discussion}
 ### Explore the RDMkit website.
 
-Spend some time with the RDMkit website: Were you already familiar with RDMkit? https://rdmkit.elixir-europe.org/
+Spend some time with the RDMkit website: Were you already familiar with [RDMkit](https://rdmkit.elixir-europe.org/)? 
 :::
 
 ::: {exercise}
@@ -36,7 +36,9 @@ Example: - Neuroscience: Prepare all documents for ethical review and personal d
 
 The cooking analogy for working with data and software - Software \<-\> recipe - Data \<-\> ingredients - Libraries \<-\> pots/tools - Operating system \<-\> style of kitchen we are working with - Hardware \<-\> the actual kitchen with the stove, fridge, cupboards
 
-```{figure} https://coderefinery.github.io/reproducible-research/\_images/recipe.png :alt: Cooking recipe in an unfamiliar language :width: 50%
+```{figure} https://coderefinery.github.io/reproducible-research/\_images/recipe.png 
+:alt: Cooking recipe in an unfamiliar language 
+:width: 50%
 
 Cooking recipe in an unfamiliar language \[Midjourney, CC-BY-NC 4.0\]
 
