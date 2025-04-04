@@ -36,7 +36,7 @@ Example: - Neuroscience: Prepare all documents for ethical review and personal d
 
 The cooking analogy for working with data and software - Software \<-\> recipe - Data \<-\> ingredients - Libraries \<-\> pots/tools - Operating system \<-\> style of kitchen we are working with - Hardware \<-\> the actual kitchen with the stove, fridge, cupboards
 
-```{figure} https://coderefinery.github.io/reproducible-research/\_images/recipe.png 
+```{figure} https://coderefinery.github.io/reproducible-research/_images/recipe.png 
 :alt: Cooking recipe in an unfamiliar language 
 :width: 50%
 
@@ -64,7 +64,13 @@ In research, proper planning helps:
 -   Ensure that the infrastructure can support the analysis (e.g., compute power, storage).
 -   Enable reproducibility and collaboration by documenting the project structure early.
 
-Typical activities in the planning phase include: \* Defining research questions: What are you trying to discover, predict, or explain? \* Identifying data needs: Do the needed data already exist? Are new experiments needed? Are there access restrictions? \* Selecting tools and environments: Will the project use Python, R, Jupyter, cloud computing, or local servers? Will a version control system like Git be used? \* Sketching the workflow: Mapping out stages from raw data to results (sometimes visually). \* Identify who can help: colleagues, data stewards, research software engineers, IT staff, domain experts.
+Typical activities in the planning phase include:
+
+* Defining research questions: What are you trying to discover, predict, or explain?
+* Identifying data needs: Do the needed data already exist? Are new experiments needed? Are there access restrictions?
+* Selecting tools and environments: Will the project use Python, R, Jupyter, cloud computing, or local servers? Will a version control system like Git be used?
+* Sketching the workflow: Mapping out stages from raw data to results (sometimes visually). 
+* Identify who can help: colleagues, data stewards, research software engineers, IT staff, domain experts.
 
 ::: {note}
 ### Visualizing workflows in research papers.
@@ -78,14 +84,24 @@ From *Nummenmaa, L., Glerean, E., Hari, R., & Hietanen, J. K. (2014). Bodily map
 
 Data collection is the process of acquiring or generating raw data that will be used in analysis or modeling. In the data science lifecycle, this step is foundational — it defines what you will be able to study, predict, and discover. Poor data collection cannot be fixed later by sophisticated models.
 
-Data can be collected in many forms: \* Structured: Tables, spreadsheets, survey results, sensor logs. \* Unstructured: Text, images, audio, video. \* Semi-structured: JSON, XML, etc.
+Data can be collected in many forms:
+* Structured: Tables, spreadsheets, survey results, sensor logs.
+* Unstructured: Text, images, audio, video.
+* Semi-structured: JSON, XML, etc.
 
-**Why is this important in research?** Without high-quality, well-documented, and ethically collected data, data science insights are unreliable. For research: \* Validity of conclusions depends on how data were gathered. \* It sets boundaries: “You can only answer the questions your data allow.” \* Poor collection leads to bias, data leakage, or irreproducibility.
+**Why is this important in research?** Without high-quality, well-documented, and ethically collected data, data science insights are unreliable. For research: 
+
+* Validity of conclusions depends on how data were gathered.
+* It sets boundaries: “You can only answer the questions your data allow.”
+* Poor collection leads to bias, data leakage, or irreproducibility.
 
 **The choice of file formats and data structures** Sometimes we confuse file formats with data formats. It is a bit like confusing the shape of a container of a box of chocolate, with the actual shape of the chocolate pieces inside. Same file formats can contain very different data structures and what is important in computation at the end will be how the data is structured rather than if it is stored in "csv" or "xls".
 
 ::: {discussion}
-Look at the very long [list of data structures in wikipedia](https://en.wikipedia.org/wiki/List_of_data_structures), some data structures are "low level" and are usually masked to the final user (you do not need to know how a list is stored in a programming language). Other data structures are more general and have become part of the language used in computational sciences: \* Primitive types (fundamental when reading or writing code) \* Composite types (the classic example is a *record* which is the smallest unit of data in a database)
+Look at the very long [list of data structures in wikipedia](https://en.wikipedia.org/wiki/List_of_data_structures), some data structures are "low level" and are usually masked to the final user (you do not need to know how a list is stored in a programming language). Other data structures are more general and have become part of the language used in computational sciences:
+
+* Primitive types (fundamental when reading or writing code)
+* Composite types (the classic example is a *record* which is the smallest unit of data in a database)
 :::
 
 ::: {exercise}
@@ -152,7 +168,8 @@ These summarise and visualise features of the data, such as:
 
 -   **Relationships**: Correlations between variables, cross-tabulations, scatter plots.
 
-**Why this matters in research**:\
+**Why this matters in research**:
+
 Descriptive statistics help researchers understand the data distribution, spot data entry errors, and guide the selection of further methods. For example:
 
 -   In **clinical studies**, summary tables show average age, blood pressure, and medication use.
