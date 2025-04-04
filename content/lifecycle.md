@@ -32,7 +32,9 @@ Spend some time with the RDMkit website: Were you already familiar with RDMkit? 
 Example: - Neuroscience: Prepare all documents for ethical review and personal data handling, collect data with the MRI scanner, move data from scanner to workstations, convert data to format for analysis, preprocess data so that statistics can be run, run statistical models (common one is the general linear model), make figures of the results (e.g. brain activation maps), share code and aggregated results on dedicated repositories (e.g. NeuroVault), make sure data can be reused (difficult one!) - *add your field / example here*
 :::
 
-````{discussion} The cooking analogy for working with data and software - Software \<-\> recipe - Data \<-\> ingredients - Libraries \<-\> pots/tools - Operating system \<-\> style of kitchen we are working with - Hardware \<-\> the actual kitchen with the stove, fridge, cupboards
+````{discussion} 
+
+The cooking analogy for working with data and software - Software \<-\> recipe - Data \<-\> ingredients - Libraries \<-\> pots/tools - Operating system \<-\> style of kitchen we are working with - Hardware \<-\> the actual kitchen with the stove, fridge, cupboards
 
 ```{figure} https://coderefinery.github.io/reproducible-research/\_images/recipe.png :alt: Cooking recipe in an unfamiliar language :width: 50%
 
