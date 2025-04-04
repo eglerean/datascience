@@ -32,9 +32,9 @@ Spend some time with the RDMkit website: Were you already familiar with RDMkit? 
 Example: - Neuroscience: Prepare all documents for ethical review and personal data handling, collect data with the MRI scanner, move data from scanner to workstations, convert data to format for analysis, preprocess data so that statistics can be run, run statistical models (common one is the general linear model), make figures of the results (e.g. brain activation maps), share code and aggregated results on dedicated repositories (e.g. NeuroVault), make sure data can be reused (difficult one!) - *add your field / example here*
 :::
 
-\`\`\`\`{discussion} The cooking analogy for working with data and software - Software \<-\> recipe - Data \<-\> ingredients - Libraries \<-\> pots/tools - Operating system \<-\> style of kitchen we are working with - Hardware \<-\> the actual kitchen with the stove, fridge, cupboards
+````{discussion} The cooking analogy for working with data and software - Software \<-\> recipe - Data \<-\> ingredients - Libraries \<-\> pots/tools - Operating system \<-\> style of kitchen we are working with - Hardware \<-\> the actual kitchen with the stove, fridge, cupboards
 
-\`\`\`{figure} https://coderefinery.github.io/reproducible-research/\_images/recipe.png :alt: Cooking recipe in an unfamiliar language :width: 50%
+```{figure} https://coderefinery.github.io/reproducible-research/\_images/recipe.png :alt: Cooking recipe in an unfamiliar language :width: 50%
 
 Cooking recipe in an unfamiliar language \[Midjourney, CC-BY-NC 4.0\]
 
@@ -47,7 +47,7 @@ Cooking recipe in an unfamiliar language \[Midjourney, CC-BY-NC 4.0\]
 When we create recipes, we often use tools created by others (libraries) [Midjourney, CC-BY-NC 4.0]
 ```
 
-\`\`\`\`
+````
 
 ## Planning data science work
 
@@ -308,24 +308,16 @@ This stage of the data lifecycle focuses on ensuring that datasets, code, models
 These steps are closely aligned with the **FAIR principles**:
 
 -   **Findable**: Data and metadata can be located by others.
-
 -   **Accessible**: Data is available under clear conditions.
-
 -   **Interoperable**: Data can be integrated with other systems.
-
 -   **Reusable**: Data is well-described and licensed for reuse.
 
 In data science, “preservation” extends beyond raw data:
-
 -   Preprocessed/cleaned data,
-
 -   Code used for analysis,
-
 -   Trained models and configurations,
-
 -   Logs, metadata, and computational environments (e.g. container images).
 
-------------------------------------------------------------------------
 
 **Why is this important in research?**
 
@@ -353,40 +345,24 @@ In data science, “preservation” extends beyond raw data:
 
 **Beyond the basics**:
 
--   **Metadata and documentation**:\
-    \
-
+-   **Metadata and documentation**:
     -   Raw data is rarely useful without context. Metadata standards (like Dublin Core, DataCite, or domain-specific schemas) make data understandable and reusable.
-
     -   Good README files, manifest files, and inline code comments make preservation valuable.
 
--   **Versioning**:\
-    \
-
+-   **Versioning**:
     -   Use Git (or DVC for data) to track changes. Without versioning, it’s hard to know what version of the data or model a result came from.
 
--   **Licensing**:\
-    \
-
+-   **Licensing**:
     -   Reuse depends on legal clarity. Use open licenses (e.g., CC BY 4.0 for data, MIT or GPL for code) to allow others to build on your work.
-
     -   Ensure you have the rights to share what you publish (especially for collaborative or sensitive datasets).
 
--   **Sensitive data and controlled access**:\
-    \
-
+-   **Sensitive data and controlled access**:
     -   For personal data (e.g., patient records, interviews), open sharing is restricted. However, preservation is still essential — use **Trusted Research Environments** or controlled-access repositories with Data Use Agreements (DUAs).
 
--   **Persistent identifiers and citation**:\
-    \
-
+-   **Persistent identifiers and citation**:
     -   Use DOIs for datasets and models to make them citable.
-
     -   Adopt standards like the Joint Declaration of Data Citation Principles.
 
--   **Model and dataset governance**:\
-    \
-
+-   **Model and dataset governance**:
     -   AI systems require monitoring post-publication. Future stewards might need to update or “unlearn” parts of models if biases or errors are discovered.
-
     -   Consider maintaining “model sheets” with version info, training data details, and known limitations.
