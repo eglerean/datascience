@@ -1,0 +1,313 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Step 1: Build a Computer &mdash; Introduction to data science  documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+      <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+      <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
+      <link rel="stylesheet" type="text/css" href="../_static/sphinx_lesson.css?v=e9df6548" />
+      <link rel="stylesheet" type="text/css" href="../_static/term_role_formatting.css?v=4194e21c" />
+      <link rel="stylesheet" type="text/css" href="../_static/sphinx_rtd_theme_ext_color_contrast.css?v=8e8ea19f" />
+      <link rel="stylesheet" type="text/css" href="../_static/style.css?v=7f5ea559" />
+
+  
+      <script src="../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../_static/documentation_options.js?v=187304be"></script>
+      <script src="../_static/doctools.js?v=9a2dae69"></script>
+      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+      <script src="../_static/copybutton.js?v=f281be69"></script>
+      <script src="../_static/minipres.js?v=a0d29692"></script>
+      <script>let toggleHintShow = 'Click to show';</script>
+      <script>let toggleHintHide = 'Click to hide';</script>
+      <script>let toggleOpenOnPrint = 'true';</script>
+      <script src="../_static/togglebutton.js?v=4a39c7ea"></script>
+      <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+      <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex/" />
+    <link rel="search" title="Search" href="../search/" />
+    <link rel="next" title="Step 2: Add Life to the Hardware" href="../build_2/" />
+    <link rel="prev" title="Building a Supercomputer" href="../build_a_supercomputer/" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../" class="icon icon-home">
+            Introduction to data science
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search/" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Episodes</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../datascience/">What is data science?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lifecycle/">Data science on the data life-cycle</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../build_a_supercomputer/"><strong>Building a Supercomputer</strong></a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../build_a_supercomputer/#motivation-why-do-we-need-computers"><strong>Motivation: Why Do We Need Computers?</strong></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../build_a_supercomputer/#motivation-do-i-need-a-supercomputer"><strong>Motivation: Do I Need a Supercomputer?</strong></a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../build_a_supercomputer/#let-s-build-a-supercomputer-then">Let’s build a supercomputer then!</a><ul class="current">
+<li class="toctree-l3 current"><a class="current reference internal" href="#"><strong>Step 1: Build a Computer</strong></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#essential-hardware-components"><strong>Essential Hardware Components</strong></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../build_2/"><strong>Step 2: Add Life to the Hardware</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../build_3/"><strong>Step 3: Add Usability with the Operating System</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../build_4/"><strong>Step 4: Install the Tools You Are Planning to Use</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../build_5/"><strong>Step 5: Expand the Computer with Remote Storage</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../build_6/"><strong>Step 6: Expand the Computing by Connecting with Other Computers</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../build_7/"><strong>Step 7: Connect Multiple Computers Together to Build the Supercomputer</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../build_8/"><strong>Step 8: Celebrate! You Now Have Built a Supercomputer!</strong></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Extras</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../tidy-data/">Tidy data and dealing with messy data</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Reference</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../reference/">Reference</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../">Introduction to data science</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../build_a_supercomputer/"><strong>Building a Supercomputer</strong></a></li>
+      <li class="breadcrumb-item active"><strong>Step 1: Build a Computer</strong></li>
+      <li class="wy-breadcrumbs-aside">
+              <a href="https://github.com/eglerean/datascience/blob/main/content/build_1.md" class="fa fa-github"> Edit on GitHub</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="step-1-build-a-computer">
+<h1><strong>Step 1: Build a Computer</strong><a class="headerlink" href="#step-1-build-a-computer" title="Link to this heading"></a></h1>
+<p>Let’s start from scratch. Before we can build a supercomputer, we need to understand how a <strong>regular computer is made</strong> — and what each component does.</p>
+<p>A modern computer is a collection of hardware pieces that work together to process data, store information, and interact with users.</p>
+<section id="essential-hardware-components">
+<h2><strong>Essential Hardware Components</strong><a class="headerlink" href="#essential-hardware-components" title="Link to this heading"></a></h2>
+<section id="cpu-central-processing-unit">
+<h3><strong>CPU (Central Processing Unit)</strong><a class="headerlink" href="#cpu-central-processing-unit" title="Link to this heading"></a></h3>
+<ul class="simple">
+<li><p>Often called the <em>brain</em> of the computer.</p></li>
+<li><p>Executes instructions from programs, one after another or across multiple cores.</p></li>
+<li><p>Controls the flow of operations — calculations, logic, and decision-making.</p></li>
+</ul>
+</section>
+<section id="gpu-graphics-processing-unit">
+<h3><strong>GPU (Graphics Processing Unit)</strong><a class="headerlink" href="#gpu-graphics-processing-unit" title="Link to this heading"></a></h3>
+<ul class="simple">
+<li><p>Originally for graphics, now essential for <strong>parallel computing</strong>.</p></li>
+<li><p>Contains many cores optimized for similar repetitive tasks — such as training AI models or processing thousands of images.</p></li>
+<li><p>Useful in research tasks that involve <strong>matrix operations</strong> or <strong>large-scale data parallelism</strong>.</p></li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p class="rubric" id="what-is-the-difference-between-cpu-and-gpu">What is the difference between CPU and GPU?</p>
+<p>A short video that intuitively explains the difference between CPUs and GPUs</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/-P28LKWTzrI?si=szqQGAK0porJIF6i" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+</section>
+<section id="ram-random-access-memory">
+<h3><strong>RAM (Random Access Memory)</strong><a class="headerlink" href="#ram-random-access-memory" title="Link to this heading"></a></h3>
+<ul class="simple">
+<li><p>Temporary, fast memory used while your programs are running.</p></li>
+<li><p>Holds <strong>active data</strong> and <strong>code in use</strong>.</p></li>
+<li><p>Not the same as storage! RAM is cleared when the computer is turned off.</p></li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p class="rubric" id="ram-is-not-the-only-memory-in-the-computer">RAM is not the only memory in the computer</p>
+<p>While <strong>RAM (Random Access Memory)</strong> is the most well-known type of memory, it’s just one part of a broader memory system that computers use to operate efficiently. Other important types include:</p>
+<ul class="simple">
+<li><p><strong>Cache memory</strong>: Small but extremely fast memory located on or near the CPU. It stores frequently accessed instructions and data to speed up execution.</p></li>
+<li><p><strong>Registers</strong>: Tiny storage units inside the CPU used to hold data that’s actively being processed. They operate faster than any other memory type.</p></li>
+<li><p><strong>ROM (Read-Only Memory)</strong>: A type of non-volatile memory that stores permanent instructions, such as the computer’s firmware (e.g., BIOS or UEFI), which runs during startup.</p></li>
+<li><p><strong>Virtual memory</strong>: A portion of storage (e.g., your hard drive or SSD) that the operating system uses to simulate additional RAM when the actual RAM is full. It’s much slower but expands available working space.</p></li>
+<li><p><strong>Swap space</strong>: A specific part of the disk reserved by the OS (especially in Linux) to support virtual memory by temporarily holding data from RAM.</p></li>
+<li><p><strong>VRAM (Video RAM)</strong>: Memory used by GPUs (Graphics Processing Units) to store visual data like textures, 3D models, or image matrices. It’s optimized for parallel processing and is essential for high-performance tasks such as AI model training and image rendering.</p></li>
+</ul>
+<p>Each of these memory types serves a specialized function. Together, they ensure that different parts of the computer — from the CPU to the GPU — have quick access to the data they need.</p>
+</div>
+</section>
+<section id="storage-hdd-ssd">
+<h3><strong>Storage (HDD/SSD)</strong><a class="headerlink" href="#storage-hdd-ssd" title="Link to this heading"></a></h3>
+<ul class="simple">
+<li><p>Long-term storage of files and programs.</p></li>
+<li><p>SSD (Solid State Drive) is faster and more common in research laptops than HDD.</p></li>
+<li><p>Stores your operating system, datasets, documents, and applications.</p></li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p class="rubric" id="not-all-storages-are-the-same">Not all storages are the same</p>
+<p>Not all storage devices perform the same — they differ in <strong>speed</strong>, <strong>reliability</strong>, and <strong>technology</strong>.</p>
+<ul class="simple">
+<li><p><strong>SSD (Solid State Drive)</strong>: Fast, reliable, and now common in laptops and servers. Uses flash memory with no moving parts, which makes it much faster than older technologies.</p></li>
+<li><p><strong>HDD (Hard Disk Drive)</strong>: Slower and more prone to wear because it uses spinning magnetic disks and a moving read/write head. Still used for large-capacity archival storage due to lower cost per terabyte.</p></li>
+<li><p><strong>eMMC (embedded MultiMediaCard)</strong>: Slower flash storage found in budget devices like tablets or low-end laptops. Not designed for heavy workloads.</p></li>
+<li><p><strong>Optical drives (CD/DVD)</strong> and <strong>magnetic tape</strong>: Rare today in personal computing, but still used for long-term cold storage or archival backups. Very slow access speeds.</p></li>
+</ul>
+<p>In modern research workflows, <strong>SSD is preferred</strong> for active data processing because of its high read/write speeds, while HDDs or network-attached storage may be used for backup or long-term storage.</p>
+</div>
+</section>
+<section id="network-interface-card-nic">
+<h3><strong>Network Interface Card (NIC)</strong><a class="headerlink" href="#network-interface-card-nic" title="Link to this heading"></a></h3>
+<ul class="simple">
+<li><p>Connects your computer to the internet or local network.</p></li>
+<li><p>Can be wired (Ethernet) or wireless (Wi-Fi).</p></li>
+<li><p>Essential for remote access, cloud computing, and downloading datasets.</p></li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p class="rubric" id="the-internet-ip-addresses-virtual-private-networks-ssh">The Internet, IP addresses, Virtual Private Networks, ssh</p>
+<p>The <strong>Internet</strong> is a global system of interconnected networks that allows computers to communicate using standardized protocols. It underlies many services — not just web browsing, but also email, file sharing, and secure access to remote machines.</p>
+<p>Every device connected to the internet has an <strong>IP address</strong> — a unique identifier, like a mailing address, that allows data to be sent to and from the correct location. Some IP addresses are <strong>static</strong> (they never change), while others are <strong>dynamic</strong> (assigned temporarily by your internet provider and may change when you reconnect). Servers usually have static IPs so they can be reached reliably.</p>
+<p>To protect internal services, many universities and institutions <strong>restrict access based on IP addresses</strong>. If you’re working remotely, you may not be allowed to connect directly to internal systems. This is where a <strong>Virtual Private Network (VPN)</strong> is useful. A VPN creates a secure, encrypted tunnel between your computer and your institution’s network. When connected through a VPN, your computer appears as if it is inside the university — which enables access to licensed resources, shared drives, internal portals, or computing environments that would otherwise be blocked.</p>
+<p>A key tool for accessing remote research infrastructure is <strong>SSH (Secure Shell)</strong>. SSH allows you to securely log into another computer or server using only a terminal window — no graphical interface is needed. It provides command-line access to powerful systems like cloud servers or supercomputers. SSH is encrypted and can be secured with <strong>cryptographic key pairs</strong>, making it both safe and widely trusted in scientific computing.</p>
+<p>In practice, support teams and researchers may use <strong>SSH in combination with VPNs</strong> to connect to institutional clusters, manage datasets, and run computational workflows from anywhere in the world. Firewalls and institutional policies often limit who can access what, so access may require registration or setup in advance.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p class="rubric" id="different-networks-different-speeds">Different networks – different speeds</p>
+<p>Not all internet connections are equally fast — and the type of connection you use can significantly affect <strong>how quickly you can access cloud storage or transfer data</strong>.</p>
+<ul class="simple">
+<li><p><strong>Wired Ethernet</strong> (e.g., Gigabit Ethernet): Typically offers stable, high-speed connections around <strong>1 Gbps (1000 Mbps)</strong>. Ideal for downloading large datasets or syncing with remote storage.</p></li>
+<li><p><strong>Wi-Fi</strong>:</p>
+<ul>
+<li><p><strong>Wi-Fi 5 (802.11ac)</strong>: Up to <strong>400–900 Mbps</strong> in real conditions.</p></li>
+<li><p><strong>Wi-Fi 6 (802.11ax)</strong>: Can reach <strong>1–2 Gbps</strong>, but speed varies with distance and interference.</p></li>
+</ul>
+</li>
+<li><p><strong>Mobile Networks</strong>:</p>
+<ul>
+<li><p><strong>4G</strong>: Real-world speeds are around <strong>20–100 Mbps</strong> — enough for email or browsing, but slow for large file transfers.</p></li>
+<li><p><strong>5G</strong>: Can offer <strong>200 Mbps to over 1 Gbps</strong> depending on coverage — fast enough for cloud access, but latency and reliability may vary.</p></li>
+</ul>
+</li>
+</ul>
+<p>When using cloud storage or remote servers, a <strong>slow connection can become a bottleneck</strong> — even if your storage or computing resources are fast. For large data transfers, <strong>wired Ethernet is usually the most stable and efficient</strong>.</p>
+</div>
+</section>
+<section id="power-supply-unit-psu">
+<h3><strong>Power Supply Unit (PSU)</strong><a class="headerlink" href="#power-supply-unit-psu" title="Link to this heading"></a></h3>
+<ul class="simple">
+<li><p>Converts electricity from the wall into usable power for your components.</p></li>
+</ul>
+</section>
+<section id="motherboard">
+<h3><strong>Motherboard</strong><a class="headerlink" href="#motherboard" title="Link to this heading"></a></h3>
+<ul class="simple">
+<li><p>The main circuit board where all components plug in.</p></li>
+<li><p>Handles communication between the CPU, RAM, storage, and peripherals.</p></li>
+</ul>
+</section>
+<section id="interfaces-for-the-user">
+<h3><strong>Interfaces for the User</strong><a class="headerlink" href="#interfaces-for-the-user" title="Link to this heading"></a></h3>
+<p>These are the parts that make a computer usable by humans:</p>
+<ul class="simple">
+<li><p><strong>Monitor</strong> (screen): to see the output.</p></li>
+<li><p><strong>Keyboard &amp; mouse</strong>: to provide input.</p></li>
+<li><p><strong>USB/HDMI ports</strong>: for connecting external devices (storage drives, cameras, projectors).</p></li>
+</ul>
+<p>These are not just conveniences — <strong>they’re essential for interacting with the system</strong>, especially during setup or troubleshooting.</p>
+<div class="admonition-discussion discussion important admonition" id="discussion-0">
+<p class="admonition-title">Discussion</p>
+<p class="rubric" id="cooking-metaphor-assembling-your-research-kitchen"><strong>Cooking Metaphor: Assembling Your Research Kitchen</strong></p>
+<ul class="simple">
+<li><p><strong>CPU</strong> = the chef: decides what to cook and when.</p></li>
+<li><p><strong>GPU</strong> = food processor: powerful but specialized.</p></li>
+<li><p><strong>RAM</strong> = kitchen counter: workspace where prep happens.</p></li>
+<li><p><strong>Storage</strong> = pantry and fridge: long-term ingredient storage.</p></li>
+<li><p><strong>NIC</strong> = the telephone or delivery door: communicates with the outside world.</p></li>
+<li><p><strong>Motherboard</strong> = the kitchen layout: connects all the tools.</p></li>
+<li><p><strong>Keyboard and mouse</strong> = your hands and tools: how you work in the kitchen.</p></li>
+</ul>
+<p>Without these components in place and connected, your kitchen — or your computer — can’t function.</p>
+</div>
+</section>
+<section id="bonus-insight-for-support-teams">
+<h3>Bonus insight for support teams<a class="headerlink" href="#bonus-insight-for-support-teams" title="Link to this heading"></a></h3>
+<p>Support teams often help researchers choose:</p>
+<ul class="simple">
+<li><p>Which <strong>hardware specs</strong> are needed for a task,</p></li>
+<li><p>Whether a local machine is sufficient,</p></li>
+<li><p>Or whether a shared or remote resource is more appropriate.</p></li>
+</ul>
+<p>Understanding these components helps you:</p>
+<ul class="simple">
+<li><p>Read tech specs with confidence,</p></li>
+<li><p>Talk with IT teams or vendors,</p></li>
+<li><p>Support researchers with realistic expectations about performance.</p></li>
+</ul>
+</section>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="../build_a_supercomputer/" class="btn btn-neutral float-left" title="Building a Supercomputer" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../build_2/" class="btn btn-neutral float-right" title="Step 2: Add Life to the Hardware" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright CodeRefinery project.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

@@ -1,0 +1,259 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Step 5: Expand the Computer with Remote Storage &mdash; Introduction to data science  documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+      <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+      <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
+      <link rel="stylesheet" type="text/css" href="../_static/sphinx_lesson.css?v=e9df6548" />
+      <link rel="stylesheet" type="text/css" href="../_static/term_role_formatting.css?v=4194e21c" />
+      <link rel="stylesheet" type="text/css" href="../_static/sphinx_rtd_theme_ext_color_contrast.css?v=8e8ea19f" />
+      <link rel="stylesheet" type="text/css" href="../_static/style.css?v=7f5ea559" />
+
+  
+      <script src="../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../_static/documentation_options.js?v=187304be"></script>
+      <script src="../_static/doctools.js?v=9a2dae69"></script>
+      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+      <script src="../_static/copybutton.js?v=f281be69"></script>
+      <script src="../_static/minipres.js?v=a0d29692"></script>
+      <script>let toggleHintShow = 'Click to show';</script>
+      <script>let toggleHintHide = 'Click to hide';</script>
+      <script>let toggleOpenOnPrint = 'true';</script>
+      <script src="../_static/togglebutton.js?v=4a39c7ea"></script>
+      <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+      <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex/" />
+    <link rel="search" title="Search" href="../search/" />
+    <link rel="next" title="Step 6: Expand the Computing by Connecting with Other Computers" href="../build_6/" />
+    <link rel="prev" title="Step 4: Install the Tools You Are Planning to Use" href="../build_4/" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../" class="icon icon-home">
+            Introduction to data science
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search/" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Episodes</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../datascience/">What is data science?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lifecycle/">Data science on the data life-cycle</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../build_a_supercomputer/"><strong>Building a Supercomputer</strong></a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../build_a_supercomputer/#motivation-why-do-we-need-computers"><strong>Motivation: Why Do We Need Computers?</strong></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../build_a_supercomputer/#motivation-do-i-need-a-supercomputer"><strong>Motivation: Do I Need a Supercomputer?</strong></a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../build_a_supercomputer/#let-s-build-a-supercomputer-then">Let’s build a supercomputer then!</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="../build_1/"><strong>Step 1: Build a Computer</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../build_2/"><strong>Step 2: Add Life to the Hardware</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../build_3/"><strong>Step 3: Add Usability with the Operating System</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../build_4/"><strong>Step 4: Install the Tools You Are Planning to Use</strong></a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#"><strong>Step 5: Expand the Computer with Remote Storage</strong></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#why-is-local-storage-sometimes-not-enough"><strong>Why Is Local Storage Sometimes Not Enough?</strong></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#what-is-remote-storage"><strong>What Is Remote Storage?</strong></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#the-i-o-bottleneck"><strong>The I/O Bottleneck</strong></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#security-and-remote-storage"><strong>Security and Remote Storage</strong></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#bonus-insight-for-support-teams">Bonus Insight for support teams</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../build_6/"><strong>Step 6: Expand the Computing by Connecting with Other Computers</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../build_7/"><strong>Step 7: Connect Multiple Computers Together to Build the Supercomputer</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../build_8/"><strong>Step 8: Celebrate! You Now Have Built a Supercomputer!</strong></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Extras</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../tidy-data/">Tidy data and dealing with messy data</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Reference</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../reference/">Reference</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../">Introduction to data science</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../build_a_supercomputer/"><strong>Building a Supercomputer</strong></a></li>
+      <li class="breadcrumb-item active"><strong>Step 5: Expand the Computer with Remote Storage</strong></li>
+      <li class="wy-breadcrumbs-aside">
+              <a href="https://github.com/eglerean/datascience/blob/main/content/build_5.md" class="fa fa-github"> Edit on GitHub</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="step-5-expand-the-computer-with-remote-storage">
+<h1><strong>Step 5: Expand the Computer with Remote Storage</strong><a class="headerlink" href="#step-5-expand-the-computer-with-remote-storage" title="Link to this heading"></a></h1>
+<p>Our computer is now running, and we’ve installed some tools. But soon, we’ll run into a bottleneck: <strong>storage space and speed</strong>.</p>
+<p>Research data can grow quickly — especially in fields like genomics, imaging, or environmental monitoring. So we need to expand beyond local disks by using <strong>remote storage</strong>.</p>
+<section id="why-is-local-storage-sometimes-not-enough">
+<h2><strong>Why Is Local Storage Sometimes Not Enough?</strong><a class="headerlink" href="#why-is-local-storage-sometimes-not-enough" title="Link to this heading"></a></h2>
+<p>Local storage (like an SSD in your laptop or server) is:</p>
+<ul class="simple">
+<li><p>Fast (especially SSDs),</p></li>
+<li><p>Always available (no internet needed),</p></li>
+<li><p>Limited in size (256 GB to a few TB),</p></li>
+<li><p>Vulnerable to failure or theft.</p></li>
+</ul>
+<p>Many datasets in research <strong>exceed local capacity</strong>:</p>
+<ul class="simple">
+<li><p>A single fMRI scan might be 2GB… scale that to 100 subjects and you have 200G… consider that processing requires 5 times the raw MRI data space and we have about 1TB…</p></li>
+<li><p>A whole-genome dataset can be over 200 GB,</p></li>
+<li><p>Satellite images can reach <strong>terabytes per day</strong>.</p></li>
+</ul>
+</section>
+<section id="what-is-remote-storage">
+<h2><strong>What Is Remote Storage?</strong><a class="headerlink" href="#what-is-remote-storage" title="Link to this heading"></a></h2>
+<p>Remote storage refers to <strong>data stored on another machine</strong> that your computer can access over a network. This includes:</p>
+<ul class="simple">
+<li><p><strong>Network drives</strong> (e.g., NFS, SMB),</p></li>
+<li><p><strong>Institutional data services</strong> (e.g., CSC Allas object storage),</p></li>
+<li><p><strong>Cloud buckets</strong> (e.g., Amazon S3, Azure Blob),</p></li>
+<li><p><strong>Remote repositories</strong> (e.g., Zenodo, Figshare, institutional archives).</p></li>
+</ul>
+<p>Remote storage can be:</p>
+<ul class="simple">
+<li><p>Much <strong>larger</strong> than local disks,</p></li>
+<li><p><strong>Backed up</strong> by IT,</p></li>
+<li><p><strong>Shared</strong> with collaborators,</p></li>
+<li><p>But often <strong>slower</strong> to read/write due to network speed.</p></li>
+</ul>
+</section>
+<section id="the-i-o-bottleneck">
+<h2><strong>The I/O Bottleneck</strong><a class="headerlink" href="#the-i-o-bottleneck" title="Link to this heading"></a></h2>
+<p>I/O = Input/Output: how fast data is read from or written to disk.</p>
+<ul class="simple">
+<li><p><strong>Local SSDs</strong>: Extremely fast (ideal for GPU processing, simulations, etc.).</p></li>
+<li><p><strong>Remote storage</strong>: Depends on internet speed, protocols, and server load. Often slower and less predictable.</p></li>
+</ul>
+<p>If you’re doing <strong>GPU-intensive computation</strong>, reading data too slowly can cause the GPU to sit idle — wasting expensive compute time.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p class="rubric" id="cooking-metaphor-storage-as-the-pantry"><strong>Cooking Metaphor: Storage as the Pantry</strong></p>
+<ul class="simple">
+<li><p>Your <strong>local disk</strong> is the pantry in your own kitchen — fast, private, limited.</p></li>
+<li><p>Remote storage is like a <strong>warehouse down the street</strong> — it’s bigger, maybe shared, but slower to access.</p></li>
+<li><p>For some tasks, you prep everything from your local pantry.</p></li>
+<li><p>For others, you send someone (like <code class="docutils literal notranslate"><span class="pre">rsync</span></code> or a script) to fetch ingredients in bulk.</p></li>
+</ul>
+<p>Choosing where to store your data affects how fast and efficiently your recipe (research) runs.</p>
+</div>
+</section>
+<section id="security-and-remote-storage">
+<h2><strong>Security and Remote Storage</strong><a class="headerlink" href="#security-and-remote-storage" title="Link to this heading"></a></h2>
+<p>Remote storage also brings <strong>data protection considerations</strong>:</p>
+<ul class="simple">
+<li><p>Is the storage <strong>encrypted</strong>?</p></li>
+<li><p>Who has <strong>access</strong> to it?</p></li>
+<li><p>Is it located in a country with appropriate <strong>legal protections</strong> (important for GDPR)?</p></li>
+<li><p>Does it offer <strong>versioning</strong> or <strong>audit logs</strong>?</p></li>
+</ul>
+<p>Trusted research infrastructures (like CSC, SURF, or institutional servers) are often required for <strong>personal or sensitive data</strong>.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p class="rubric" id="classification-of-information-and-data-storage">Classification of information and data storage</p>
+<p>Many organizations — including universities, research institutes, and government agencies — use a <strong>classification framework</strong> to manage information securely and responsibly. This framework helps determine <strong>where and how different types of data should be stored, accessed, and shared</strong>.</p>
+<p>A widely used (though not universal) classification model includes four categories:</p>
+<ol class="arabic simple">
+<li><p><strong>Public</strong><br />
+Information that is intended for open sharing and has no access restrictions. Examples include published research articles, public websites, and open data. This kind of information can be stored on public servers, shared via email, and posted online without special safeguards.</p></li>
+<li><p><strong>Internal</strong><br />
+Information meant for use within the organization but not intended for public release. It may include internal documentation, draft manuscripts, or general staff communications. Internal data should be stored on organizational platforms (e.g., secure shared drives or institutional cloud services), but doesn’t require encryption or special permissions.</p></li>
+<li><p><strong>Confidential</strong><br />
+Sensitive information that, if exposed, could cause harm to individuals, the institution, or research partners. This includes personal data (e.g., student records, interview transcripts), research data under embargo, or licensed datasets. Confidential data <strong>must be stored in secure environments</strong> — such as encrypted drives, secure servers, or designated trusted research infrastructures — and access must be limited to authorized individuals only.</p></li>
+<li><p><strong>Secret</strong><br />
+Highly restricted information that could result in serious harm if disclosed. It may apply to secondary use of medical data, national security data, defense-related research, or sensitive proprietary data under strict non-disclosure agreements. Secret data typically requires isolated, access-controlled environments with strong encryption and strict auditing.</p></li>
+</ol>
+<p>While this four-level model is common, <strong>each organization may have its own specific definitions, labels, and handling rules</strong> — often aligned with legal or regulatory frameworks (such as GDPR for personal data).</p>
+<p>It is essential to <strong>check your institution’s data classification policy</strong> and follow their guidance when deciding:</p>
+<ul class="simple">
+<li><p>Where to store different types of data,</p></li>
+<li><p>Who is allowed to access it,</p></li>
+<li><p>Whether encryption or special access controls are needed,</p></li>
+<li><p>And how data should be shared or archived.</p></li>
+</ul>
+</div>
+</section>
+<section id="bonus-insight-for-support-teams">
+<h2>Bonus Insight for support teams<a class="headerlink" href="#bonus-insight-for-support-teams" title="Link to this heading"></a></h2>
+<p>Support teams are often responsible for:</p>
+<ul class="simple">
+<li><p>Advising on <strong>where data should live</strong> (local vs. remote),</p></li>
+<li><p>Managing <strong>access permissions and documentation</strong>,</p></li>
+<li><p>Explaining <strong>performance trade-offs</strong> between storage types,</p></li>
+<li><p>Ensuring compliance with policies and data management plans (DMPs).</p></li>
+</ul>
+<p>Understanding remote storage — both <strong>practically</strong> and <strong>strategically</strong> — is key to supporting researchers.</p>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="../build_4/" class="btn btn-neutral float-left" title="Step 4: Install the Tools You Are Planning to Use" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../build_6/" class="btn btn-neutral float-right" title="Step 6: Expand the Computing by Connecting with Other Computers" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright CodeRefinery project.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

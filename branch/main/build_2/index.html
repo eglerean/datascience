@@ -1,0 +1,217 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Step 2: Add Life to the Hardware &mdash; Introduction to data science  documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+      <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+      <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
+      <link rel="stylesheet" type="text/css" href="../_static/sphinx_lesson.css?v=e9df6548" />
+      <link rel="stylesheet" type="text/css" href="../_static/term_role_formatting.css?v=4194e21c" />
+      <link rel="stylesheet" type="text/css" href="../_static/sphinx_rtd_theme_ext_color_contrast.css?v=8e8ea19f" />
+      <link rel="stylesheet" type="text/css" href="../_static/style.css?v=7f5ea559" />
+
+  
+      <script src="../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../_static/documentation_options.js?v=187304be"></script>
+      <script src="../_static/doctools.js?v=9a2dae69"></script>
+      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+      <script src="../_static/copybutton.js?v=f281be69"></script>
+      <script src="../_static/minipres.js?v=a0d29692"></script>
+      <script>let toggleHintShow = 'Click to show';</script>
+      <script>let toggleHintHide = 'Click to hide';</script>
+      <script>let toggleOpenOnPrint = 'true';</script>
+      <script src="../_static/togglebutton.js?v=4a39c7ea"></script>
+      <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+      <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex/" />
+    <link rel="search" title="Search" href="../search/" />
+    <link rel="next" title="Step 3: Add Usability with the Operating System" href="../build_3/" />
+    <link rel="prev" title="Step 1: Build a Computer" href="../build_1/" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../" class="icon icon-home">
+            Introduction to data science
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search/" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Episodes</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../datascience/">What is data science?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lifecycle/">Data science on the data life-cycle</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../build_a_supercomputer/"><strong>Building a Supercomputer</strong></a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../build_a_supercomputer/#motivation-why-do-we-need-computers"><strong>Motivation: Why Do We Need Computers?</strong></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../build_a_supercomputer/#motivation-do-i-need-a-supercomputer"><strong>Motivation: Do I Need a Supercomputer?</strong></a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../build_a_supercomputer/#let-s-build-a-supercomputer-then">Let’s build a supercomputer then!</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="../build_1/"><strong>Step 1: Build a Computer</strong></a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#"><strong>Step 2: Add Life to the Hardware</strong></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#what-is-bios-or-uefi">🧬 <strong>What Is BIOS (or UEFI)?</strong></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#what-does-the-bios-uefi-do"><strong>What Does the BIOS/UEFI Do?</strong></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../build_3/"><strong>Step 3: Add Usability with the Operating System</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../build_4/"><strong>Step 4: Install the Tools You Are Planning to Use</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../build_5/"><strong>Step 5: Expand the Computer with Remote Storage</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../build_6/"><strong>Step 6: Expand the Computing by Connecting with Other Computers</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../build_7/"><strong>Step 7: Connect Multiple Computers Together to Build the Supercomputer</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../build_8/"><strong>Step 8: Celebrate! You Now Have Built a Supercomputer!</strong></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Extras</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../tidy-data/">Tidy data and dealing with messy data</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Reference</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../reference/">Reference</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../">Introduction to data science</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../build_a_supercomputer/"><strong>Building a Supercomputer</strong></a></li>
+      <li class="breadcrumb-item active"><strong>Step 2: Add Life to the Hardware</strong></li>
+      <li class="wy-breadcrumbs-aside">
+              <a href="https://github.com/eglerean/datascience/blob/main/content/build_2.md" class="fa fa-github"> Edit on GitHub</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="step-2-add-life-to-the-hardware">
+<h1><strong>Step 2: Add Life to the Hardware</strong><a class="headerlink" href="#step-2-add-life-to-the-hardware" title="Link to this heading"></a></h1>
+<p>So far, we’ve assembled the physical components of a computer — the <em>kitchen</em> is ready. But a pile of hardware isn’t useful on its own. We need to make it come alive.</p>
+<p>This is where <strong>firmware</strong> and <strong>boot systems</strong> come into play.</p>
+<section id="what-is-bios-or-uefi">
+<h2>🧬 <strong>What Is BIOS (or UEFI)?</strong><a class="headerlink" href="#what-is-bios-or-uefi" title="Link to this heading"></a></h2>
+<p>The <strong>BIOS</strong> (Basic Input/Output System) is a small program stored on a chip on the motherboard. It runs <strong>immediately when the computer is powered on</strong> — before any operating system is loaded.</p>
+<p>Modern systems often use <strong>UEFI</strong> (Unified Extensible Firmware Interface), which is an advanced version of BIOS.</p>
+</section>
+<section id="what-does-the-bios-uefi-do">
+<h2><strong>What Does the BIOS/UEFI Do?</strong><a class="headerlink" href="#what-does-the-bios-uefi-do" title="Link to this heading"></a></h2>
+<ol class="arabic simple">
+<li><p><strong>Power-On Self-Test (POST)</strong>: Checks that components like RAM and keyboard are working.</p></li>
+<li><p><strong>Initial Setup</strong>: Detects connected drives and peripherals.</p></li>
+<li><p><strong>Boot Order</strong>: Decides where to look for the system to load next (e.g., SSD, USB stick, network).</p></li>
+<li><p><strong>Hands Off</strong>: Once a bootloader is found, the BIOS/UEFI gives control to it.</p></li>
+</ol>
+<p><strong>In short:</strong> The BIOS is the spark that tells the hardware to wake up and start the process of becoming a computer.</p>
+<section id="is-bios-enough-no-we-need-an-operating-system">
+<h3><strong>Is BIOS Enough? No — We Need an Operating System</strong><a class="headerlink" href="#is-bios-enough-no-we-need-an-operating-system" title="Link to this heading"></a></h3>
+<p>The BIOS only prepares the computer to load a <strong>real operating system</strong> (like Linux, Windows, or macOS). Without an OS, your computer can’t:</p>
+<ul class="simple">
+<li><p>Launch programs,</p></li>
+<li><p>Manage files,</p></li>
+<li><p>Connect to the internet,</p></li>
+<li><p>Display a graphical interface.</p></li>
+</ul>
+<p>We’ll install the OS in the next step — but first, let’s talk about early-stage <strong>security</strong>.</p>
+</section>
+<section id="security-already-starts-here-disk-encryption">
+<h3>🔐 <strong>Security Already Starts Here: Disk Encryption</strong><a class="headerlink" href="#security-already-starts-here-disk-encryption" title="Link to this heading"></a></h3>
+<p>At the BIOS/UEFI level, we can:</p>
+<ul class="simple">
+<li><p>Set a password to <strong>prevent unauthorized access to the firmware settings</strong>,</p></li>
+<li><p>Enable <strong>disk encryption</strong> to protect data at rest.</p></li>
+</ul>
+<p><strong>Encryption</strong> scrambles your data using a mathematical key. Without that key, the data is unreadable — even if someone physically steals the disk.</p>
+<p><strong>Think of encryption like a secret spice blend locked in a safe</strong>: even if someone gets the ingredients (data), they can’t cook the same recipe without the key (password or passphrase).</p>
+<div class="admonition-discussion discussion important admonition" id="discussion-0">
+<p class="admonition-title">Discussion</p>
+<p><strong>Cooking Metaphor: Lighting the Stove</strong></p>
+<ul class="simple">
+<li><p>The BIOS is like <strong>turning on the stove and checking the gas</strong> — it prepares everything to start cooking.</p></li>
+<li><p>It doesn’t do any cooking itself — but without it, the kitchen is dark.</p></li>
+<li><p>Encryption at this stage is like <strong>locking your ingredient cabinet</strong>, so no one can mess with it while you’re away.</p></li>
+</ul>
+</div>
+</section>
+<section id="bonus-insight-for-support-teams">
+<h3>Bonus Insight for support teams<a class="headerlink" href="#bonus-insight-for-support-teams" title="Link to this heading"></a></h3>
+<p>Why this matters:</p>
+<ul class="simple">
+<li><p>Researchers working with <strong>sensitive data</strong> (e.g., health, interviews, unpublished results) must <strong>protect their devices</strong> from theft or unauthorized access.</p></li>
+<li><p>As a support person, you may be asked how to:</p>
+<ul>
+<li><p>Enable disk encryption,</p></li>
+<li><p>Set up secure boot settings,</p></li>
+<li><p>Ensure laptops comply with institutional data protection policies.</p></li>
+</ul>
+</li>
+</ul>
+<p>Understanding BIOS/UEFI is not about being a technician — it’s about knowing <strong>where trust begins</strong> in the system.</p>
+</section>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="../build_1/" class="btn btn-neutral float-left" title="Step 1: Build a Computer" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../build_3/" class="btn btn-neutral float-right" title="Step 3: Add Usability with the Operating System" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright CodeRefinery project.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

@@ -1,0 +1,279 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Step 6: Expand the Computing by Connecting with Other Computers &mdash; Introduction to data science  documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+      <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+      <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
+      <link rel="stylesheet" type="text/css" href="../_static/sphinx_lesson.css?v=e9df6548" />
+      <link rel="stylesheet" type="text/css" href="../_static/term_role_formatting.css?v=4194e21c" />
+      <link rel="stylesheet" type="text/css" href="../_static/sphinx_rtd_theme_ext_color_contrast.css?v=8e8ea19f" />
+      <link rel="stylesheet" type="text/css" href="../_static/style.css?v=7f5ea559" />
+
+  
+      <script src="../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../_static/documentation_options.js?v=187304be"></script>
+      <script src="../_static/doctools.js?v=9a2dae69"></script>
+      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+      <script src="../_static/copybutton.js?v=f281be69"></script>
+      <script src="../_static/minipres.js?v=a0d29692"></script>
+      <script>let toggleHintShow = 'Click to show';</script>
+      <script>let toggleHintHide = 'Click to hide';</script>
+      <script>let toggleOpenOnPrint = 'true';</script>
+      <script src="../_static/togglebutton.js?v=4a39c7ea"></script>
+      <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+      <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex/" />
+    <link rel="search" title="Search" href="../search/" />
+    <link rel="next" title="Step 7: Connect Multiple Computers Together to Build the Supercomputer" href="../build_7/" />
+    <link rel="prev" title="Step 5: Expand the Computer with Remote Storage" href="../build_5/" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../" class="icon icon-home">
+            Introduction to data science
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search/" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Episodes</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../datascience/">What is data science?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lifecycle/">Data science on the data life-cycle</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../build_a_supercomputer/"><strong>Building a Supercomputer</strong></a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../build_a_supercomputer/#motivation-why-do-we-need-computers"><strong>Motivation: Why Do We Need Computers?</strong></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../build_a_supercomputer/#motivation-do-i-need-a-supercomputer"><strong>Motivation: Do I Need a Supercomputer?</strong></a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../build_a_supercomputer/#let-s-build-a-supercomputer-then">Let’s build a supercomputer then!</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="../build_1/"><strong>Step 1: Build a Computer</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../build_2/"><strong>Step 2: Add Life to the Hardware</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../build_3/"><strong>Step 3: Add Usability with the Operating System</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../build_4/"><strong>Step 4: Install the Tools You Are Planning to Use</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../build_5/"><strong>Step 5: Expand the Computer with Remote Storage</strong></a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#"><strong>Step 6: Expand the Computing by Connecting with Other Computers</strong></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#using-remote-computers"><strong>Using Remote Computers</strong></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#offloading-computation-apis"><strong>Offloading Computation: APIs</strong></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#cloud-computing-and-virtual-machines"><strong>Cloud Computing and Virtual Machines</strong></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#security-and-compliance"><strong>Security and Compliance</strong></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#bonus-insight-for-support-teams">Bonus Insight for support teams</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../build_7/"><strong>Step 7: Connect Multiple Computers Together to Build the Supercomputer</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../build_8/"><strong>Step 8: Celebrate! You Now Have Built a Supercomputer!</strong></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Extras</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../tidy-data/">Tidy data and dealing with messy data</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Reference</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../reference/">Reference</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../">Introduction to data science</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../build_a_supercomputer/"><strong>Building a Supercomputer</strong></a></li>
+      <li class="breadcrumb-item active"><strong>Step 6: Expand the Computing by Connecting with Other Computers</strong></li>
+      <li class="wy-breadcrumbs-aside">
+              <a href="https://github.com/eglerean/datascience/blob/main/content/build_6.md" class="fa fa-github"> Edit on GitHub</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="step-6-expand-the-computing-by-connecting-with-other-computers">
+<h1><strong>Step 6: Expand the Computing by Connecting with Other Computers</strong><a class="headerlink" href="#step-6-expand-the-computing-by-connecting-with-other-computers" title="Link to this heading"></a></h1>
+<p>Sometimes, our own computer — even with extra storage — <strong>just isn’t enough</strong> to do what we need. Maybe we’re processing too much data, training a large AI model, or need more memory than we physically have.</p>
+<p>In these cases, we don’t just expand storage — we expand <strong>computation</strong> by connecting to other computers.</p>
+<section id="using-remote-computers">
+<h2><strong>Using Remote Computers</strong><a class="headerlink" href="#using-remote-computers" title="Link to this heading"></a></h2>
+<p>Remote computing means using another machine, typically more powerful than yours, to:</p>
+<ul class="simple">
+<li><p>Run programs,</p></li>
+<li><p>Store data,</p></li>
+<li><p>Train models,</p></li>
+<li><p>Or host services (like dashboards or APIs).</p></li>
+</ul>
+<p>This remote computer could be:</p>
+<ul class="simple">
+<li><p>A <strong>cloud-based virtual machine</strong> (e.g. from CSC, AWS, Azure),</p></li>
+<li><p>A <strong>remote workstation</strong> in your institution,</p></li>
+<li><p>A <strong>computing node</strong> on a cluster or HPC system,</p></li>
+<li><p>Or a <strong>server</strong> that you access over the internet.</p></li>
+</ul>
+<p>You control the remote computer using tools like:</p>
+<ul class="simple">
+<li><p><strong>SSH</strong> (secure shell, text-based),</p></li>
+<li><p><strong>Remote desktop</strong> (GUI-based),</p></li>
+<li><p><strong>Web interfaces</strong> (e.g. JupyterHub, VS Code in the browser, OpenOnDemand https://www.puhti.csc.fi/public/).</p></li>
+</ul>
+</section>
+<section id="offloading-computation-apis">
+<h2><strong>Offloading Computation: APIs</strong><a class="headerlink" href="#offloading-computation-apis" title="Link to this heading"></a></h2>
+<p>In many modern applications, <strong>your computer is only a front-end</strong>, while the work is done elsewhere.</p>
+<p>This is exactly how <strong>APIs (Application Programming Interfaces)</strong> work:</p>
+<ul class="simple">
+<li><p>You send a <strong>request</strong> (e.g. a prompt to ChatGPT),</p></li>
+<li><p>The remote system does all the processing,</p></li>
+<li><p>You get back a <strong>response</strong> (e.g. a completed sentence).</p></li>
+</ul>
+<p>Other examples:</p>
+<ul class="simple">
+<li><p>Image classification via a web API,</p></li>
+<li><p>Weather forecast data fetched from a public government API,</p></li>
+<li><p>Research datasets accessed through SPARQL endpoints or RESTful APIs.</p></li>
+</ul>
+<p>Your laptop just handles the input/output — <strong>the thinking happens remotely</strong>.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p class="rubric" id="an-example-on-the-terminal-to-query-a-remote-api">An example on the terminal to query a remote API</p>
+<p>In research, it’s often useful to retrieve data from external services using APIs (Application Programming Interfaces). Many APIs are <strong>RESTful</strong>, meaning they use standard web protocols (like HTTP) and return data in structured formats, such as JSON. You can query these APIs directly from the terminal using a tool like <code class="docutils literal notranslate"><span class="pre">curl</span></code>.</p>
+<p class="rubric" id="an-example-with-the-nasa-astronomy-picture-of-the-day-apod-service">An example with the <strong>NASA Astronomy Picture of the Day (APOD)</strong> service.</p>
+<p>This API provides information and metadata about astronomy images curated by NASA.</p>
+<p>You can retrieve the latest entry like this:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>curl<span class="w"> </span><span class="s2">&quot;https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY&quot;</span>
+</pre></div>
+</div>
+<p>This command sends a GET request to the NASA APOD API using a public test key (<code class="docutils literal notranslate"><span class="pre">DEMO_KEY</span></code>). The response will be in JSON format and includes the image URL, title, date, and explanation:</p>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+<span class="w">  </span><span class="nt">&quot;date&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2025-04-05&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;title&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Solar Eclipse from the ISS&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;url&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://apod.nasa.gov/apod/image/2504/eclipse_iss.jpg&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;explanation&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;This image from the International Space Station shows...&quot;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>You can save the response to a file for later use:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>curl<span class="w"> </span><span class="s2">&quot;https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY&quot;</span><span class="w"> </span>-o<span class="w"> </span>apod.json
+</pre></div>
+</div>
+<p>While this example uses a public endpoint, many APIs require authentication via API keys, tokens, or other headers — these can be added with curl options (e.g. <code class="docutils literal notranslate"><span class="pre">-H</span> <span class="pre">&quot;Authorization:</span> <span class="pre">Bearer</span> <span class="pre">TOKEN&quot;</span></code>), which we’ll explore later.</p>
+<p>Accessing APIs from the terminal allows researchers to:</p>
+<ul class="simple">
+<li><p>Automate data collection,</p></li>
+<li><p>Build reproducible workflows,</p></li>
+<li><p>Integrate external scientific datasets directly into analysis pipelines.</p></li>
+</ul>
+</div>
+<div class="admonition-discussion discussion important admonition" id="discussion-0">
+<p class="admonition-title">Discussion</p>
+<p><strong>Cooking Metaphor: Borrowing Another Kitchen</strong></p>
+<p>Imagine your kitchen is too small for a banquet. You can:</p>
+<ul class="simple">
+<li><p>Rent space at a <strong>larger kitchen across town</strong> (remote machine),</p></li>
+<li><p>Hire a <strong>chef robot</strong> that cooks on command (API),</p></li>
+<li><p>Or plug into a <strong>remote food factory</strong> using only your computer as a control panel.</p></li>
+</ul>
+<p>Your local computer becomes a <strong>terminal</strong> — a keyboard and a screen — while the real work happens remotely.</p>
+</div>
+</section>
+<section id="cloud-computing-and-virtual-machines">
+<h2><strong>Cloud Computing and Virtual Machines</strong><a class="headerlink" href="#cloud-computing-and-virtual-machines" title="Link to this heading"></a></h2>
+<p>Cloud providers offer <strong>on-demand computing environments</strong>:</p>
+<ul class="simple">
+<li><p>You create a virtual machine (VM) with a few clicks,</p></li>
+<li><p>Choose the number of CPUs, RAM, and even GPUs,</p></li>
+<li><p>Install your tools, run your code, and shut it down when done.</p></li>
+</ul>
+<p>Cloud platforms include:</p>
+<ul class="simple">
+<li><p><strong>General-purpose</strong>: AWS, Google Cloud, Azure</p></li>
+<li><p><strong>Research-focused</strong>: CSC</p></li>
+</ul>
+<p>The upside: scale, flexibility, reproducibility.<br />
+The downside: complexity, cost, and security considerations.</p>
+</section>
+<section id="security-and-compliance">
+<h2><strong>Security and Compliance</strong><a class="headerlink" href="#security-and-compliance" title="Link to this heading"></a></h2>
+<p>Using remote systems for research means:</p>
+<ul class="simple">
+<li><p>Being mindful of <strong>who else can access the system</strong>,</p></li>
+<li><p>Ensuring <strong>data protection</strong> (especially with personal data),</p></li>
+<li><p>Using <strong>strong authentication</strong> (SSH keys, 2FA),</p></li>
+<li><p>Following your institution’s <strong>IT and ethical guidelines</strong>.</p></li>
+</ul>
+</section>
+<section id="bonus-insight-for-support-teams">
+<h2>Bonus Insight for support teams<a class="headerlink" href="#bonus-insight-for-support-teams" title="Link to this heading"></a></h2>
+<p>As a support person, you’ll often help researchers:</p>
+<ul class="simple">
+<li><p>Understand where to run their code or models,</p></li>
+<li><p>Set up SSH access or Jupyter environments,</p></li>
+<li><p>Decide between <strong>on-premises</strong> and <strong>cloud-based</strong> resources,</p></li>
+<li><p>Comply with <strong>data security and legal requirements</strong> when using external computing power.</p></li>
+</ul>
+<p>You don’t need to be a system administrator — but you <em>do</em> need to know what’s possible, what’s allowed, and what questions to ask.</p>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="../build_5/" class="btn btn-neutral float-left" title="Step 5: Expand the Computer with Remote Storage" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../build_7/" class="btn btn-neutral float-right" title="Step 7: Connect Multiple Computers Together to Build the Supercomputer" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright CodeRefinery project.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

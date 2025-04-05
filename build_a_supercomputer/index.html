@@ -1,0 +1,314 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Building a Supercomputer &mdash; Introduction to data science  documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+      <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+      <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
+      <link rel="stylesheet" type="text/css" href="../_static/sphinx_lesson.css?v=e9df6548" />
+      <link rel="stylesheet" type="text/css" href="../_static/term_role_formatting.css?v=4194e21c" />
+      <link rel="stylesheet" type="text/css" href="../_static/sphinx_rtd_theme_ext_color_contrast.css?v=8e8ea19f" />
+      <link rel="stylesheet" type="text/css" href="../_static/style.css?v=7f5ea559" />
+
+  
+      <script src="../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../_static/documentation_options.js?v=187304be"></script>
+      <script src="../_static/doctools.js?v=9a2dae69"></script>
+      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+      <script src="../_static/copybutton.js?v=f281be69"></script>
+      <script src="../_static/minipres.js?v=a0d29692"></script>
+      <script>let toggleHintShow = 'Click to show';</script>
+      <script>let toggleHintHide = 'Click to hide';</script>
+      <script>let toggleOpenOnPrint = 'true';</script>
+      <script src="../_static/togglebutton.js?v=4a39c7ea"></script>
+      <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+      <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex/" />
+    <link rel="search" title="Search" href="../search/" />
+    <link rel="next" title="Step 1: Build a Computer" href="../build_1/" />
+    <link rel="prev" title="Data science on the data life-cycle" href="../lifecycle/" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../" class="icon icon-home">
+            Introduction to data science
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search/" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Episodes</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../datascience/">What is data science?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lifecycle/">Data science on the data life-cycle</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#"><strong>Building a Supercomputer</strong></a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#motivation-why-do-we-need-computers"><strong>Motivation: Why Do We Need Computers?</strong></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#automation-reproducibility-and-exploration"><strong>Automation, Reproducibility, and Exploration</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#bonus-insight">Bonus Insight</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#motivation-do-i-need-a-supercomputer"><strong>Motivation: Do I Need a Supercomputer?</strong></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#when-is-a-normal-computer-enough"><strong>When Is a Normal Computer Enough?</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#when-do-you-need-more-power"><strong>When Do You Need More Power?</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#not-all-remote-computers-are-supercomputers">Not All Remote Computers Are Supercomputers</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#key-takeaway-for-support-teams">Key Takeaway for support teams</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#let-s-build-a-supercomputer-then">Let’s build a supercomputer then!</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../build_1/"><strong>Step 1: Build a Computer</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../build_2/"><strong>Step 2: Add Life to the Hardware</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../build_3/"><strong>Step 3: Add Usability with the Operating System</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../build_4/"><strong>Step 4: Install the Tools You Are Planning to Use</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../build_5/"><strong>Step 5: Expand the Computer with Remote Storage</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../build_6/"><strong>Step 6: Expand the Computing by Connecting with Other Computers</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../build_7/"><strong>Step 7: Connect Multiple Computers Together to Build the Supercomputer</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../build_8/"><strong>Step 8: Celebrate! You Now Have Built a Supercomputer!</strong></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Extras</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../tidy-data/">Tidy data and dealing with messy data</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Reference</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../reference/">Reference</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../">Introduction to data science</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active"><strong>Building a Supercomputer</strong></li>
+      <li class="wy-breadcrumbs-aside">
+              <a href="https://github.com/eglerean/datascience/blob/main/content/build_a_supercomputer.md" class="fa fa-github"> Edit on GitHub</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="building-a-supercomputer">
+<h1><strong>Building a Supercomputer</strong><a class="headerlink" href="#building-a-supercomputer" title="Link to this heading"></a></h1>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>This material is <strong>work in progress</strong>.</p>
+<ul class="simple">
+<li><p>Writing technical materials as a technical person falls into the fallacy of assuming the reader shares the same background knowledge, leading to explanations that skip essential context, use jargon without clarification, and unintentionally exclude non-expert audiences. <strong>Please ask to expand and explain obscure concepts, jargon, unclear things</strong></p></li>
+<li><p>It is difficult to find CC0 graphics to reuse so the materials right now are not too visual. Please suggest if you have any good source for graphics.</p></li>
+</ul>
+</div>
+<p>In this episode, we try to build a supercomputer — starting from a single computer and scaling it up, step by step. Along the way, we’ll see why researchers use powerful computers and how the infrastructure behind research computing actually works.</p>
+<section id="motivation-why-do-we-need-computers">
+<h2><strong>Motivation: Why Do We Need Computers?</strong><a class="headerlink" href="#motivation-why-do-we-need-computers" title="Link to this heading"></a></h2>
+<p>Computers have become essential to research in every field — from physics to philosophy. But why?</p>
+<p>The core reasons are speed, automation, and the ability to <strong>store, process, and analyze large amounts of information</strong> quickly and reproducibly. Researchers use computers to perform tasks that would otherwise take months or years to do by hand — or would be too complex to do at all.</p>
+<div class="admonition-discussion discussion important admonition" id="discussion-0">
+<p class="admonition-title">Discussion</p>
+<p><strong>Why Do Researchers Use Computers?</strong></p>
+<p>Let’s look at a few examples:</p>
+<ul class="simple">
+<li><p><strong>In genomics</strong>, computers process the DNA sequences of thousands of individuals, looking for patterns that might explain disease.</p></li>
+<li><p><strong>In climate science</strong>, computers simulate Earth’s atmosphere and oceans to forecast climate change scenarios decades into the future.</p></li>
+<li><p><strong>In linguistics</strong>, researchers use natural language processing (NLP) to analyze the evolution of meaning in massive text archives across centuries.</p></li>
+<li><p><strong>In the humanities</strong>, historians use text mining to analyze themes across thousands of digitized books.</p></li>
+<li><p><strong>In business research</strong>, analysts model customer behavior using time series and recommendation algorithms.</p></li>
+</ul>
+<p>Without computers, these projects would either be <strong>impossible</strong> or so slow that the results would arrive too late to be useful.</p>
+</div>
+<section id="automation-reproducibility-and-exploration">
+<h3><strong>Automation, Reproducibility, and Exploration</strong><a class="headerlink" href="#automation-reproducibility-and-exploration" title="Link to this heading"></a></h3>
+<p>Computers allow researchers to:</p>
+<ul class="simple">
+<li><p><strong>Automate repetitive tasks</strong> (e.g. cleaning 10,000 images),</p></li>
+<li><p><strong>Try many different models quickly</strong> (e.g. training 100 regressions with different parameters),</p></li>
+<li><p><strong>Ensure reproducibility</strong>: code and scripts can be reused, shared, and rerun by others with identical results.</p></li>
+</ul>
+<p>This is especially important in modern science, which increasingly depends on <strong>data-driven inquiry</strong> and <strong>transparent methods</strong>.</p>
+<div class="admonition-discussion discussion important admonition" id="discussion-1">
+<p class="admonition-title">Discussion</p>
+<p class="rubric" id="cooking-metaphor-computers-are-research-kitchens"><strong>Cooking Metaphor: Computers Are Research Kitchens</strong></p>
+<p>Imagine a researcher as a cook, and their ideas as recipes.</p>
+<ul class="simple">
+<li><p>Without a kitchen (computer), the cook is left to chop and stir with bare hands. It’s slow and exhausting.</p></li>
+<li><p>With a modern kitchen, tools like ovens (CPUs), food processors (GPUs), and timers (scripts) make cooking fast, repeatable, and precise.</p></li>
+<li><p>Just like kitchens, <strong>computers turn raw ingredients (data)</strong> into <strong>finished meals (results)</strong> — following detailed recipes (programs and workflows).</p></li>
+</ul>
+<p>Different research domains need different kitchens: a historian may just need a stovetop, while a physicist might need an industrial food lab. But <strong>everyone benefits from the tools a computer provides.</strong></p>
+</div>
+</section>
+<section id="bonus-insight">
+<h3>Bonus Insight<a class="headerlink" href="#bonus-insight" title="Link to this heading"></a></h3>
+<p>Even though researchers come from very different backgrounds, the <strong>basic functions computers provide are universal</strong>:</p>
+<ul class="simple">
+<li><p>Input: Collect or read data,</p></li>
+<li><p>Processing: Apply algorithms, filters, or simulations,</p></li>
+<li><p>Output: Store, visualize, or share results.</p></li>
+</ul>
+<p>The tools vary — spreadsheets, R scripts, Python notebooks, cloud platforms — but the principles are the same. Learning how to think about computing <strong>systematically and metaphorically</strong> is a first step to becoming a confident data steward.</p>
+</section>
+</section>
+<section id="motivation-do-i-need-a-supercomputer">
+<h2><strong>Motivation: Do I Need a Supercomputer?</strong><a class="headerlink" href="#motivation-do-i-need-a-supercomputer" title="Link to this heading"></a></h2>
+<p>Not all research requires a supercomputer — but some does. Whether you need one depends on <strong>what kind of questions you’re asking</strong>, <strong>how much data you’re working with</strong>, and <strong>how fast you need results</strong>.</p>
+<section id="when-is-a-normal-computer-enough">
+<h3><strong>When Is a Normal Computer Enough?</strong><a class="headerlink" href="#when-is-a-normal-computer-enough" title="Link to this heading"></a></h3>
+<p>For many research tasks, a <strong>well-equipped laptop or desktop</strong> is completely sufficient:</p>
+<ul class="simple">
+<li><p>Analyzing a survey dataset in SPSS or R.</p></li>
+<li><p>Writing scripts in Python to clean tabular data.</p></li>
+<li><p>Creating visualizations or writing reports.</p></li>
+</ul>
+<p>These are like home-cooked meals — you only need <strong>one cook</strong> in a regular kitchen.</p>
+</section>
+<section id="when-do-you-need-more-power">
+<h3><strong>When Do You Need More Power?</strong><a class="headerlink" href="#when-do-you-need-more-power" title="Link to this heading"></a></h3>
+<p>Some research tasks <strong>can be split into smaller pieces</strong> and run in parallel — like having <strong>many chefs working at once</strong>, each preparing one part of the meal.</p>
+<p>This is where <strong>supercomputers</strong> come in:</p>
+<ul class="simple">
+<li><p><strong>Molecular simulations</strong>: Thousands of atoms simulated over millions of time steps.</p></li>
+<li><p><strong>Climate modeling</strong>: Regional and global forecasts require solving differential equations for every square kilometer of the Earth’s surface.</p></li>
+<li><p><strong>AI training</strong>: Large language models (LLMs) like GPT-4 require thousands of GPU hours to train.</p></li>
+<li><p><strong>Satellite image processing</strong>: Terabytes of high-resolution images analyzed over large time windows.</p></li>
+</ul>
+<p>Supercomputers allow these tasks to be done <strong>in hours or days instead of months or years</strong> — and often, to be done at all.</p>
+<div class="admonition-discussion discussion important admonition" id="discussion-2">
+<p class="admonition-title">Discussion</p>
+<p class="rubric" id="cooking-metaphor-do-you-need-an-industrial-kitchen"><strong>Cooking Metaphor: Do You Need an Industrial Kitchen?</strong></p>
+<p>Imagine you are making:</p>
+<ul class="simple">
+<li><p>One bowl of pasta for yourself → <strong>your laptop is fine</strong>.</p></li>
+<li><p>100 bowls of different pastas for a party → <strong>you need help</strong>, maybe some automation.</p></li>
+<li><p>Tens of thousands of portions for a food festival → You need <strong>an industrial kitchen with many chefs working in parallel</strong>, all coordinated.</p></li>
+</ul>
+<p>That’s what a supercomputer is: <strong>many normal computers working together</strong>, connected with high-speed communication, and orchestrated to act like one large kitchen.</p>
+</div>
+</section>
+<section id="not-all-remote-computers-are-supercomputers">
+<h3>Not All Remote Computers Are Supercomputers<a class="headerlink" href="#not-all-remote-computers-are-supercomputers" title="Link to this heading"></a></h3>
+<p>A supercomputer is powerful, but sometimes you just need <strong>a different computer</strong>, not a “super” one.</p>
+<p>For example:</p>
+<ul class="simple">
+<li><p>A <strong>remote workstation</strong> at your department could be enough for heavier tasks</p></li>
+<li><p>A <strong>server</strong> with more RAM or a better GPU than your laptop, usually on-premises.</p></li>
+<li><p>A <strong>remote virtual machine (VM)</strong> hosted in the cloud (e.g. on CSC, AWS, Azure). Servers can also be virtual machines, from the user perspective nothing changes</p></li>
+</ul>
+<p>These can help you:</p>
+<ul class="simple">
+<li><p>Work with large datasets that don’t fit on your laptop,</p></li>
+<li><p>Share resources with collaborators,</p></li>
+<li><p>Access faster networks or licensed software.</p></li>
+</ul>
+<p><strong>Remote ≠ Super.</strong> But remote access is still incredibly powerful.</p>
+<div class="admonition-discussion discussion important admonition" id="discussion-3">
+<p class="admonition-title">Discussion</p>
+<p class="rubric" id="how-to-know-when-i-need-to-scale-up-to-a-bigger-system"><em>How to know when I need to scale up to a bigger system?</em></p>
+<p>Understanding what you need to solve your computing problems is not trivial. Some questions you might ask yourself at some point in your life:</p>
+<ul class="simple">
+<li><p><strong>Do I need one or more CPUs to process my data?</strong> <em>Caveat: not every problem can be parallelised.</em></p></li>
+<li><p><strong>Do I need 1 computer with N CPUs or N computers with 1 CPU?</strong> <em>Caveat: not all code is written to use multiple CPUs</em></p></li>
+<li><p><strong>Do I need GPUs?</strong> <em>Caveat: GPUs require special code/libraries</em></p></li>
+<li><p><strong>Do I have tools/code that can be run on multiple CPUs and/or GPUs?</strong> <em>Caveat: code does not automatically use all the resources you might have at hand</em></p></li>
+<li><p><strong>Is the speed to access the data a bottleneck?</strong> <em>Caveat: the faster the access to the data, the more localised your data is</em></p></li>
+<li><p><strong>What level of security my data (and code) need to have?</strong> <em>Caveat: sensitive data should not be taken outside remote storage locations</em></p></li>
+</ul>
+</div>
+</section>
+<section id="key-takeaway-for-support-teams">
+<h3>Key Takeaway for support teams<a class="headerlink" href="#key-takeaway-for-support-teams" title="Link to this heading"></a></h3>
+<p>Research software engineers along with data stewards can help researchers <strong>decide where to run what</strong> with the perspective of the copmuting needed and the data usage. This includes:</p>
+<ul class="simple">
+<li><p>Estimating whether a task needs local or remote computing (e.g. for using larger storage or more secure storage),</p></li>
+<li><p>Helping select platforms (e.g. supercomputer, cloud VM, remote workstation),</p></li>
+<li><p>Explaining trade-offs (e.g. cost, speed, access, learning curve),</p></li>
+<li><p>Ensuring <strong>ethical and legal use</strong> (e.g. personal data on secure servers only).</p></li>
+</ul>
+<p>Understanding the <strong>computational scale of the problem</strong> is a critical support skill.</p>
+</section>
+</section>
+<section id="let-s-build-a-supercomputer-then">
+<h2>Let’s build a supercomputer then!<a class="headerlink" href="#let-s-build-a-supercomputer-then" title="Link to this heading"></a></h2>
+<p><img alt="A computing node" src="https://raw.githubusercontent.com/eglerean/eglerean.github.io/master/files/AComputingNode.svg" />
+<em>The architecture of a computer (or computing node)</em></p>
+<div class="toctree-wrapper compound">
+<p class="caption" role="heading"><span class="caption-text">How to build a supercomputer</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../build_1/"><strong>Step 1: Build a Computer</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../build_2/"><strong>Step 2: Add Life to the Hardware</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../build_3/"><strong>Step 3: Add Usability with the Operating System</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../build_4/"><strong>Step 4: Install the Tools You Are Planning to Use</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../build_5/"><strong>Step 5: Expand the Computer with Remote Storage</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../build_6/"><strong>Step 6: Expand the Computing by Connecting with Other Computers</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../build_7/"><strong>Step 7: Connect Multiple Computers Together to Build the Supercomputer</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../build_8/"><strong>Step 8: Celebrate! You Now Have Built a Supercomputer!</strong></a></li>
+</ul>
+</div>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="../lifecycle/" class="btn btn-neutral float-left" title="Data science on the data life-cycle" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../build_1/" class="btn btn-neutral float-right" title="Step 1: Build a Computer" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright CodeRefinery project.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

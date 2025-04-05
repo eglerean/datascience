@@ -1,0 +1,327 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Step 3: Add Usability with the Operating System &mdash; Introduction to data science  documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+      <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+      <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
+      <link rel="stylesheet" type="text/css" href="../_static/sphinx_lesson.css?v=e9df6548" />
+      <link rel="stylesheet" type="text/css" href="../_static/term_role_formatting.css?v=4194e21c" />
+      <link rel="stylesheet" type="text/css" href="../_static/sphinx_rtd_theme_ext_color_contrast.css?v=8e8ea19f" />
+      <link rel="stylesheet" type="text/css" href="../_static/style.css?v=7f5ea559" />
+      <link rel="stylesheet" type="text/css" href="../_static/tabs.css?v=a5c4661c" />
+
+  
+      <script src="../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../_static/documentation_options.js?v=187304be"></script>
+      <script src="../_static/doctools.js?v=9a2dae69"></script>
+      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+      <script src="../_static/copybutton.js?v=f281be69"></script>
+      <script src="../_static/minipres.js?v=a0d29692"></script>
+      <script>let toggleHintShow = 'Click to show';</script>
+      <script>let toggleHintHide = 'Click to hide';</script>
+      <script>let toggleOpenOnPrint = 'true';</script>
+      <script src="../_static/togglebutton.js?v=4a39c7ea"></script>
+      <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+      <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+      <script src="../_static/tabs.js?v=3030b3cb"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex/" />
+    <link rel="search" title="Search" href="../search/" />
+    <link rel="next" title="Step 4: Install the Tools You Are Planning to Use" href="../build_4/" />
+    <link rel="prev" title="Step 2: Add Life to the Hardware" href="../build_2/" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../" class="icon icon-home">
+            Introduction to data science
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search/" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Episodes</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../datascience/">What is data science?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lifecycle/">Data science on the data life-cycle</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../build_a_supercomputer/"><strong>Building a Supercomputer</strong></a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../build_a_supercomputer/#motivation-why-do-we-need-computers"><strong>Motivation: Why Do We Need Computers?</strong></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../build_a_supercomputer/#motivation-do-i-need-a-supercomputer"><strong>Motivation: Do I Need a Supercomputer?</strong></a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../build_a_supercomputer/#let-s-build-a-supercomputer-then">Let’s build a supercomputer then!</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="../build_1/"><strong>Step 1: Build a Computer</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../build_2/"><strong>Step 2: Add Life to the Hardware</strong></a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#"><strong>Step 3: Add Usability with the Operating System</strong></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#what-is-an-operating-system-os"><strong>What Is an Operating System (OS)?</strong></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#how-programs-work-with-the-os"><strong>How Programs Work With the OS</strong></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#users-and-roles-in-the-os"><strong>Users and Roles in the OS</strong></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#security-and-permissions"><strong>Security and Permissions</strong></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#bonus-insight-for-support-teams">Bonus insight for support teams</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../build_4/"><strong>Step 4: Install the Tools You Are Planning to Use</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../build_5/"><strong>Step 5: Expand the Computer with Remote Storage</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../build_6/"><strong>Step 6: Expand the Computing by Connecting with Other Computers</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../build_7/"><strong>Step 7: Connect Multiple Computers Together to Build the Supercomputer</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../build_8/"><strong>Step 8: Celebrate! You Now Have Built a Supercomputer!</strong></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Extras</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../tidy-data/">Tidy data and dealing with messy data</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Reference</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../reference/">Reference</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../">Introduction to data science</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../build_a_supercomputer/"><strong>Building a Supercomputer</strong></a></li>
+      <li class="breadcrumb-item active"><strong>Step 3: Add Usability with the Operating System</strong></li>
+      <li class="wy-breadcrumbs-aside">
+              <a href="https://github.com/eglerean/datascience/blob/main/content/build_3.md" class="fa fa-github"> Edit on GitHub</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="step-3-add-usability-with-the-operating-system">
+<h1><strong>Step 3: Add Usability with the Operating System</strong><a class="headerlink" href="#step-3-add-usability-with-the-operating-system" title="Link to this heading"></a></h1>
+<p>You’ve assembled the computer. You’ve powered it on. The BIOS did its job — and now it’s time to give the machine a personality: an <strong>operating system</strong>.</p>
+<p>Without one, the computer is like a kitchen with gas and electricity but <strong>no recipes</strong>, <strong>no tools</strong>, and <strong>no staff</strong>. It’s technically on, but it doesn’t <em>do</em> anything.</p>
+<section id="what-is-an-operating-system-os">
+<h2><strong>What Is an Operating System (OS)?</strong><a class="headerlink" href="#what-is-an-operating-system-os" title="Link to this heading"></a></h2>
+<p>An operating system is software that:</p>
+<ul class="simple">
+<li><p><strong>Manages hardware</strong>: Memory, disk, CPU, and input/output devices.</p></li>
+<li><p><strong>Runs programs</strong>: Coordinates which code executes and when.</p></li>
+<li><p><strong>Controls user access</strong>: Determines who can do what.</p></li>
+<li><p><strong>Provides interfaces</strong>: Command line, windows, files, folders, menus.</p></li>
+</ul>
+<p>Examples:</p>
+<ul class="simple">
+<li><p><strong>macOS</strong> (popular in creative and academic work).</p></li>
+<li><p><strong>Windows</strong> (common for desktops),</p></li>
+<li><p><strong>Linux</strong> (used widely in research environments and HPC),</p></li>
+</ul>
+<div class="admonition-kitchen-analogy discussion important admonition" id="discussion-0">
+<p class="admonition-title">Kitchen analogy</p>
+<p>Just for fun: which operating systems do the following example kitchens represent?</p>
+<div class="sphinx-tabs docutils container">
+<div aria-label="Tabbed content" class="closeable" role="tablist"><button aria-controls="panel-0-0-0" aria-selected="true" class="sphinx-tabs-tab" id="tab-0-0-0" name="0-0" role="tab" tabindex="0">1</button><button aria-controls="panel-0-0-1" aria-selected="false" class="sphinx-tabs-tab" id="tab-0-0-1" name="0-1" role="tab" tabindex="-1">2</button><button aria-controls="panel-0-0-2" aria-selected="false" class="sphinx-tabs-tab" id="tab-0-0-2" name="0-2" role="tab" tabindex="-1">3</button></div><div aria-labelledby="tab-0-0-0" class="sphinx-tabs-panel" id="panel-0-0-0" name="0-0" role="tabpanel" tabindex="0"><figure class="align-default" id="id1">
+<a class="reference internal image-reference" href="https://coderefinery.github.io/reproducible-research/_images/macos.png"><img alt="Generated image of a kitchen" src="https://coderefinery.github.io/reproducible-research/_images/macos.png" style="width: 50%;" />
+</a>
+<figcaption>
+<p><span class="caption-text">[Midjourney, CC-BY-NC 4.0]</span><a class="headerlink" href="#id1" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+</div><div aria-labelledby="tab-0-0-1" class="sphinx-tabs-panel" hidden="true" id="panel-0-0-1" name="0-1" role="tabpanel" tabindex="0"><figure class="align-default" id="id2">
+<a class="reference internal image-reference" href="https://coderefinery.github.io/reproducible-research/_images/windows.png"><img alt="Generated image of a kitchen" src="https://coderefinery.github.io/reproducible-research/_images/windows.png" style="width: 50%;" />
+</a>
+<figcaption>
+<p><span class="caption-text">[Midjourney, CC-BY-NC 4.0]</span><a class="headerlink" href="#id2" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+</div><div aria-labelledby="tab-0-0-2" class="sphinx-tabs-panel" hidden="true" id="panel-0-0-2" name="0-2" role="tabpanel" tabindex="0"><figure class="align-default" id="id3">
+<a class="reference internal image-reference" href="https://coderefinery.github.io/reproducible-research/_images/linux.png"><img alt="Generated image of a kitchen" src="https://coderefinery.github.io/reproducible-research/_images/linux.png" style="width: 50%;" />
+</a>
+<figcaption>
+<p><span class="caption-text">[Midjourney, CC-BY-NC 4.0]</span><a class="headerlink" href="#id3" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+</div></div>
+</div>
+</section>
+<section id="how-programs-work-with-the-os">
+<h2><strong>How Programs Work With the OS</strong><a class="headerlink" href="#how-programs-work-with-the-os" title="Link to this heading"></a></h2>
+<ul class="simple">
+<li><p>When you open a program, the OS loads it into <strong>RAM</strong>.</p></li>
+<li><p>The CPU executes the program <strong>instruction by instruction</strong>.</p></li>
+<li><p>The OS handles <strong>scheduling</strong>: when each program gets CPU time.</p></li>
+<li><p>The OS also provides <strong>system calls</strong> so that programs can talk to devices (e.g., save a file, read a sensor).</p></li>
+</ul>
+<p>So the OS is the <strong>bridge</strong> between raw hardware and usable computing.</p>
+</section>
+<section id="users-and-roles-in-the-os">
+<h2><strong>Users and Roles in the OS</strong><a class="headerlink" href="#users-and-roles-in-the-os" title="Link to this heading"></a></h2>
+<p>Operating systems allow <strong>multiple users</strong>. Each user may have different permissions.</p>
+<ul class="simple">
+<li><p><strong>Root / Administrator</strong>:</p>
+<ul>
+<li><p>Full control of the system.</p></li>
+<li><p>Can install software, change user accounts, reconfigure everything.</p></li>
+</ul>
+</li>
+<li><p><strong>Normal Users</strong>:</p>
+<ul>
+<li><p>Limited control — can run software, manage their own files, but not others’.</p></li>
+</ul>
+</li>
+</ul>
+<p>This separation prevents accidents or security issues (e.g. if you run a malicious program that deletes the main operating system files, user permissions wouldn’t let you do that).</p>
+</section>
+<section id="security-and-permissions">
+<h2><strong>Security and Permissions</strong><a class="headerlink" href="#security-and-permissions" title="Link to this heading"></a></h2>
+<p>The OS uses <strong>file permissions</strong> and <strong>user roles</strong> to:</p>
+<ul class="simple">
+<li><p>Ensure data integrity (users can’t modify each other’s files),</p></li>
+<li><p>Maintain confidentiality (research data is private),</p></li>
+<li><p>Protect system functionality.</p></li>
+</ul>
+<p>Permissions control:</p>
+<ul class="simple">
+<li><p>Who can read, write, or execute files.</p></li>
+<li><p>Who can install or update software.</p></li>
+<li><p>Which users can access shared data folders.</p></li>
+</ul>
+<p>Permissions are like <strong>kitchen access badges</strong> — only the head chef can restock the fridge or replace knives, while sous-chefs can use them but not reorder.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p class="rubric" id="permissions-in-the-linux-terminal-explained">Permissions in the Linux terminal explained</p>
+<p>When you list files in a Linux terminal using the command <code class="docutils literal notranslate"><span class="pre">ls</span> <span class="pre">-l</span></code>, you’ll see something like this:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">-</span><span class="n">rw</span><span class="o">-</span><span class="n">r</span><span class="o">--</span><span class="n">r</span><span class="o">--</span>  <span class="mi">1</span> <span class="n">user</span> <span class="n">group</span>  <span class="mi">2048</span> <span class="n">Apr</span>  <span class="mi">5</span> <span class="mi">14</span><span class="p">:</span><span class="mi">32</span> <span class="n">data</span><span class="o">.</span><span class="n">txt</span>
+</pre></div>
+</div>
+<p>Let’s break it down:</p>
+<ul class="simple">
+<li><p>The first part, <code class="docutils literal notranslate"><span class="pre">-rw-r--r--</span></code>, shows the <strong>file permissions</strong>.</p></li>
+<li><p>It’s a 10-character string where:</p>
+<ul>
+<li><p>The first character indicates the <strong>type</strong> (<code class="docutils literal notranslate"><span class="pre">-</span></code> = regular file, <code class="docutils literal notranslate"><span class="pre">d</span></code> = directory, <code class="docutils literal notranslate"><span class="pre">l</span></code> = symbolic link, etc.).</p></li>
+<li><p>The next 9 characters are split into <strong>three groups of three</strong>:</p>
+<ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">rw-</span></code>: <strong>Owner</strong> permissions (read, write),</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">r--</span></code>: <strong>Group</strong> permissions (read only),</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">r--</span></code>: <strong>Others</strong> (everyone else; read only).</p></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>So in this example:</p>
+<ul class="simple">
+<li><p>The <strong>owner</strong> can <strong>read and write</strong> the file,</p></li>
+<li><p>The <strong>group</strong> can only <strong>read</strong> it,</p></li>
+<li><p><strong>Others</strong> (any user on the system) can also only <strong>read</strong> it.</p></li>
+</ul>
+<p>If you see something like this for a script:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">-</span><span class="n">rwxr</span><span class="o">-</span><span class="n">xr</span><span class="o">-</span><span class="n">x</span>
+</pre></div>
+</div>
+<p>That means:</p>
+<ul class="simple">
+<li><p>The owner can <strong>read, write, and execute</strong>,</p></li>
+<li><p>The group and others can <strong>read and execute</strong>, but <strong>not modify</strong> the file.</p></li>
+</ul>
+<p>You can change these permissions using commands like <code class="docutils literal notranslate"><span class="pre">chmod</span></code>, and change the owner with <code class="docutils literal notranslate"><span class="pre">chown</span></code>.</p>
+<p>Understanding these settings is essential when managing access to data and scripts in shared research environments.</p>
+</div>
+<div class="admonition-discussion discussion important admonition" id="discussion-1">
+<p class="admonition-title">Discussion</p>
+<p><strong>Cooking Metaphor: The Operating System Is the Kitchen Manager</strong></p>
+<ul class="simple">
+<li><p>The OS decides who can use which appliances.</p></li>
+<li><p>It makes sure the oven isn’t on fire while the dishwasher is running.</p></li>
+<li><p>It keeps the pantry organized (file system),</p></li>
+<li><p>And ensures everyone follows safety protocols (permissions and users).</p></li>
+</ul>
+<p>Without an OS, you’d just have an empty room full of disconnected appliances.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p class="rubric" id="the-terminal-is-the-most-powerful-tool">The terminal is the most powerful tool</p>
+<p>The terminal — also known as the <strong>command-line interface</strong> or <strong>shell</strong> — is one of the most powerful and flexible tools available on a computer, especially in scientific and research computing.</p>
+<p>At its core, the shell is a program that provides a <strong>text-based interface</strong> between the user and the operating system. Rather than clicking through menus and windows, users type commands directly to control the computer. This is why it is called a <strong>“shell”</strong> — it wraps around the underlying system and gives users a structured way to interact with it.</p>
+<p>There are different kinds of shells (like <code class="docutils literal notranslate"><span class="pre">bash</span></code>, <code class="docutils literal notranslate"><span class="pre">zsh</span></code>, or <code class="docutils literal notranslate"><span class="pre">fish</span></code>), but they all allow the user to execute programs, navigate the filesystem, automate tasks, and combine tools in highly efficient ways.</p>
+<p>The terminal is particularly favored by expert users and researchers because it offers:</p>
+<ul class="simple">
+<li><p><strong>Precision</strong>: Commands can be written and saved exactly, removing ambiguity and allowing for exact replication of tasks.</p></li>
+<li><p><strong>Speed</strong>: Complex or repetitive tasks that would take many clicks in a graphical interface can be done in seconds with a single command or script.</p></li>
+<li><p><strong>Automation</strong>: Workflows can be scripted, making it easy to repeat analyses, preprocess data, or set up entire environments automatically.</p></li>
+<li><p><strong>Remote access</strong>: Shell-based tools like SSH make it possible to work on powerful remote systems or supercomputers as if they were local.</p></li>
+<li><p><strong>Reproducibility</strong>: Everything you do in the terminal can be logged and version-controlled, which is essential for transparent scientific research.</p></li>
+</ul>
+<p>In short, while it may seem intimidating at first, the shell becomes an essential ally for researchers dealing with data, software environments, or computing infrastructure. Learning to use it effectively can significantly increase both productivity and control over computational tasks.</p>
+<p>Consider taking <a class="reference external" href="https://scicomp.aalto.fi/scicomp/shell/">the Shell Crash Course</a></p>
+</div>
+</section>
+<section id="bonus-insight-for-support-teams">
+<h2>Bonus insight for support teams<a class="headerlink" href="#bonus-insight-for-support-teams" title="Link to this heading"></a></h2>
+<p>Why this matters for your role:</p>
+<ul class="simple">
+<li><p>Researchers will ask you <strong>why they can’t install a tool</strong> or <strong>access a folder</strong> — this often comes down to OS permissions.</p></li>
+<li><p>In secure environments (e.g., working with personal data), understanding <strong>user roles</strong> and <strong>access controls</strong> is crucial for compliance.</p></li>
+<li><p>If you support computational research, you’ll often interact with <strong>Linux-based systems</strong> and need to understand how users and files are managed there.</p></li>
+</ul>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="../build_2/" class="btn btn-neutral float-left" title="Step 2: Add Life to the Hardware" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../build_4/" class="btn btn-neutral float-right" title="Step 4: Install the Tools You Are Planning to Use" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright CodeRefinery project.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

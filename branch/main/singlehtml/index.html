@@ -1,0 +1,2027 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Introduction to data science documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css" />
+      <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+      <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+      <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+      <link rel="stylesheet" type="text/css" href="_static/sphinx_lesson.css" />
+      <link rel="stylesheet" type="text/css" href="_static/term_role_formatting.css" />
+      <link rel="stylesheet" type="text/css" href="_static/sphinx_rtd_theme_ext_color_contrast.css" />
+      <link rel="stylesheet" type="text/css" href="_static/style.css" />
+      <link rel="stylesheet" type="text/css" href="_static/tabs.css" />
+
+  
+      <script src="_static/jquery.js?v=5d32c60e"></script>
+      <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="_static/documentation_options.js"></script>
+      <script src="_static/doctools.js"></script>
+      <script src="_static/sphinx_highlight.js"></script>
+      <script src="_static/clipboard.min.js"></script>
+      <script src="_static/copybutton.js"></script>
+      <script src="_static/minipres.js"></script>
+      <script>let toggleHintShow = 'Click to show';</script>
+      <script>let toggleHintHide = 'Click to hide';</script>
+      <script>let toggleOpenOnPrint = 'true';</script>
+      <script src="_static/togglebutton.js"></script>
+      <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+      <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+      <script src="_static/tabs.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="#" class="icon icon-home">
+            Introduction to data science
+          </a>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Episodes</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="#document-datascience">What is data science?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#document-lifecycle">Data science on the data life-cycle</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#document-build_a_supercomputer"><strong>Building a Supercomputer</strong></a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Extras</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="#document-tidy-data">Tidy data and dealing with messy data</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Reference</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="#document-reference">Reference</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="#">Introduction to data science</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="#" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Introduction to data science  documentation</li>
+      <li class="wy-breadcrumbs-aside">
+              <a href="https://github.com/eglerean/datascience/blob/main/content/index" class="fa fa-github"> Edit on GitHub</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="introduction-to-data-science-and-data-driven-research">
+<h1>Introduction to Data Science and Data-Driven Research<a class="headerlink" href="#introduction-to-data-science-and-data-driven-research" title="Link to this heading"></a></h1>
+<p>In this introductory-level workshop, we will cover the basic concepts behind data science focusing
+on the methodological and technological aspects in working with data.</p>
+<section id="who-is-the-course-for">
+<h2>Who is the course for?<a class="headerlink" href="#who-is-the-course-for" title="Link to this heading"></a></h2>
+<ul class="simple">
+<li><p>Somebody who is not a data scientist, but is working with other data scientists.</p></li>
+</ul>
+<div class="admonition-preparations prerequisites admonition" id="prerequisites-0">
+<p class="admonition-title">Preparations</p>
+<ul class="simple">
+<li><p>No preparation is needed for this course</p></li>
+</ul>
+</div>
+</section>
+<section id="what-is-not-taught">
+<h2>What is not taught?<a class="headerlink" href="#what-is-not-taught" title="Link to this heading"></a></h2>
+<ul class="simple">
+<li><p>This course has no practical examples on how to write code for doing data science.</p></li>
+</ul>
+<div class="admonition-discussion discussion important admonition" id="discussion-0">
+<span id="episode-overview"></span><p class="admonition-title">Discussion</p>
+<p>Let’s answer to a couple of <em>icebreakers</em></p>
+<ol class="arabic simple">
+<li><p>What are the two things about IT, programming, software, hardware, … that you have always been curious about, but never really understood?</p></li>
+<li><p>What is the most important thing that you want to learn from this module?</p></li>
+</ol>
+</div>
+</section>
+<section id="id1">
+<h2>Episode overview<a class="headerlink" href="#id1" title="Link to this heading"></a></h2>
+<p>List of content:</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="#document-datascience"><span class="doc">What is data science?</span></a></p></li>
+<li><p><a class="reference internal" href="#document-lifecycle"><span class="doc">Data science on the data life-cycle</span></a></p></li>
+<li><p><a class="reference internal" href="#document-build_a_supercomputer"><span class="doc">Building a Supercomputer</span></a></p></li>
+</ul>
+<div class="toctree-wrapper compound">
+<span id="document-datascience"></span><section id="what-is-data-science">
+<h3>What is data science?<a class="headerlink" href="#what-is-data-science" title="Link to this heading"></a></h3>
+<div class="admonition-objectives objectives admonition" id="objectives-0">
+<p class="admonition-title">Objectives</p>
+<ul class="simple">
+<li><p>Understanding what is meant with data science in relationship to other types of research paradigms</p></li>
+<li><p>Distinguishing between exploratory and confirmatory research</p></li>
+</ul>
+</div>
+<section id="id1">
+<h4>What is data science?<a class="headerlink" href="#id1" title="Link to this heading"></a></h4>
+<p>Data science is an interdisciplinary field that focuses on extracting knowledge and insights from data using methods from statistics, computer science, mathematics, and domain-specific knowledge. It involves techniques such as data cleaning, exploratory analysis, statistical testing, and machine learning to answer research questions, generate predictions, and support decision-making.</p>
+<p>Data science is a term also used outside academia to describe those professional roles where data exploration is fundamental to gain insights about products or other metrics that a company is producing. In research, data science – also called <em>data-driven research</em> – provides a computational complement to traditional scientific inquiry. It allows researchers to work with much larger and more complex datasets than ever before.</p>
+<p><img alt="The data science lifecycle - (c) sudeep.co" src="https://analyticstraininghub.com/wp-content/uploads/2022/10/data-science.png" /></p>
+</section>
+<section id="what-is-the-scientific-method">
+<h4>What is the scientific method?<a class="headerlink" href="#what-is-the-scientific-method" title="Link to this heading"></a></h4>
+<p>The scientific method is the process through which science advances, building on prior knowledge and unifying understanding over time. It played a key role in the Scientific Revolution. The method involves forming hypotheses, making predictions, and testing them through experiments. While often shown as a fixed sequence, it’s better seen as a set of general principles that vary in order and application across different inquiries.</p>
+<p><img alt="The scientific method - Wikimedia" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/The_Scientific_Method_as_an_Ongoing_Process.svg/1456px-The_Scientific_Method_as_an_Ongoing_Process.svg.png?20161231121344" /></p>
+<div class="admonition-discussion discussion important admonition" id="discussion-0">
+<p class="admonition-title">Discussion</p>
+<p>What are the similarities and the differences between data science and the scientific method?</p>
+</div>
+</section>
+<section id="confirmatory-hypothesis-driven-versus-exploratory-data-driven-research">
+<h4>Confirmatory (hypothesis driven) versus exploratory (data driven) research<a class="headerlink" href="#confirmatory-hypothesis-driven-versus-exploratory-data-driven-research" title="Link to this heading"></a></h4>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Aspect</p></th>
+<th class="head"><p>Exploratory Research</p></th>
+<th class="head"><p>Hypothesis-Driven Research</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><strong>Goal</strong></p></td>
+<td><p>Explore patterns, relationships, generate hypotheses</p></td>
+<td><p>Test a specific, predefined hypothesis</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Approach</strong></p></td>
+<td><p>Open-ended, data-first</p></td>
+<td><p>Theory-first, often based on prior literature</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>Methods</strong></p></td>
+<td><p>Visualizations, clustering, dimension reduction, etc.</p></td>
+<td><p>Statistical tests, regression models, experiments</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Common Tools</strong></p></td>
+<td><p>EDA (Exploratory Data Analysis), unsupervised ML</p></td>
+<td><p>Inferential statistics, causal inference methods</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>Typical Output</strong></p></td>
+<td><p>Insights, patterns, questions</p></td>
+<td><p>Confirmed or rejected hypotheses</p></td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p class="rubric" id="have-you-heard-about-registered-reports">Have you heard about registered reports?</p>
+<blockquote>
+<div><p><em>“Which part of	a research	study do you believe should	be beyond your control as a scientist? <strong>The result</strong>.</em>
+<em>Which part of	a research study do	you	believe	is most	important	for	advancing	your	career?	<strong>The	results</strong>”</em> (<a class="reference external" href="https://osf.io/gs6tp/download">Chris Chambers, slides</a>)</p>
+</div></blockquote>
+<p class="rubric" id="registered-reports-in-a-nutshell">Registered reports in a nutshell</p>
+<p>(<a class="reference external" href="https://www.cos.io/initiatives/registered-reports">source</a>)
+<img alt="Registered reports process" src="https://cdn.cos.io/media/images/registered_reports.width-800.png" /></p>
+<ul class="simple">
+<li><p>Prepare manuscript with: Introduction, Proposed	Methods	&amp; Analyses,	and	- if applicable - Pilot data with a power analysis (Power &gt; 90%)</p></li>
+<li><p>Stage 1 peer review</p></li>
+<li><p><strong>In principle acceptance</strong> after Stage 1 peer review</p></li>
+<li><p>Collect and analyze data according to the plan</p></li>
+<li><p>Write the report (basically same Introduction and Methods, Results and Discussion are new; data and code are deposited and made accessible)</p></li>
+<li><p>Stage 2 peer review to confirm</p></li>
+<li><p>Done!</p></li>
+<li><p>Bonus step: include non-planned analyses (exploratory analyses)</p></li>
+</ul>
+<p><em>For history about Registered reports please see <a class="reference external" href="https://www.nature.com/articles/s41562-021-01193-7">Chambers &amp; Tzavella, Nature 2021</a>.</em></p>
+<p>See also <a class="reference external" href="https://hackmd.io/&#64;eglerean/RegRep">Glerean 2022 “Introduction to Registered Reports”</a>.</p>
+</div>
+</section>
+<section id="summary">
+<h4>Summary<a class="headerlink" href="#summary" title="Link to this heading"></a></h4>
+<p>Data science and the scientific methods are complementary approaches in doing science with data. While traditionally a strong emphasis had been given towards quantitative sciences, the same conceptual approach applies also to qualitative research.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p class="rubric" id="the-cooking-metaphor-for-data-science">The cooking metaphor for data science</p>
+<p>We will often use cooking related metaphors.</p>
+<p><strong>Quantitative, Hypothesis-Driven</strong></p>
+<blockquote>
+<div><p><em>Cooking from a strict recipe</em>: You start with a well-tested recipe (theory), follow exact steps (methods), and test if the result matches expectations (hypothesis).</p>
+</div></blockquote>
+<p><strong>Quantitative, Data-Driven (Exploratory)</strong></p>
+<blockquote>
+<div><p><em>Opening the fridge and experimenting</em>: You don’t have a recipe, but you’ve got lots of ingredients (data). You try combinations, see what patterns emerge, and maybe invent a new signature dish (model or hypothesis).</p>
+</div></blockquote>
+<p><strong>Qualitative, Theory-Driven</strong></p>
+<blockquote>
+<div><p><em>Get inspired before cooking</em>: Cooking a creative dish inspired by a culinary philosophy (e.g., vegan, keto, or traditional Japanese)</p>
+</div></blockquote>
+<p><strong>Qualitative, Data-Driven</strong></p>
+<blockquote>
+<div><p><em>Foraging and inventing a dish</em>: You explore the landscape (interviews, observations), gather rich ingredients (quotes, themes), and create a new dish (theory) based on what you find.</p>
+</div></blockquote>
+</div>
+</section>
+</section>
+<span id="document-lifecycle"></span><section id="data-science-on-the-data-life-cycle">
+<h3>Data science on the data life-cycle<a class="headerlink" href="#data-science-on-the-data-life-cycle" title="Link to this heading"></a></h3>
+<ul class="simple">
+<li><p>The data lifecycle considers 7 steps in relationship to data.</p></li>
+<li><p>Each step however could be accompanied with choices of the methods and tools used along with the data</p></li>
+<li><p>Can we expand the considerations that we are familiar with from data management to methods and tools?</p></li>
+</ul>
+<section id="the-research-data-lifecycle">
+<h4>The Research Data Lifecycle<a class="headerlink" href="#the-research-data-lifecycle" title="Link to this heading"></a></h4>
+<p><img alt="RDMkit image" src="https://rdmkit.elixir-europe.org/images/data_life_cycle.png" /></p>
+<p>RDMKit defines the data lifecycle with seven stages: <strong>Plan, Collect, Process, Analyse, Preserve, Share, Reuse</strong>. In data science, each stage is tightly coupled with computational and methodological tasks. Each step has some questions to consider and the answers can affect reproducibility, data quality, and scientific impact:</p>
+<ul class="simple">
+<li><p>Plan – What data will be needed? What tools and infrastructure will be used?</p></li>
+<li><p>Collect – How will data be acquired or generated (e.g., sensors, experiments, scraping)? What data structure / data format will be used?</p></li>
+<li><p>Process – Cleaning and organizing raw data, often using programming and automation.</p></li>
+<li><p>Analyse – Applying statistics or machine learning to test hypotheses or make predictions.</p></li>
+<li><p>Preserve – Storing raw and processed data in a way that allows others (or your future self) to access and use it later.</p></li>
+<li><p>Share – Making data (and often code) available to others, while ensuring legal and ethical compliance.</p></li>
+<li><p>Reuse – Using existing data for new questions, possibly integrating it with other datasets.</p></li>
+</ul>
+<p>Each stage in the lifecycle is computationally enabled — from writing code for data cleaning, to calculating statistics, to automating sharing via data repositories and APIs.</p>
+<div class="admonition-discussion discussion important admonition" id="discussion-0">
+<p class="admonition-title">Discussion</p>
+<p class="rubric" id="explore-the-rdmkit-website">Explore the RDMkit website.</p>
+<p>Spend some time with the RDMkit website: Were you already familiar with <a class="reference external" href="https://rdmkit.elixir-europe.org/">RDMkit</a>?</p>
+</div>
+<div class="admonition-exercise exercise important admonition" id="exercise-0">
+<p class="admonition-title">Exercise</p>
+<p class="rubric" id="how-would-the-software-methods-life-cycle-look-in-a-field-that-you-are-familiar-with">How would the software/methods life-cycle look in a field that you are familiar with?</p>
+<p>Example: - Neuroscience: Prepare all documents for ethical review and personal data handling, collect data with the MRI scanner, move data from scanner to workstations, convert data to format for analysis, preprocess data so that statistics can be run, run statistical models (common one is the general linear model), make figures of the results (e.g. brain activation maps), share code and aggregated results on dedicated repositories (e.g. NeuroVault), make sure data can be reused (difficult one!) - <em>add your field / example here</em></p>
+</div>
+<div class="admonition-discussion discussion important admonition" id="discussion-1">
+<p class="admonition-title">Discussion</p>
+<p>The cooking analogy for working with data and software</p>
+<ul class="simple">
+<li><p>Software &lt;-&gt; recipe</p></li>
+<li><p>Data &lt;-&gt; ingredients</p></li>
+<li><p>Libraries &lt;-&gt; pots/tools</p></li>
+<li><p>Operating system &lt;-&gt; style of kitchen we are working with</p></li>
+<li><p>Hardware &lt;-&gt; the actual kitchen with the stove, fridge, cupboards</p></li>
+</ul>
+<figure class="align-default" id="id1">
+<a class="reference internal image-reference" href="https://coderefinery.github.io/reproducible-research/_images/recipe.png"><img alt="Cooking recipe in an unfamiliar language" src="https://coderefinery.github.io/reproducible-research/_images/recipe.png" style="width: 50%;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Cooking recipe in an unfamiliar language [Midjourney, CC-BY-NC 4.0]</span><a class="headerlink" href="#id1" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<figure class="align-default" id="id2">
+<a class="reference internal image-reference" href="https://coderefinery.github.io/reproducible-research/_images/libraries.png"><img alt="Kitchen with few open cooking books" src="https://coderefinery.github.io/reproducible-research/_images/libraries.png" style="width: 50%;" />
+</a>
+<figcaption>
+<p><span class="caption-text">When we create recipes, we often use tools created by others (libraries) [Midjourney, CC-BY-NC 4.0]</span><a class="headerlink" href="#id2" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+</div>
+</section>
+<section id="planning-data-science-work">
+<h4>Planning data science work<a class="headerlink" href="#planning-data-science-work" title="Link to this heading"></a></h4>
+<p>Planning in data science refers to the deliberate process of defining the goals, scope, data requirements, tools, methods, and risks before diving into code or analysis. It’s about <strong>designing the computational and data strategy for a research question</strong> — and ensuring that all decisions (from data collection to modeling) are aligned with research objectives.</p>
+<p>In research, proper planning helps:</p>
+<ul class="simple">
+<li><p>Prevent wasted time due to poor data quality or missing variables.</p></li>
+<li><p>Ensure that ethical and legal responsibilities are considered before doing the actual work (e.g., data protection, consent, licenses).</p></li>
+<li><p>Ensure that the infrastructure can support the analysis (e.g., compute power, storage).</p></li>
+<li><p>Enable reproducibility and collaboration by documenting the project structure early.</p></li>
+</ul>
+<p>Typical activities in the planning phase include:</p>
+<ul class="simple">
+<li><p>Defining research questions: What are you trying to discover, predict, or explain?</p></li>
+<li><p>Identifying data needs: Do the needed data already exist? Are new experiments needed? Are there access restrictions?</p></li>
+<li><p>Selecting tools and environments: Will the project use Python, R, Jupyter, cloud computing, or local servers? Will a version control system like Git be used?</p></li>
+<li><p>Sketching the workflow: Mapping out stages from raw data to results (sometimes visually).</p></li>
+<li><p>Identify who can help: colleagues, data stewards, research software engineers, IT staff, domain experts.</p></li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p class="rubric" id="visualizing-workflows-in-research-papers">Visualizing workflows in research papers.</p>
+<p><img alt="Workflow of data collection and analysis for &quot;Bodily Maps of Emotion (2014)&quot;" src="https://www.pnas.org/cms/10.1073/pnas.1321664111/asset/dcc3da97-2288-4f1c-a175-cad39b111aab/assets/graphic/pnas.1321664111fig01.jpeg" /></p>
+<p>From <a class="reference external" href="https://www.pnas.org/doi/abs/10.1073/pnas.1321664111"><em>Nummenmaa, L., Glerean, E., Hari, R., &amp; Hietanen, J. K. (2014). Bodily maps of emotions. Proceedings of the National Academy of Sciences, 111(2), 646-651.</em></a></p>
+</div>
+</section>
+<section id="collecting-data">
+<h4>Collecting data<a class="headerlink" href="#collecting-data" title="Link to this heading"></a></h4>
+<p>Data collection is the process of acquiring or generating raw data that will be used in analysis or modeling. In the data science lifecycle, this step is foundational — it defines what you will be able to study, predict, and discover. Poor data collection cannot be fixed later by sophisticated models.</p>
+<p>Data can be collected in many forms:</p>
+<ul class="simple">
+<li><p>Structured: Tables, spreadsheets, survey results, sensor logs.</p></li>
+<li><p>Unstructured: Text, images, audio, video.</p></li>
+<li><p>Semi-structured: JSON, XML, etc.</p></li>
+</ul>
+<p><strong>Why is this important in research?</strong> Without high-quality, well-documented, and ethically collected data, data science insights are unreliable. For research:</p>
+<ul class="simple">
+<li><p>Validity of conclusions depends on how data were gathered.</p></li>
+<li><p>It sets boundaries: “You can only answer the questions your data allow.”</p></li>
+<li><p>Poor collection leads to bias, data leakage, or irreproducibility.</p></li>
+</ul>
+<p><strong>The choice of file formats and data structures</strong> Sometimes we confuse file formats with data formats. It is a bit like confusing the shape of a container of a box of chocolate, with the actual shape of the chocolate pieces inside. Same file formats can contain very different data structures and what is important in computation at the end will be how the data is structured rather than if it is stored in “csv” or “xls”.</p>
+<div class="admonition-discussion discussion important admonition" id="discussion-2">
+<p class="admonition-title">Discussion</p>
+<p>Look at the very long <a class="reference external" href="https://en.wikipedia.org/wiki/List_of_data_structures">list of data structures in wikipedia</a>, some data structures are “low level” and are usually masked to the final user (you do not need to know how a list is stored in a programming language). Other data structures are more general and have become part of the language used in computational sciences:</p>
+<ul class="simple">
+<li><p>Primitive types (fundamental when reading or writing code)</p></li>
+<li><p>Composite types (the classic example is a <em>record</em> which is the smallest unit of data in a database)</p></li>
+</ul>
+</div>
+<div class="admonition-exercise exercise important admonition" id="exercise-1">
+<p class="admonition-title">Exercise</p>
+<p>Check the <strong>tidy-data</strong> sub-section for understanding what is a tidy dataset and how to convert data into a tidy format.</p>
+</div>
+</section>
+<section id="data-preprocessing">
+<h4>Data preprocessing<a class="headerlink" href="#data-preprocessing" title="Link to this heading"></a></h4>
+<p>Data preprocessing is the step of <strong>transforming raw data into a clean, consistent, and analysis-ready format</strong>. It includes everything from fixing typos and handling missing values, to reshaping datasets and engineering new variables. Without it, models and statistics are built on shaky foundations.</p>
+<p>Preprocessing typically involves two major tasks:</p>
+<ol class="arabic simple">
+<li><p><strong>Data cleaning</strong>: Removing errors, inconsistencies, or missing entries.</p></li>
+<li><p><strong>Feature extraction (or engineering)</strong>: Creating useful variables or representations from raw inputs to help models or visualizations reveal insights.</p></li>
+</ol>
+<p><strong>Why is it needed in research?</strong></p>
+<p>In real-world data, messiness is the norm: - Measurements might be missing or corrupted. - Categories might be inconsistently labeled (e.g., “Finland”, “FIN”, “Suomi”). - Time data might use different formats (e.g., DD-MM-YYYY vs MM/DD/YYYY). - Unstructured data (text, images) must be structured into something a model can read.</p>
+<p>Preprocessing ensures <strong>validity, accuracy, and comparability</strong>. It is often the <strong>most time-consuming phase</strong> in a data science project — but also one of the most critical.</p>
+<p><strong>Examples across disciplines</strong>:</p>
+<ul class="simple">
+<li><p>In <strong>clinical studies</strong>, missing patient records are imputed or excluded carefully to avoid bias.</p></li>
+<li><p>In <strong>natural language processing (NLP)</strong>, raw text is lowercased, tokenized, and stripped of stopwords before analysis.</p></li>
+<li><p>In <strong>physics</strong>, sensor drift or noise is corrected by calibration routines and filtering.</p></li>
+<li><p>In <strong>archaeological data</strong>, scanned artifact images are turned into tabular form by annotating features like shape or material.</p></li>
+</ul>
+<p><strong>Common tasks and tools</strong>:</p>
+<ul class="simple">
+<li><p><strong>Missing values</strong>: Remove, fill (impute), or flag them.</p></li>
+<li><p><strong>Outliers</strong>: Detect values outside expected range (statistical or domain-driven).</p></li>
+<li><p><strong>Encoding</strong>: Turn categories into numbers (e.g., one-hot encoding for machine learning).</p></li>
+<li><p><strong>Normalization</strong>: Scale numeric values to a standard range.</p></li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Teaching and learning about data cleaning is notoriously difficult because it’s not just about applying standard techniques—it’s a context-dependent, messy process that demands analytical thinking, domain understanding, and hands-on experience. <a class="reference external" href="https://www.counting-stuff.com/whys-it-hard-to-teach-data-cleaning-65949948516031001b3512c8/">This article by Randy Au</a> explains why traditional teaching methods often fall short and highlights the real-world complexity behind what may seem like a simple task.</p>
+</div>
+</section>
+<section id="data-analysis-i-descriptive-statistics-and-statistical-testing">
+<h4>Data analysis I: descriptive statistics and statistical testing<a class="headerlink" href="#data-analysis-i-descriptive-statistics-and-statistical-testing" title="Link to this heading"></a></h4>
+<p>Data analysis refers to the methods used to <strong>summarise, explore, and test patterns in data</strong>. In data science, two foundational categories are:</p>
+<ol class="arabic simple">
+<li><p><strong>Descriptive statistics</strong> – Describe what the data looks like.</p></li>
+<li><p><strong>Statistical testing</strong> – Infer whether observed patterns are likely to be real or due to chance.</p></li>
+</ol>
+<section id="descriptive-statistics">
+<h5><strong>Descriptive Statistics</strong><a class="headerlink" href="#descriptive-statistics" title="Link to this heading"></a></h5>
+<p>These summarise and visualise features of the data, such as:</p>
+<ul class="simple">
+<li><p><strong>Central tendency</strong>: Mean, median, mode.</p></li>
+<li><p><strong>Spread</strong>: Standard deviation, range, interquartile range.</p></li>
+<li><p><strong>Shape</strong>: Skewness, kurtosis, modality (e.g., unimodal vs. bimodal).</p></li>
+<li><p><strong>Relationships</strong>: Correlations between variables, cross-tabulations, scatter plots.</p></li>
+</ul>
+<p><strong>Why this matters in research</strong>:</p>
+<p>Descriptive statistics help researchers understand the data distribution, spot data entry errors, and guide the selection of further methods. For example:</p>
+<ul class="simple">
+<li><p>In <strong>clinical studies</strong>, summary tables show average age, blood pressure, and medication use.</p></li>
+<li><p>In <strong>education research</strong>, exam scores are summarised by class or teaching method.</p></li>
+<li><p>In <strong>environmental monitoring</strong>, daily mean temperatures and standard deviations help understand seasonal variation.</p></li>
+</ul>
+</section>
+<section id="statistical-testing">
+<h5><strong>Statistical Testing</strong><a class="headerlink" href="#statistical-testing" title="Link to this heading"></a></h5>
+<p>Statistical tests assess whether observed differences or relationships are likely to be <strong>statistically significant</strong>, given sample variability.</p>
+<p>Some common tests:</p>
+<ul class="simple">
+<li><p><strong>T-test</strong>: Are the means of two groups significantly different?</p></li>
+<li><p><strong>Chi-square test</strong>: Are two categorical variables independent?</p></li>
+<li><p><strong>ANOVA</strong>: Are there differences between three or more groups?</p></li>
+<li><p><strong>Correlation (Pearson/Spearman)</strong>: How strong is the relationship between two variables?</p></li>
+<li><p><strong>Regression analysis</strong>: How does one variable predict another?</p></li>
+</ul>
+<p>Statistical testing connects your <strong>data</strong> to your <strong>hypothesis</strong>: it gives you a way to determine whether the evidence supports your theory.</p>
+<div class="admonition-exercise exercise important admonition" id="exercise-2">
+<p class="admonition-title">Exercise</p>
+<p class="rubric" id="isn-t-excel-the-most-useful-tool-that-any-data-engineer-scientist-steward-manager-assistant-expert-should-know">Isn’t excel the most useful tool that any data- engineer | scientist | steward | manager | assistant | expert should know?</p>
+<p>Let’s learn excel by doing! Your task is as follow:</p>
+<ul class="simple">
+<li><p>Download the census dataset and import it in excel (let’s pretend it is truly some sensitive dataset about individuals). If you do not have excel installed, Google Sheet provide a convenient web-based alternative. (Note that depending on which account you use with Google, you might not have the rights to upload real research data containing personal data.)</p></li>
+<li><p>Apply a filter to the data so that it is easy for you to have a look at the values in each column</p></li>
+<li><p>Data cleaning: This data has way too much personal identifiers, not really needed for research! Remove (or mark in some way) those columns that can be used to directly identify an individual.</p></li>
+<li><p>Descriptive statistics I : plot an histograms of the column Age</p></li>
+<li><p>Optional - Descriptive statistics II: plot an histograms of the column Age so that exact ages are show in the X axis</p></li>
+<li><p>Descriptive statistics III: calculate the average of the column Age</p></li>
+<li><p>Export/download/save the excel file (only the sheet you worked on) and submit it as homework.</p></li>
+<li><p>Optional task (difficult!): do you think this cleaned version of the dataset could be shared openly? Do you think the histogram with exact ages in X axis could be included in a paper?</p></li>
+<li><p>Optional task (very difficult): What would you do to make sure there are at least 5 individuals with the same age?</p></li>
+</ul>
+</div>
+<p><strong>Beyond the basics</strong>:</p>
+<ul class="simple">
+<li><p><strong>Effect sizes and confidence intervals</strong>: A statistically significant result (p &lt; 0.05) might still be unimportant. Always report effect sizes and uncertainty intervals.</p></li>
+<li><p><strong>Multiple comparisons</strong>: Testing dozens of variables increases the chance of false positives. Use corrections (e.g., Bonferroni, False Discovery Rate) to control error rates.</p></li>
+<li><p><strong>Assumptions matter</strong>: Many tests assume normal distributions or equal variances. When those don’t hold, non-parametric alternatives (e.g., Mann–Whitney U test) are safer.</p></li>
+<li><p><strong>Visual diagnostics</strong>: Always pair numerical tests with plots — histograms, box plots, scatter matrices — to catch anomalies or misinterpretations.</p></li>
+</ul>
+<p><strong>Exploratory vs. confirmatory</strong>: Exploratory data analysis (EDA) looks for patterns. Confirmatory analysis tests predefined hypotheses. Mixing them without care can lead to bias.</p>
+</section>
+</section>
+<section id="data-analysis-ii-artificial-intelligence-and-machine-learning">
+<h4>Data analysis II: artificial intelligence and machine learning<a class="headerlink" href="#data-analysis-ii-artificial-intelligence-and-machine-learning" title="Link to this heading"></a></h4>
+<p><strong>What is machine learning (ML) and artificial intelligence (AI)?</strong></p>
+<ul class="simple">
+<li><p><strong>Artificial Intelligence (AI)</strong> refers to systems that mimic human cognitive functions like learning, reasoning, and problem-solving.</p></li>
+<li><p><strong>Machine Learning (ML)</strong> is a subset of AI focused on systems that learn from data — improving their performance on a task over time <strong>without being explicitly programmed</strong>.</p></li>
+</ul>
+<p>In a research context, ML is a powerful tool for:</p>
+<ul class="simple">
+<li><p><strong>Pattern recognition</strong> (e.g., detecting disease in medical images),</p></li>
+<li><p><strong>Prediction</strong> (e.g., forecasting species extinction risk),</p></li>
+<li><p><strong>Classification</strong> (e.g., distinguishing fake news from real news),</p></li>
+<li><p><strong>Clustering</strong> (e.g., grouping similar genetic expressions),</p></li>
+<li><p><strong>Recommendation</strong> (e.g., suggesting relevant articles or treatment plans).</p></li>
+</ul>
+<p>Unlike traditional statistical testing, which relies on predefined hypotheses and assumptions, machine learning is often <strong>data-driven, inductive</strong>, and focused on <strong>prediction</strong> or <strong>automation</strong> rather than explanation.</p>
+<section id="types-of-machine-learning">
+<h5><strong>Types of Machine Learning</strong><a class="headerlink" href="#types-of-machine-learning" title="Link to this heading"></a></h5>
+<p><strong>Supervised learning</strong> (training with labeled data):</p>
+<ul class="simple">
+<li><p><strong>Classification</strong>: Predict categories (e.g., spam vs. not spam).</p></li>
+<li><p><strong>Regression</strong>: Predict numerical outcomes (e.g., house prices).</p></li>
+</ul>
+<p><strong>Unsupervised learning</strong> (no labels, discovering structure):</p>
+<ul class="simple">
+<li><p><strong>Clustering</strong>: Group similar data points (e.g., market segmentation).</p></li>
+<li><p><strong>Dimensionality reduction</strong>: Simplify complex datasets (e.g., PCA).</p></li>
+</ul>
+<p><strong>Examples across disciplines</strong>:</p>
+<ul class="simple">
+<li><p><strong>Healthcare</strong>: Predicting patient readmission based on historical data.</p></li>
+<li><p><strong>Astronomy</strong>: Classifying galaxy types from images.</p></li>
+<li><p><strong>Literary studies</strong>: Using NLP to identify themes or authorship in large text corpora.</p></li>
+</ul>
+<p><strong>Ecology</strong>: Modeling animal movements based on GPS and environmental data.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p class="rubric" id="how-do-large-language-models-work-how-can-i-use-them-responsibly-in-my-work">How do large language models work? How can I use them responsibly in my work?</p>
+<p>A comprehensive introduction on the topic with focus on responsible conduct of research is available at <a class="reference external" href="https://zenodo.org/records/14032261">this zenodo link</a> and as video at Aalto <a class="reference external" href="https://www.youtube.com/watch?v=RTHtfGz0-sY">University Research Services YouTube channel</a></p>
+</div>
+</section>
+</section>
+<section id="data-analysis-iii-qualitative-research-methods">
+<h4>Data analysis III: qualitative research methods<a class="headerlink" href="#data-analysis-iii-qualitative-research-methods" title="Link to this heading"></a></h4>
+<p>Qualitative analysis often involves methods like <strong>deductive and inductive coding</strong>. Deductive coding starts with pre-defined categories or theories and applies them to the data, while inductive coding allows themes to emerge naturally from the data itself without prior assumptions. Both approaches help researchers identify patterns, meanings, and insights within textual or observational data, and can also be combined in a flexible, iterative process.</p>
+<p>The process for working with qualitative research methods is usually less automated and <em>automatable</em> when we compare it with quantitative methods. Recent developements in Natural Language Processing have added the possibility to also automate the coding process, however they might defeat the purpose of qualitative research if the coding is reduced to basic textual classification. It is a currently debated topic in the field of qualitative research (more references coming).</p>
+</section>
+<section id="data-visualisation-techniques">
+<h4>Data visualisation techniques<a class="headerlink" href="#data-visualisation-techniques" title="Link to this heading"></a></h4>
+<p>Data visualization is the practice of <strong>translating data into visual formats</strong> — such as charts, graphs, and maps — to help explore, understand, and communicate patterns and insights. In the data science lifecycle, visualization supports <strong>both analysis and <em>storytelling</em></strong>.</p>
+<ul class="simple">
+<li><p>During analysis: used to explore distributions, detect anomalies, and observe relationships.</p></li>
+<li><p>During communication: used to present findings to technical and non-technical audiences.</p></li>
+</ul>
+<p><strong>Why is it important in research?</strong></p>
+<p>Visualization is essential to:</p>
+<ul class="simple">
+<li><p>Reveal <strong>trends and outliers</strong> that raw data or statistics may obscure.</p></li>
+<li><p>Support <strong>hypothesis generation</strong> in exploratory analysis.</p></li>
+<li><p>Communicate <strong>complex findings clearly</strong> to collaborators, funders, and the public.</p></li>
+<li><p>Enhance reproducibility — well-documented plots help others verify your results.</p></li>
+</ul>
+<p><strong>Common types of visualizations</strong>:</p>
+<ul class="simple">
+<li><p><strong>Exploratory</strong>:</p>
+<ul>
+<li><p>Histograms and boxplots (distribution),</p></li>
+<li><p>Scatter plots and heatmaps (relationships),</p></li>
+<li><p>Line plots (trends over time),</p></li>
+<li><p>PCA plots (dimensionality reduction).</p></li>
+</ul>
+</li>
+<li><p><strong>Explanatory</strong>:</p>
+<ul>
+<li><p>Bar charts, annotated maps, Sankey diagrams, interactive dashboards.</p></li>
+</ul>
+</li>
+</ul>
+<div class="admonition-exercise exercise important admonition" id="exercise-3">
+<p class="admonition-title">Exercise</p>
+<p>Explore all the possible type of plots available at https://r-graph-gallery.com/</p>
+<ul class="simple">
+<li><p>Was there a type of plot that you were not familiar with?</p></li>
+<li><p>Did you know that some types of plots can be more biased than others and wrongly lead to conclusions that are actually not supported by the data? (see for example <a class="reference external" href="https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.1002128">“Beyond Bar and Line Graphs: Time for a New Data Presentation Paradigm”</a>)</p></li>
+</ul>
+</div>
+</section>
+<section id="preserve-share-reuse">
+<h4>Preserve, Share, Reuse<a class="headerlink" href="#preserve-share-reuse" title="Link to this heading"></a></h4>
+<p>This stage of the data lifecycle focuses on ensuring that datasets, code, models, and insights from a research project <strong>do not disappear after publication</strong>, but remain accessible and usable for future projects — by yourself, your team, or the broader community.</p>
+<p>These steps are closely aligned with the <strong>FAIR principles</strong>:</p>
+<ul class="simple">
+<li><p><strong>Findable</strong>: Data and metadata can be located by others.</p></li>
+<li><p><strong>Accessible</strong>: Data is available under clear conditions.</p></li>
+<li><p><strong>Interoperable</strong>: Data can be integrated with other systems.</p></li>
+<li><p><strong>Reusable</strong>: Data is well-described and licensed for reuse.</p></li>
+</ul>
+<p>In data science, “preservation” extends beyond raw data:</p>
+<ul class="simple">
+<li><p>Preprocessed/cleaned data,</p></li>
+<li><p>Code used for analysis,</p></li>
+<li><p>Trained models and configurations,</p></li>
+<li><p>Logs, metadata, and computational environments (e.g. container images).</p></li>
+</ul>
+<p><strong>Why is this important in research?</strong></p>
+<ul class="simple">
+<li><p>Enables <strong>replication and verification</strong> of results (scientific integrity).</p></li>
+<li><p>Allows others to <strong>build upon your work</strong> (cumulative knowledge).</p></li>
+<li><p>Satisfies requirements of funders and publishers.</p></li>
+<li><p>Increases <strong>impact and citations</strong>.</p></li>
+<li><p>Saves time: you or your team can reuse workflows or cleaned datasets in future studies.</p></li>
+</ul>
+<p><strong>Common tools and repositories</strong>:</p>
+<ul class="simple">
+<li><p><strong>Data repositories</strong>: Zenodo, Figshare, Dryad, Dataverse, OpenAIRE.</p></li>
+<li><p><strong>Code repositories</strong>: GitHub, GitLab (with README.md, license, and citations).</p></li>
+<li><p><strong>Notebooks</strong>: Jupyter/Quarto projects saved with environment metadata (requirements.txt, environment.yml).</p></li>
+<li><p><strong>Containerization</strong>: Docker/Singularity images to preserve computing environments.</p></li>
+</ul>
+<p><strong>Model documentation</strong>: Model cards (for models) and datasheets (for datasets).</p>
+<p><strong>Beyond the basics</strong>:</p>
+<ul class="simple">
+<li><p><strong>Metadata and documentation</strong>:</p>
+<ul>
+<li><p>Raw data is rarely useful without context. Metadata standards (like Dublin Core, DataCite, or domain-specific schemas) make data understandable and reusable.</p></li>
+<li><p>Good README files, manifest files, and inline code comments make preservation valuable.</p></li>
+</ul>
+</li>
+<li><p><strong>Versioning</strong>:</p>
+<ul>
+<li><p>Use Git (or DVC for data) to track changes. Without versioning, it’s hard to know what version of the data or model a result came from.</p></li>
+</ul>
+</li>
+<li><p><strong>Licensing</strong>:</p>
+<ul>
+<li><p>Reuse depends on legal clarity. Use open licenses (e.g., CC BY 4.0 for data, MIT or GPL for code) to allow others to build on your work.</p></li>
+<li><p>Ensure you have the rights to share what you publish (especially for collaborative or sensitive datasets).</p></li>
+</ul>
+</li>
+<li><p><strong>Sensitive data and controlled access</strong>:</p>
+<ul>
+<li><p>For personal data (e.g., patient records, interviews), open sharing is restricted. However, preservation is still essential — use <strong>Trusted Research Environments</strong> or controlled-access repositories with Data Use Agreements (DUAs).</p></li>
+</ul>
+</li>
+<li><p><strong>Persistent identifiers and citation</strong>:</p>
+<ul>
+<li><p>Use DOIs for datasets and models to make them citable.</p></li>
+<li><p>Adopt standards like the Joint Declaration of Data Citation Principles.</p></li>
+</ul>
+</li>
+<li><p><strong>Model and dataset governance</strong>:</p>
+<ul>
+<li><p>AI systems require monitoring post-publication. Future stewards might need to update or “unlearn” parts of models if biases or errors are discovered.</p></li>
+<li><p>Consider maintaining “model sheets” with version info, training data details, and known limitations.</p></li>
+</ul>
+</li>
+</ul>
+</section>
+</section>
+<span id="document-build_a_supercomputer"></span><section id="building-a-supercomputer">
+<h3><strong>Building a Supercomputer</strong><a class="headerlink" href="#building-a-supercomputer" title="Link to this heading"></a></h3>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>This material is <strong>work in progress</strong>.</p>
+<ul class="simple">
+<li><p>Writing technical materials as a technical person falls into the fallacy of assuming the reader shares the same background knowledge, leading to explanations that skip essential context, use jargon without clarification, and unintentionally exclude non-expert audiences. <strong>Please ask to expand and explain obscure concepts, jargon, unclear things</strong></p></li>
+<li><p>It is difficult to find CC0 graphics to reuse so the materials right now are not too visual. Please suggest if you have any good source for graphics.</p></li>
+</ul>
+</div>
+<p>In this episode, we try to build a supercomputer — starting from a single computer and scaling it up, step by step. Along the way, we’ll see why researchers use powerful computers and how the infrastructure behind research computing actually works.</p>
+<section id="motivation-why-do-we-need-computers">
+<h4><strong>Motivation: Why Do We Need Computers?</strong><a class="headerlink" href="#motivation-why-do-we-need-computers" title="Link to this heading"></a></h4>
+<p>Computers have become essential to research in every field — from physics to philosophy. But why?</p>
+<p>The core reasons are speed, automation, and the ability to <strong>store, process, and analyze large amounts of information</strong> quickly and reproducibly. Researchers use computers to perform tasks that would otherwise take months or years to do by hand — or would be too complex to do at all.</p>
+<div class="admonition-discussion discussion important admonition" id="discussion-0">
+<p class="admonition-title">Discussion</p>
+<p><strong>Why Do Researchers Use Computers?</strong></p>
+<p>Let’s look at a few examples:</p>
+<ul class="simple">
+<li><p><strong>In genomics</strong>, computers process the DNA sequences of thousands of individuals, looking for patterns that might explain disease.</p></li>
+<li><p><strong>In climate science</strong>, computers simulate Earth’s atmosphere and oceans to forecast climate change scenarios decades into the future.</p></li>
+<li><p><strong>In linguistics</strong>, researchers use natural language processing (NLP) to analyze the evolution of meaning in massive text archives across centuries.</p></li>
+<li><p><strong>In the humanities</strong>, historians use text mining to analyze themes across thousands of digitized books.</p></li>
+<li><p><strong>In business research</strong>, analysts model customer behavior using time series and recommendation algorithms.</p></li>
+</ul>
+<p>Without computers, these projects would either be <strong>impossible</strong> or so slow that the results would arrive too late to be useful.</p>
+</div>
+<section id="automation-reproducibility-and-exploration">
+<h5><strong>Automation, Reproducibility, and Exploration</strong><a class="headerlink" href="#automation-reproducibility-and-exploration" title="Link to this heading"></a></h5>
+<p>Computers allow researchers to:</p>
+<ul class="simple">
+<li><p><strong>Automate repetitive tasks</strong> (e.g. cleaning 10,000 images),</p></li>
+<li><p><strong>Try many different models quickly</strong> (e.g. training 100 regressions with different parameters),</p></li>
+<li><p><strong>Ensure reproducibility</strong>: code and scripts can be reused, shared, and rerun by others with identical results.</p></li>
+</ul>
+<p>This is especially important in modern science, which increasingly depends on <strong>data-driven inquiry</strong> and <strong>transparent methods</strong>.</p>
+<div class="admonition-discussion discussion important admonition" id="discussion-1">
+<p class="admonition-title">Discussion</p>
+<p class="rubric" id="cooking-metaphor-computers-are-research-kitchens"><strong>Cooking Metaphor: Computers Are Research Kitchens</strong></p>
+<p>Imagine a researcher as a cook, and their ideas as recipes.</p>
+<ul class="simple">
+<li><p>Without a kitchen (computer), the cook is left to chop and stir with bare hands. It’s slow and exhausting.</p></li>
+<li><p>With a modern kitchen, tools like ovens (CPUs), food processors (GPUs), and timers (scripts) make cooking fast, repeatable, and precise.</p></li>
+<li><p>Just like kitchens, <strong>computers turn raw ingredients (data)</strong> into <strong>finished meals (results)</strong> — following detailed recipes (programs and workflows).</p></li>
+</ul>
+<p>Different research domains need different kitchens: a historian may just need a stovetop, while a physicist might need an industrial food lab. But <strong>everyone benefits from the tools a computer provides.</strong></p>
+</div>
+</section>
+<section id="bonus-insight">
+<h5>Bonus Insight<a class="headerlink" href="#bonus-insight" title="Link to this heading"></a></h5>
+<p>Even though researchers come from very different backgrounds, the <strong>basic functions computers provide are universal</strong>:</p>
+<ul class="simple">
+<li><p>Input: Collect or read data,</p></li>
+<li><p>Processing: Apply algorithms, filters, or simulations,</p></li>
+<li><p>Output: Store, visualize, or share results.</p></li>
+</ul>
+<p>The tools vary — spreadsheets, R scripts, Python notebooks, cloud platforms — but the principles are the same. Learning how to think about computing <strong>systematically and metaphorically</strong> is a first step to becoming a confident data steward.</p>
+</section>
+</section>
+<section id="motivation-do-i-need-a-supercomputer">
+<h4><strong>Motivation: Do I Need a Supercomputer?</strong><a class="headerlink" href="#motivation-do-i-need-a-supercomputer" title="Link to this heading"></a></h4>
+<p>Not all research requires a supercomputer — but some does. Whether you need one depends on <strong>what kind of questions you’re asking</strong>, <strong>how much data you’re working with</strong>, and <strong>how fast you need results</strong>.</p>
+<section id="when-is-a-normal-computer-enough">
+<h5><strong>When Is a Normal Computer Enough?</strong><a class="headerlink" href="#when-is-a-normal-computer-enough" title="Link to this heading"></a></h5>
+<p>For many research tasks, a <strong>well-equipped laptop or desktop</strong> is completely sufficient:</p>
+<ul class="simple">
+<li><p>Analyzing a survey dataset in SPSS or R.</p></li>
+<li><p>Writing scripts in Python to clean tabular data.</p></li>
+<li><p>Creating visualizations or writing reports.</p></li>
+</ul>
+<p>These are like home-cooked meals — you only need <strong>one cook</strong> in a regular kitchen.</p>
+</section>
+<section id="when-do-you-need-more-power">
+<h5><strong>When Do You Need More Power?</strong><a class="headerlink" href="#when-do-you-need-more-power" title="Link to this heading"></a></h5>
+<p>Some research tasks <strong>can be split into smaller pieces</strong> and run in parallel — like having <strong>many chefs working at once</strong>, each preparing one part of the meal.</p>
+<p>This is where <strong>supercomputers</strong> come in:</p>
+<ul class="simple">
+<li><p><strong>Molecular simulations</strong>: Thousands of atoms simulated over millions of time steps.</p></li>
+<li><p><strong>Climate modeling</strong>: Regional and global forecasts require solving differential equations for every square kilometer of the Earth’s surface.</p></li>
+<li><p><strong>AI training</strong>: Large language models (LLMs) like GPT-4 require thousands of GPU hours to train.</p></li>
+<li><p><strong>Satellite image processing</strong>: Terabytes of high-resolution images analyzed over large time windows.</p></li>
+</ul>
+<p>Supercomputers allow these tasks to be done <strong>in hours or days instead of months or years</strong> — and often, to be done at all.</p>
+<div class="admonition-discussion discussion important admonition" id="discussion-2">
+<p class="admonition-title">Discussion</p>
+<p class="rubric" id="cooking-metaphor-do-you-need-an-industrial-kitchen"><strong>Cooking Metaphor: Do You Need an Industrial Kitchen?</strong></p>
+<p>Imagine you are making:</p>
+<ul class="simple">
+<li><p>One bowl of pasta for yourself → <strong>your laptop is fine</strong>.</p></li>
+<li><p>100 bowls of different pastas for a party → <strong>you need help</strong>, maybe some automation.</p></li>
+<li><p>Tens of thousands of portions for a food festival → You need <strong>an industrial kitchen with many chefs working in parallel</strong>, all coordinated.</p></li>
+</ul>
+<p>That’s what a supercomputer is: <strong>many normal computers working together</strong>, connected with high-speed communication, and orchestrated to act like one large kitchen.</p>
+</div>
+</section>
+<section id="not-all-remote-computers-are-supercomputers">
+<h5>Not All Remote Computers Are Supercomputers<a class="headerlink" href="#not-all-remote-computers-are-supercomputers" title="Link to this heading"></a></h5>
+<p>A supercomputer is powerful, but sometimes you just need <strong>a different computer</strong>, not a “super” one.</p>
+<p>For example:</p>
+<ul class="simple">
+<li><p>A <strong>remote workstation</strong> at your department could be enough for heavier tasks</p></li>
+<li><p>A <strong>server</strong> with more RAM or a better GPU than your laptop, usually on-premises.</p></li>
+<li><p>A <strong>remote virtual machine (VM)</strong> hosted in the cloud (e.g. on CSC, AWS, Azure). Servers can also be virtual machines, from the user perspective nothing changes</p></li>
+</ul>
+<p>These can help you:</p>
+<ul class="simple">
+<li><p>Work with large datasets that don’t fit on your laptop,</p></li>
+<li><p>Share resources with collaborators,</p></li>
+<li><p>Access faster networks or licensed software.</p></li>
+</ul>
+<p><strong>Remote ≠ Super.</strong> But remote access is still incredibly powerful.</p>
+<div class="admonition-discussion discussion important admonition" id="discussion-3">
+<p class="admonition-title">Discussion</p>
+<p class="rubric" id="how-to-know-when-i-need-to-scale-up-to-a-bigger-system"><em>How to know when I need to scale up to a bigger system?</em></p>
+<p>Understanding what you need to solve your computing problems is not trivial. Some questions you might ask yourself at some point in your life:</p>
+<ul class="simple">
+<li><p><strong>Do I need one or more CPUs to process my data?</strong> <em>Caveat: not every problem can be parallelised.</em></p></li>
+<li><p><strong>Do I need 1 computer with N CPUs or N computers with 1 CPU?</strong> <em>Caveat: not all code is written to use multiple CPUs</em></p></li>
+<li><p><strong>Do I need GPUs?</strong> <em>Caveat: GPUs require special code/libraries</em></p></li>
+<li><p><strong>Do I have tools/code that can be run on multiple CPUs and/or GPUs?</strong> <em>Caveat: code does not automatically use all the resources you might have at hand</em></p></li>
+<li><p><strong>Is the speed to access the data a bottleneck?</strong> <em>Caveat: the faster the access to the data, the more localised your data is</em></p></li>
+<li><p><strong>What level of security my data (and code) need to have?</strong> <em>Caveat: sensitive data should not be taken outside remote storage locations</em></p></li>
+</ul>
+</div>
+</section>
+<section id="key-takeaway-for-support-teams">
+<h5>Key Takeaway for support teams<a class="headerlink" href="#key-takeaway-for-support-teams" title="Link to this heading"></a></h5>
+<p>Research software engineers along with data stewards can help researchers <strong>decide where to run what</strong> with the perspective of the copmuting needed and the data usage. This includes:</p>
+<ul class="simple">
+<li><p>Estimating whether a task needs local or remote computing (e.g. for using larger storage or more secure storage),</p></li>
+<li><p>Helping select platforms (e.g. supercomputer, cloud VM, remote workstation),</p></li>
+<li><p>Explaining trade-offs (e.g. cost, speed, access, learning curve),</p></li>
+<li><p>Ensuring <strong>ethical and legal use</strong> (e.g. personal data on secure servers only).</p></li>
+</ul>
+<p>Understanding the <strong>computational scale of the problem</strong> is a critical support skill.</p>
+</section>
+</section>
+<section id="let-s-build-a-supercomputer-then">
+<h4>Let’s build a supercomputer then!<a class="headerlink" href="#let-s-build-a-supercomputer-then" title="Link to this heading"></a></h4>
+<p><img alt="A computing node" src="https://raw.githubusercontent.com/eglerean/eglerean.github.io/master/files/AComputingNode.svg" />
+<em>The architecture of a computer (or computing node)</em></p>
+<div class="toctree-wrapper compound">
+<span id="document-build_1"></span><section id="step-1-build-a-computer">
+<h5><strong>Step 1: Build a Computer</strong><a class="headerlink" href="#step-1-build-a-computer" title="Link to this heading"></a></h5>
+<p>Let’s start from scratch. Before we can build a supercomputer, we need to understand how a <strong>regular computer is made</strong> — and what each component does.</p>
+<p>A modern computer is a collection of hardware pieces that work together to process data, store information, and interact with users.</p>
+<section id="essential-hardware-components">
+<h6><strong>Essential Hardware Components</strong><a class="headerlink" href="#essential-hardware-components" title="Link to this heading"></a></h6>
+<section id="cpu-central-processing-unit">
+<h6 aria-level="7"><strong>CPU (Central Processing Unit)</strong><a class="headerlink" href="#cpu-central-processing-unit" title="Link to this heading"></a></h6>
+<ul class="simple">
+<li><p>Often called the <em>brain</em> of the computer.</p></li>
+<li><p>Executes instructions from programs, one after another or across multiple cores.</p></li>
+<li><p>Controls the flow of operations — calculations, logic, and decision-making.</p></li>
+</ul>
+</section>
+<section id="gpu-graphics-processing-unit">
+<h6 aria-level="7"><strong>GPU (Graphics Processing Unit)</strong><a class="headerlink" href="#gpu-graphics-processing-unit" title="Link to this heading"></a></h6>
+<ul class="simple">
+<li><p>Originally for graphics, now essential for <strong>parallel computing</strong>.</p></li>
+<li><p>Contains many cores optimized for similar repetitive tasks — such as training AI models or processing thousands of images.</p></li>
+<li><p>Useful in research tasks that involve <strong>matrix operations</strong> or <strong>large-scale data parallelism</strong>.</p></li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p class="rubric" id="what-is-the-difference-between-cpu-and-gpu">What is the difference between CPU and GPU?</p>
+<p>A short video that intuitively explains the difference between CPUs and GPUs</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/-P28LKWTzrI?si=szqQGAK0porJIF6i" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+</section>
+<section id="ram-random-access-memory">
+<h6 aria-level="7"><strong>RAM (Random Access Memory)</strong><a class="headerlink" href="#ram-random-access-memory" title="Link to this heading"></a></h6>
+<ul class="simple">
+<li><p>Temporary, fast memory used while your programs are running.</p></li>
+<li><p>Holds <strong>active data</strong> and <strong>code in use</strong>.</p></li>
+<li><p>Not the same as storage! RAM is cleared when the computer is turned off.</p></li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p class="rubric" id="ram-is-not-the-only-memory-in-the-computer">RAM is not the only memory in the computer</p>
+<p>While <strong>RAM (Random Access Memory)</strong> is the most well-known type of memory, it’s just one part of a broader memory system that computers use to operate efficiently. Other important types include:</p>
+<ul class="simple">
+<li><p><strong>Cache memory</strong>: Small but extremely fast memory located on or near the CPU. It stores frequently accessed instructions and data to speed up execution.</p></li>
+<li><p><strong>Registers</strong>: Tiny storage units inside the CPU used to hold data that’s actively being processed. They operate faster than any other memory type.</p></li>
+<li><p><strong>ROM (Read-Only Memory)</strong>: A type of non-volatile memory that stores permanent instructions, such as the computer’s firmware (e.g., BIOS or UEFI), which runs during startup.</p></li>
+<li><p><strong>Virtual memory</strong>: A portion of storage (e.g., your hard drive or SSD) that the operating system uses to simulate additional RAM when the actual RAM is full. It’s much slower but expands available working space.</p></li>
+<li><p><strong>Swap space</strong>: A specific part of the disk reserved by the OS (especially in Linux) to support virtual memory by temporarily holding data from RAM.</p></li>
+<li><p><strong>VRAM (Video RAM)</strong>: Memory used by GPUs (Graphics Processing Units) to store visual data like textures, 3D models, or image matrices. It’s optimized for parallel processing and is essential for high-performance tasks such as AI model training and image rendering.</p></li>
+</ul>
+<p>Each of these memory types serves a specialized function. Together, they ensure that different parts of the computer — from the CPU to the GPU — have quick access to the data they need.</p>
+</div>
+</section>
+<section id="storage-hdd-ssd">
+<h6 aria-level="7"><strong>Storage (HDD/SSD)</strong><a class="headerlink" href="#storage-hdd-ssd" title="Link to this heading"></a></h6>
+<ul class="simple">
+<li><p>Long-term storage of files and programs.</p></li>
+<li><p>SSD (Solid State Drive) is faster and more common in research laptops than HDD.</p></li>
+<li><p>Stores your operating system, datasets, documents, and applications.</p></li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p class="rubric" id="not-all-storages-are-the-same">Not all storages are the same</p>
+<p>Not all storage devices perform the same — they differ in <strong>speed</strong>, <strong>reliability</strong>, and <strong>technology</strong>.</p>
+<ul class="simple">
+<li><p><strong>SSD (Solid State Drive)</strong>: Fast, reliable, and now common in laptops and servers. Uses flash memory with no moving parts, which makes it much faster than older technologies.</p></li>
+<li><p><strong>HDD (Hard Disk Drive)</strong>: Slower and more prone to wear because it uses spinning magnetic disks and a moving read/write head. Still used for large-capacity archival storage due to lower cost per terabyte.</p></li>
+<li><p><strong>eMMC (embedded MultiMediaCard)</strong>: Slower flash storage found in budget devices like tablets or low-end laptops. Not designed for heavy workloads.</p></li>
+<li><p><strong>Optical drives (CD/DVD)</strong> and <strong>magnetic tape</strong>: Rare today in personal computing, but still used for long-term cold storage or archival backups. Very slow access speeds.</p></li>
+</ul>
+<p>In modern research workflows, <strong>SSD is preferred</strong> for active data processing because of its high read/write speeds, while HDDs or network-attached storage may be used for backup or long-term storage.</p>
+</div>
+</section>
+<section id="network-interface-card-nic">
+<h6 aria-level="7"><strong>Network Interface Card (NIC)</strong><a class="headerlink" href="#network-interface-card-nic" title="Link to this heading"></a></h6>
+<ul class="simple">
+<li><p>Connects your computer to the internet or local network.</p></li>
+<li><p>Can be wired (Ethernet) or wireless (Wi-Fi).</p></li>
+<li><p>Essential for remote access, cloud computing, and downloading datasets.</p></li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p class="rubric" id="the-internet-ip-addresses-virtual-private-networks-ssh">The Internet, IP addresses, Virtual Private Networks, ssh</p>
+<p>The <strong>Internet</strong> is a global system of interconnected networks that allows computers to communicate using standardized protocols. It underlies many services — not just web browsing, but also email, file sharing, and secure access to remote machines.</p>
+<p>Every device connected to the internet has an <strong>IP address</strong> — a unique identifier, like a mailing address, that allows data to be sent to and from the correct location. Some IP addresses are <strong>static</strong> (they never change), while others are <strong>dynamic</strong> (assigned temporarily by your internet provider and may change when you reconnect). Servers usually have static IPs so they can be reached reliably.</p>
+<p>To protect internal services, many universities and institutions <strong>restrict access based on IP addresses</strong>. If you’re working remotely, you may not be allowed to connect directly to internal systems. This is where a <strong>Virtual Private Network (VPN)</strong> is useful. A VPN creates a secure, encrypted tunnel between your computer and your institution’s network. When connected through a VPN, your computer appears as if it is inside the university — which enables access to licensed resources, shared drives, internal portals, or computing environments that would otherwise be blocked.</p>
+<p>A key tool for accessing remote research infrastructure is <strong>SSH (Secure Shell)</strong>. SSH allows you to securely log into another computer or server using only a terminal window — no graphical interface is needed. It provides command-line access to powerful systems like cloud servers or supercomputers. SSH is encrypted and can be secured with <strong>cryptographic key pairs</strong>, making it both safe and widely trusted in scientific computing.</p>
+<p>In practice, support teams and researchers may use <strong>SSH in combination with VPNs</strong> to connect to institutional clusters, manage datasets, and run computational workflows from anywhere in the world. Firewalls and institutional policies often limit who can access what, so access may require registration or setup in advance.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p class="rubric" id="different-networks-different-speeds">Different networks – different speeds</p>
+<p>Not all internet connections are equally fast — and the type of connection you use can significantly affect <strong>how quickly you can access cloud storage or transfer data</strong>.</p>
+<ul class="simple">
+<li><p><strong>Wired Ethernet</strong> (e.g., Gigabit Ethernet): Typically offers stable, high-speed connections around <strong>1 Gbps (1000 Mbps)</strong>. Ideal for downloading large datasets or syncing with remote storage.</p></li>
+<li><p><strong>Wi-Fi</strong>:</p>
+<ul>
+<li><p><strong>Wi-Fi 5 (802.11ac)</strong>: Up to <strong>400–900 Mbps</strong> in real conditions.</p></li>
+<li><p><strong>Wi-Fi 6 (802.11ax)</strong>: Can reach <strong>1–2 Gbps</strong>, but speed varies with distance and interference.</p></li>
+</ul>
+</li>
+<li><p><strong>Mobile Networks</strong>:</p>
+<ul>
+<li><p><strong>4G</strong>: Real-world speeds are around <strong>20–100 Mbps</strong> — enough for email or browsing, but slow for large file transfers.</p></li>
+<li><p><strong>5G</strong>: Can offer <strong>200 Mbps to over 1 Gbps</strong> depending on coverage — fast enough for cloud access, but latency and reliability may vary.</p></li>
+</ul>
+</li>
+</ul>
+<p>When using cloud storage or remote servers, a <strong>slow connection can become a bottleneck</strong> — even if your storage or computing resources are fast. For large data transfers, <strong>wired Ethernet is usually the most stable and efficient</strong>.</p>
+</div>
+</section>
+<section id="power-supply-unit-psu">
+<h6 aria-level="7"><strong>Power Supply Unit (PSU)</strong><a class="headerlink" href="#power-supply-unit-psu" title="Link to this heading"></a></h6>
+<ul class="simple">
+<li><p>Converts electricity from the wall into usable power for your components.</p></li>
+</ul>
+</section>
+<section id="motherboard">
+<h6 aria-level="7"><strong>Motherboard</strong><a class="headerlink" href="#motherboard" title="Link to this heading"></a></h6>
+<ul class="simple">
+<li><p>The main circuit board where all components plug in.</p></li>
+<li><p>Handles communication between the CPU, RAM, storage, and peripherals.</p></li>
+</ul>
+</section>
+<section id="interfaces-for-the-user">
+<h6 aria-level="7"><strong>Interfaces for the User</strong><a class="headerlink" href="#interfaces-for-the-user" title="Link to this heading"></a></h6>
+<p>These are the parts that make a computer usable by humans:</p>
+<ul class="simple">
+<li><p><strong>Monitor</strong> (screen): to see the output.</p></li>
+<li><p><strong>Keyboard &amp; mouse</strong>: to provide input.</p></li>
+<li><p><strong>USB/HDMI ports</strong>: for connecting external devices (storage drives, cameras, projectors).</p></li>
+</ul>
+<p>These are not just conveniences — <strong>they’re essential for interacting with the system</strong>, especially during setup or troubleshooting.</p>
+<div class="admonition-discussion discussion important admonition" id="discussion-0">
+<p class="admonition-title">Discussion</p>
+<p class="rubric" id="cooking-metaphor-assembling-your-research-kitchen"><strong>Cooking Metaphor: Assembling Your Research Kitchen</strong></p>
+<ul class="simple">
+<li><p><strong>CPU</strong> = the chef: decides what to cook and when.</p></li>
+<li><p><strong>GPU</strong> = food processor: powerful but specialized.</p></li>
+<li><p><strong>RAM</strong> = kitchen counter: workspace where prep happens.</p></li>
+<li><p><strong>Storage</strong> = pantry and fridge: long-term ingredient storage.</p></li>
+<li><p><strong>NIC</strong> = the telephone or delivery door: communicates with the outside world.</p></li>
+<li><p><strong>Motherboard</strong> = the kitchen layout: connects all the tools.</p></li>
+<li><p><strong>Keyboard and mouse</strong> = your hands and tools: how you work in the kitchen.</p></li>
+</ul>
+<p>Without these components in place and connected, your kitchen — or your computer — can’t function.</p>
+</div>
+</section>
+<section id="bonus-insight-for-support-teams">
+<h6 aria-level="7">Bonus insight for support teams<a class="headerlink" href="#bonus-insight-for-support-teams" title="Link to this heading"></a></h6>
+<p>Support teams often help researchers choose:</p>
+<ul class="simple">
+<li><p>Which <strong>hardware specs</strong> are needed for a task,</p></li>
+<li><p>Whether a local machine is sufficient,</p></li>
+<li><p>Or whether a shared or remote resource is more appropriate.</p></li>
+</ul>
+<p>Understanding these components helps you:</p>
+<ul class="simple">
+<li><p>Read tech specs with confidence,</p></li>
+<li><p>Talk with IT teams or vendors,</p></li>
+<li><p>Support researchers with realistic expectations about performance.</p></li>
+</ul>
+</section>
+</section>
+</section>
+<span id="document-build_2"></span><section id="step-2-add-life-to-the-hardware">
+<h5><strong>Step 2: Add Life to the Hardware</strong><a class="headerlink" href="#step-2-add-life-to-the-hardware" title="Link to this heading"></a></h5>
+<p>So far, we’ve assembled the physical components of a computer — the <em>kitchen</em> is ready. But a pile of hardware isn’t useful on its own. We need to make it come alive.</p>
+<p>This is where <strong>firmware</strong> and <strong>boot systems</strong> come into play.</p>
+<section id="what-is-bios-or-uefi">
+<h6>🧬 <strong>What Is BIOS (or UEFI)?</strong><a class="headerlink" href="#what-is-bios-or-uefi" title="Link to this heading"></a></h6>
+<p>The <strong>BIOS</strong> (Basic Input/Output System) is a small program stored on a chip on the motherboard. It runs <strong>immediately when the computer is powered on</strong> — before any operating system is loaded.</p>
+<p>Modern systems often use <strong>UEFI</strong> (Unified Extensible Firmware Interface), which is an advanced version of BIOS.</p>
+</section>
+<section id="what-does-the-bios-uefi-do">
+<h6><strong>What Does the BIOS/UEFI Do?</strong><a class="headerlink" href="#what-does-the-bios-uefi-do" title="Link to this heading"></a></h6>
+<ol class="arabic simple">
+<li><p><strong>Power-On Self-Test (POST)</strong>: Checks that components like RAM and keyboard are working.</p></li>
+<li><p><strong>Initial Setup</strong>: Detects connected drives and peripherals.</p></li>
+<li><p><strong>Boot Order</strong>: Decides where to look for the system to load next (e.g., SSD, USB stick, network).</p></li>
+<li><p><strong>Hands Off</strong>: Once a bootloader is found, the BIOS/UEFI gives control to it.</p></li>
+</ol>
+<p><strong>In short:</strong> The BIOS is the spark that tells the hardware to wake up and start the process of becoming a computer.</p>
+<section id="is-bios-enough-no-we-need-an-operating-system">
+<h6 aria-level="7"><strong>Is BIOS Enough? No — We Need an Operating System</strong><a class="headerlink" href="#is-bios-enough-no-we-need-an-operating-system" title="Link to this heading"></a></h6>
+<p>The BIOS only prepares the computer to load a <strong>real operating system</strong> (like Linux, Windows, or macOS). Without an OS, your computer can’t:</p>
+<ul class="simple">
+<li><p>Launch programs,</p></li>
+<li><p>Manage files,</p></li>
+<li><p>Connect to the internet,</p></li>
+<li><p>Display a graphical interface.</p></li>
+</ul>
+<p>We’ll install the OS in the next step — but first, let’s talk about early-stage <strong>security</strong>.</p>
+</section>
+<section id="security-already-starts-here-disk-encryption">
+<h6 aria-level="7">🔐 <strong>Security Already Starts Here: Disk Encryption</strong><a class="headerlink" href="#security-already-starts-here-disk-encryption" title="Link to this heading"></a></h6>
+<p>At the BIOS/UEFI level, we can:</p>
+<ul class="simple">
+<li><p>Set a password to <strong>prevent unauthorized access to the firmware settings</strong>,</p></li>
+<li><p>Enable <strong>disk encryption</strong> to protect data at rest.</p></li>
+</ul>
+<p><strong>Encryption</strong> scrambles your data using a mathematical key. Without that key, the data is unreadable — even if someone physically steals the disk.</p>
+<p><strong>Think of encryption like a secret spice blend locked in a safe</strong>: even if someone gets the ingredients (data), they can’t cook the same recipe without the key (password or passphrase).</p>
+<div class="admonition-discussion discussion important admonition" id="discussion-0">
+<p class="admonition-title">Discussion</p>
+<p><strong>Cooking Metaphor: Lighting the Stove</strong></p>
+<ul class="simple">
+<li><p>The BIOS is like <strong>turning on the stove and checking the gas</strong> — it prepares everything to start cooking.</p></li>
+<li><p>It doesn’t do any cooking itself — but without it, the kitchen is dark.</p></li>
+<li><p>Encryption at this stage is like <strong>locking your ingredient cabinet</strong>, so no one can mess with it while you’re away.</p></li>
+</ul>
+</div>
+</section>
+<section id="bonus-insight-for-support-teams">
+<h6 aria-level="7">Bonus Insight for support teams<a class="headerlink" href="#bonus-insight-for-support-teams" title="Link to this heading"></a></h6>
+<p>Why this matters:</p>
+<ul class="simple">
+<li><p>Researchers working with <strong>sensitive data</strong> (e.g., health, interviews, unpublished results) must <strong>protect their devices</strong> from theft or unauthorized access.</p></li>
+<li><p>As a support person, you may be asked how to:</p>
+<ul>
+<li><p>Enable disk encryption,</p></li>
+<li><p>Set up secure boot settings,</p></li>
+<li><p>Ensure laptops comply with institutional data protection policies.</p></li>
+</ul>
+</li>
+</ul>
+<p>Understanding BIOS/UEFI is not about being a technician — it’s about knowing <strong>where trust begins</strong> in the system.</p>
+</section>
+</section>
+</section>
+<span id="document-build_3"></span><section id="step-3-add-usability-with-the-operating-system">
+<h5><strong>Step 3: Add Usability with the Operating System</strong><a class="headerlink" href="#step-3-add-usability-with-the-operating-system" title="Link to this heading"></a></h5>
+<p>You’ve assembled the computer. You’ve powered it on. The BIOS did its job — and now it’s time to give the machine a personality: an <strong>operating system</strong>.</p>
+<p>Without one, the computer is like a kitchen with gas and electricity but <strong>no recipes</strong>, <strong>no tools</strong>, and <strong>no staff</strong>. It’s technically on, but it doesn’t <em>do</em> anything.</p>
+<section id="what-is-an-operating-system-os">
+<h6><strong>What Is an Operating System (OS)?</strong><a class="headerlink" href="#what-is-an-operating-system-os" title="Link to this heading"></a></h6>
+<p>An operating system is software that:</p>
+<ul class="simple">
+<li><p><strong>Manages hardware</strong>: Memory, disk, CPU, and input/output devices.</p></li>
+<li><p><strong>Runs programs</strong>: Coordinates which code executes and when.</p></li>
+<li><p><strong>Controls user access</strong>: Determines who can do what.</p></li>
+<li><p><strong>Provides interfaces</strong>: Command line, windows, files, folders, menus.</p></li>
+</ul>
+<p>Examples:</p>
+<ul class="simple">
+<li><p><strong>macOS</strong> (popular in creative and academic work).</p></li>
+<li><p><strong>Windows</strong> (common for desktops),</p></li>
+<li><p><strong>Linux</strong> (used widely in research environments and HPC),</p></li>
+</ul>
+<div class="admonition-kitchen-analogy discussion important admonition" id="discussion-0">
+<p class="admonition-title">Kitchen analogy</p>
+<p>Just for fun: which operating systems do the following example kitchens represent?</p>
+<div class="sphinx-tabs docutils container">
+<div aria-label="Tabbed content" class="closeable" role="tablist"><button aria-controls="panel-0-0-0" aria-selected="true" class="sphinx-tabs-tab" id="tab-0-0-0" name="0-0" role="tab" tabindex="0">1</button><button aria-controls="panel-0-0-1" aria-selected="false" class="sphinx-tabs-tab" id="tab-0-0-1" name="0-1" role="tab" tabindex="-1">2</button><button aria-controls="panel-0-0-2" aria-selected="false" class="sphinx-tabs-tab" id="tab-0-0-2" name="0-2" role="tab" tabindex="-1">3</button></div><div aria-labelledby="tab-0-0-0" class="sphinx-tabs-panel" id="panel-0-0-0" name="0-0" role="tabpanel" tabindex="0"><figure class="align-default" id="id1">
+<a class="reference internal image-reference" href="https://coderefinery.github.io/reproducible-research/_images/macos.png"><img alt="Generated image of a kitchen" src="https://coderefinery.github.io/reproducible-research/_images/macos.png" style="width: 50%;" />
+</a>
+<figcaption>
+<p><span class="caption-text">[Midjourney, CC-BY-NC 4.0]</span><a class="headerlink" href="#id1" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+</div><div aria-labelledby="tab-0-0-1" class="sphinx-tabs-panel" hidden="true" id="panel-0-0-1" name="0-1" role="tabpanel" tabindex="0"><figure class="align-default" id="id2">
+<a class="reference internal image-reference" href="https://coderefinery.github.io/reproducible-research/_images/windows.png"><img alt="Generated image of a kitchen" src="https://coderefinery.github.io/reproducible-research/_images/windows.png" style="width: 50%;" />
+</a>
+<figcaption>
+<p><span class="caption-text">[Midjourney, CC-BY-NC 4.0]</span><a class="headerlink" href="#id2" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+</div><div aria-labelledby="tab-0-0-2" class="sphinx-tabs-panel" hidden="true" id="panel-0-0-2" name="0-2" role="tabpanel" tabindex="0"><figure class="align-default" id="id3">
+<a class="reference internal image-reference" href="https://coderefinery.github.io/reproducible-research/_images/linux.png"><img alt="Generated image of a kitchen" src="https://coderefinery.github.io/reproducible-research/_images/linux.png" style="width: 50%;" />
+</a>
+<figcaption>
+<p><span class="caption-text">[Midjourney, CC-BY-NC 4.0]</span><a class="headerlink" href="#id3" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+</div></div>
+</div>
+</section>
+<section id="how-programs-work-with-the-os">
+<h6><strong>How Programs Work With the OS</strong><a class="headerlink" href="#how-programs-work-with-the-os" title="Link to this heading"></a></h6>
+<ul class="simple">
+<li><p>When you open a program, the OS loads it into <strong>RAM</strong>.</p></li>
+<li><p>The CPU executes the program <strong>instruction by instruction</strong>.</p></li>
+<li><p>The OS handles <strong>scheduling</strong>: when each program gets CPU time.</p></li>
+<li><p>The OS also provides <strong>system calls</strong> so that programs can talk to devices (e.g., save a file, read a sensor).</p></li>
+</ul>
+<p>So the OS is the <strong>bridge</strong> between raw hardware and usable computing.</p>
+</section>
+<section id="users-and-roles-in-the-os">
+<h6><strong>Users and Roles in the OS</strong><a class="headerlink" href="#users-and-roles-in-the-os" title="Link to this heading"></a></h6>
+<p>Operating systems allow <strong>multiple users</strong>. Each user may have different permissions.</p>
+<ul class="simple">
+<li><p><strong>Root / Administrator</strong>:</p>
+<ul>
+<li><p>Full control of the system.</p></li>
+<li><p>Can install software, change user accounts, reconfigure everything.</p></li>
+</ul>
+</li>
+<li><p><strong>Normal Users</strong>:</p>
+<ul>
+<li><p>Limited control — can run software, manage their own files, but not others’.</p></li>
+</ul>
+</li>
+</ul>
+<p>This separation prevents accidents or security issues (e.g. if you run a malicious program that deletes the main operating system files, user permissions wouldn’t let you do that).</p>
+</section>
+<section id="security-and-permissions">
+<h6><strong>Security and Permissions</strong><a class="headerlink" href="#security-and-permissions" title="Link to this heading"></a></h6>
+<p>The OS uses <strong>file permissions</strong> and <strong>user roles</strong> to:</p>
+<ul class="simple">
+<li><p>Ensure data integrity (users can’t modify each other’s files),</p></li>
+<li><p>Maintain confidentiality (research data is private),</p></li>
+<li><p>Protect system functionality.</p></li>
+</ul>
+<p>Permissions control:</p>
+<ul class="simple">
+<li><p>Who can read, write, or execute files.</p></li>
+<li><p>Who can install or update software.</p></li>
+<li><p>Which users can access shared data folders.</p></li>
+</ul>
+<p>Permissions are like <strong>kitchen access badges</strong> — only the head chef can restock the fridge or replace knives, while sous-chefs can use them but not reorder.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p class="rubric" id="permissions-in-the-linux-terminal-explained">Permissions in the Linux terminal explained</p>
+<p>When you list files in a Linux terminal using the command <code class="docutils literal notranslate"><span class="pre">ls</span> <span class="pre">-l</span></code>, you’ll see something like this:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">-</span><span class="n">rw</span><span class="o">-</span><span class="n">r</span><span class="o">--</span><span class="n">r</span><span class="o">--</span>  <span class="mi">1</span> <span class="n">user</span> <span class="n">group</span>  <span class="mi">2048</span> <span class="n">Apr</span>  <span class="mi">5</span> <span class="mi">14</span><span class="p">:</span><span class="mi">32</span> <span class="n">data</span><span class="o">.</span><span class="n">txt</span>
+</pre></div>
+</div>
+<p>Let’s break it down:</p>
+<ul class="simple">
+<li><p>The first part, <code class="docutils literal notranslate"><span class="pre">-rw-r--r--</span></code>, shows the <strong>file permissions</strong>.</p></li>
+<li><p>It’s a 10-character string where:</p>
+<ul>
+<li><p>The first character indicates the <strong>type</strong> (<code class="docutils literal notranslate"><span class="pre">-</span></code> = regular file, <code class="docutils literal notranslate"><span class="pre">d</span></code> = directory, <code class="docutils literal notranslate"><span class="pre">l</span></code> = symbolic link, etc.).</p></li>
+<li><p>The next 9 characters are split into <strong>three groups of three</strong>:</p>
+<ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">rw-</span></code>: <strong>Owner</strong> permissions (read, write),</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">r--</span></code>: <strong>Group</strong> permissions (read only),</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">r--</span></code>: <strong>Others</strong> (everyone else; read only).</p></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>So in this example:</p>
+<ul class="simple">
+<li><p>The <strong>owner</strong> can <strong>read and write</strong> the file,</p></li>
+<li><p>The <strong>group</strong> can only <strong>read</strong> it,</p></li>
+<li><p><strong>Others</strong> (any user on the system) can also only <strong>read</strong> it.</p></li>
+</ul>
+<p>If you see something like this for a script:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">-</span><span class="n">rwxr</span><span class="o">-</span><span class="n">xr</span><span class="o">-</span><span class="n">x</span>
+</pre></div>
+</div>
+<p>That means:</p>
+<ul class="simple">
+<li><p>The owner can <strong>read, write, and execute</strong>,</p></li>
+<li><p>The group and others can <strong>read and execute</strong>, but <strong>not modify</strong> the file.</p></li>
+</ul>
+<p>You can change these permissions using commands like <code class="docutils literal notranslate"><span class="pre">chmod</span></code>, and change the owner with <code class="docutils literal notranslate"><span class="pre">chown</span></code>.</p>
+<p>Understanding these settings is essential when managing access to data and scripts in shared research environments.</p>
+</div>
+<div class="admonition-discussion discussion important admonition" id="discussion-1">
+<p class="admonition-title">Discussion</p>
+<p><strong>Cooking Metaphor: The Operating System Is the Kitchen Manager</strong></p>
+<ul class="simple">
+<li><p>The OS decides who can use which appliances.</p></li>
+<li><p>It makes sure the oven isn’t on fire while the dishwasher is running.</p></li>
+<li><p>It keeps the pantry organized (file system),</p></li>
+<li><p>And ensures everyone follows safety protocols (permissions and users).</p></li>
+</ul>
+<p>Without an OS, you’d just have an empty room full of disconnected appliances.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p class="rubric" id="the-terminal-is-the-most-powerful-tool">The terminal is the most powerful tool</p>
+<p>The terminal — also known as the <strong>command-line interface</strong> or <strong>shell</strong> — is one of the most powerful and flexible tools available on a computer, especially in scientific and research computing.</p>
+<p>At its core, the shell is a program that provides a <strong>text-based interface</strong> between the user and the operating system. Rather than clicking through menus and windows, users type commands directly to control the computer. This is why it is called a <strong>“shell”</strong> — it wraps around the underlying system and gives users a structured way to interact with it.</p>
+<p>There are different kinds of shells (like <code class="docutils literal notranslate"><span class="pre">bash</span></code>, <code class="docutils literal notranslate"><span class="pre">zsh</span></code>, or <code class="docutils literal notranslate"><span class="pre">fish</span></code>), but they all allow the user to execute programs, navigate the filesystem, automate tasks, and combine tools in highly efficient ways.</p>
+<p>The terminal is particularly favored by expert users and researchers because it offers:</p>
+<ul class="simple">
+<li><p><strong>Precision</strong>: Commands can be written and saved exactly, removing ambiguity and allowing for exact replication of tasks.</p></li>
+<li><p><strong>Speed</strong>: Complex or repetitive tasks that would take many clicks in a graphical interface can be done in seconds with a single command or script.</p></li>
+<li><p><strong>Automation</strong>: Workflows can be scripted, making it easy to repeat analyses, preprocess data, or set up entire environments automatically.</p></li>
+<li><p><strong>Remote access</strong>: Shell-based tools like SSH make it possible to work on powerful remote systems or supercomputers as if they were local.</p></li>
+<li><p><strong>Reproducibility</strong>: Everything you do in the terminal can be logged and version-controlled, which is essential for transparent scientific research.</p></li>
+</ul>
+<p>In short, while it may seem intimidating at first, the shell becomes an essential ally for researchers dealing with data, software environments, or computing infrastructure. Learning to use it effectively can significantly increase both productivity and control over computational tasks.</p>
+<p>Consider taking <a class="reference external" href="https://scicomp.aalto.fi/scicomp/shell/">the Shell Crash Course</a></p>
+</div>
+</section>
+<section id="bonus-insight-for-support-teams">
+<h6>Bonus insight for support teams<a class="headerlink" href="#bonus-insight-for-support-teams" title="Link to this heading"></a></h6>
+<p>Why this matters for your role:</p>
+<ul class="simple">
+<li><p>Researchers will ask you <strong>why they can’t install a tool</strong> or <strong>access a folder</strong> — this often comes down to OS permissions.</p></li>
+<li><p>In secure environments (e.g., working with personal data), understanding <strong>user roles</strong> and <strong>access controls</strong> is crucial for compliance.</p></li>
+<li><p>If you support computational research, you’ll often interact with <strong>Linux-based systems</strong> and need to understand how users and files are managed there.</p></li>
+</ul>
+</section>
+</section>
+<span id="document-build_4"></span><section id="step-4-install-the-tools-you-are-planning-to-use">
+<h5><strong>Step 4: Install the Tools You Are Planning to Use</strong><a class="headerlink" href="#step-4-install-the-tools-you-are-planning-to-use" title="Link to this heading"></a></h5>
+<p>Now that our operating system is running, we need to give it <strong>specific abilities</strong>. A base system can open windows and manage files — but it can’t do research yet.</p>
+<p>To make the computer useful for science, we need to <strong>install software</strong>.</p>
+<section id="what-is-software-installation">
+<h6><strong>What Is Software Installation?</strong><a class="headerlink" href="#what-is-software-installation" title="Link to this heading"></a></h6>
+<p>Installing software means placing a program and its dependencies on your system so it can be run:</p>
+<ul class="simple">
+<li><p>It may involve downloading files,</p></li>
+<li><p>Unpacking or compiling them,</p></li>
+<li><p>Configuring settings, and</p></li>
+<li><p>Linking them to your operating system.</p></li>
+</ul>
+<p>Examples:</p>
+<ul class="simple">
+<li><p>A climate scientist installs <strong>NetCDF tools</strong> to read weather models.</p></li>
+<li><p>A data scientist installs <strong>R and the tidyverse</strong> for statistical analysis.</p></li>
+<li><p>A linguist installs <strong>NLTK in Python</strong> for natural language processing.</p></li>
+</ul>
+</section>
+<section id="package-managers-and-installers">
+<h6><strong>Package Managers and Installers</strong><a class="headerlink" href="#package-managers-and-installers" title="Link to this heading"></a></h6>
+<p>Operating systems often come with tools to simplify installation:</p>
+<ul class="simple">
+<li><p><strong>Linux</strong>:</p>
+<ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">apt</span></code>, <code class="docutils literal notranslate"><span class="pre">dnf</span></code>, <code class="docutils literal notranslate"><span class="pre">yum</span></code>, <code class="docutils literal notranslate"><span class="pre">conda</span></code>, <code class="docutils literal notranslate"><span class="pre">pip</span></code></p></li>
+</ul>
+</li>
+<li><p><strong>Windows</strong>:</p>
+<ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">.exe</span></code> installers, Windows Store, Chocolatey</p></li>
+</ul>
+</li>
+<li><p><strong>macOS</strong>:</p>
+<ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">.dmg</span></code> files, <code class="docutils literal notranslate"><span class="pre">brew</span></code></p></li>
+</ul>
+</li>
+</ul>
+<p>Some tools are graphical (click to install), others use the <strong>command line</strong> (important in HPC environments and important for reproducibility).</p>
+</section>
+<section id="permissions-can-everyone-install-software">
+<h6><strong>Permissions: Can Everyone Install Software?</strong><a class="headerlink" href="#permissions-can-everyone-install-software" title="Link to this heading"></a></h6>
+<p>No. In shared or secure systems:</p>
+<ul class="simple">
+<li><p>Only <strong>admins (root)</strong> can install system-wide software.</p></li>
+<li><p>Regular users can only install in their <strong>home directory</strong> or via isolated environments.</p></li>
+</ul>
+<p>In research groups or HPC systems, this often means:</p>
+<ul class="simple">
+<li><p>You ask the IT team to install something, <strong>or</strong></p></li>
+<li><p>You use workarounds like <strong>conda environments</strong>, <strong>virtualenv</strong>, or <strong>containers</strong>.</p></li>
+</ul>
+</section>
+<section id="licenses-and-access">
+<h6><strong>Licenses and Access</strong><a class="headerlink" href="#licenses-and-access" title="Link to this heading"></a></h6>
+<p>Some tools are <strong>open source</strong> — free to use, inspect, and share:</p>
+<ul class="simple">
+<li><p>Python, R, Julia</p></li>
+<li><p>QGIS, LibreOffice, Jupyter</p></li>
+</ul>
+<p>Others are <strong>proprietary</strong> or require institutional licenses:</p>
+<ul class="simple">
+<li><p>MATLAB, SPSS, ArcGIS, Microsoft Office</p></li>
+</ul>
+<p>You may have to:</p>
+<ul class="simple">
+<li><p>Register with a license server,</p></li>
+<li><p>Use your university VPN,</p></li>
+<li><p>Or request access through IT.</p></li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><strong>Containers: Software in a Box</strong></p>
+<p>When you can’t install tools normally — or want full control over the environment — you can use <strong>containers</strong>:</p>
+<ul class="simple">
+<li><p>Tools like <strong>Docker</strong> or <strong>Singularity/Apptainer</strong> let you run pre-packaged environments.</p></li>
+<li><p>Everything the program needs is inside the container — like a <strong>portable mini-kitchen</strong>.</p></li>
+</ul>
+<p>Use case: A data scientist runs a reproducible analysis inside a Docker container that works the same way on a laptop, cloud server, or supercomputer node.</p>
+</div>
+<div class="admonition-discussion discussion important admonition" id="discussion-0">
+<p class="admonition-title">Discussion</p>
+<p class="rubric" id="cooking-metaphor-installing-tools-equipping-your-kitchen"><strong>Cooking Metaphor: Installing Tools = Equipping Your Kitchen</strong></p>
+<ul class="simple">
+<li><p>Installing <strong>software</strong> is like choosing your appliances and ingredients.</p></li>
+<li><p>Package managers are like a <strong>kitchen supply catalog</strong>.</p></li>
+<li><p>Permissions are like <strong>access rules</strong> in a shared kitchen — maybe only the head chef can bring in new knives.</p></li>
+<li><p>Containers are <strong>your own mobile kitchen</strong> — everything pre-installed, works the same anywhere.</p></li>
+</ul>
+</div>
+</section>
+<section id="bonus-insight-for-support-teams">
+<h6>Bonus Insight for support teams<a class="headerlink" href="#bonus-insight-for-support-teams" title="Link to this heading"></a></h6>
+<p>Why this matters for your support role:</p>
+<ul class="simple">
+<li><p>Researchers may ask for help installing domain-specific software — or report that “something isn’t working” on a cluster or shared VM.</p></li>
+<li><p>You should understand:</p>
+<ul>
+<li><p>Why permission errors happen,</p></li>
+<li><p>What alternatives (like <code class="docutils literal notranslate"><span class="pre">conda</span></code> or containers) are available,</p></li>
+<li><p>When to escalate to IT or request a license.</p></li>
+</ul>
+</li>
+</ul>
+<p>You can help by maintaining a list of pre-approved tools, recommended packages, or links to shared containers.</p>
+</section>
+</section>
+<span id="document-build_5"></span><section id="step-5-expand-the-computer-with-remote-storage">
+<h5><strong>Step 5: Expand the Computer with Remote Storage</strong><a class="headerlink" href="#step-5-expand-the-computer-with-remote-storage" title="Link to this heading"></a></h5>
+<p>Our computer is now running, and we’ve installed some tools. But soon, we’ll run into a bottleneck: <strong>storage space and speed</strong>.</p>
+<p>Research data can grow quickly — especially in fields like genomics, imaging, or environmental monitoring. So we need to expand beyond local disks by using <strong>remote storage</strong>.</p>
+<section id="why-is-local-storage-sometimes-not-enough">
+<h6><strong>Why Is Local Storage Sometimes Not Enough?</strong><a class="headerlink" href="#why-is-local-storage-sometimes-not-enough" title="Link to this heading"></a></h6>
+<p>Local storage (like an SSD in your laptop or server) is:</p>
+<ul class="simple">
+<li><p>Fast (especially SSDs),</p></li>
+<li><p>Always available (no internet needed),</p></li>
+<li><p>Limited in size (256 GB to a few TB),</p></li>
+<li><p>Vulnerable to failure or theft.</p></li>
+</ul>
+<p>Many datasets in research <strong>exceed local capacity</strong>:</p>
+<ul class="simple">
+<li><p>A single fMRI scan might be 2GB… scale that to 100 subjects and you have 200G… consider that processing requires 5 times the raw MRI data space and we have about 1TB…</p></li>
+<li><p>A whole-genome dataset can be over 200 GB,</p></li>
+<li><p>Satellite images can reach <strong>terabytes per day</strong>.</p></li>
+</ul>
+</section>
+<section id="what-is-remote-storage">
+<h6><strong>What Is Remote Storage?</strong><a class="headerlink" href="#what-is-remote-storage" title="Link to this heading"></a></h6>
+<p>Remote storage refers to <strong>data stored on another machine</strong> that your computer can access over a network. This includes:</p>
+<ul class="simple">
+<li><p><strong>Network drives</strong> (e.g., NFS, SMB),</p></li>
+<li><p><strong>Institutional data services</strong> (e.g., CSC Allas object storage),</p></li>
+<li><p><strong>Cloud buckets</strong> (e.g., Amazon S3, Azure Blob),</p></li>
+<li><p><strong>Remote repositories</strong> (e.g., Zenodo, Figshare, institutional archives).</p></li>
+</ul>
+<p>Remote storage can be:</p>
+<ul class="simple">
+<li><p>Much <strong>larger</strong> than local disks,</p></li>
+<li><p><strong>Backed up</strong> by IT,</p></li>
+<li><p><strong>Shared</strong> with collaborators,</p></li>
+<li><p>But often <strong>slower</strong> to read/write due to network speed.</p></li>
+</ul>
+</section>
+<section id="the-i-o-bottleneck">
+<h6><strong>The I/O Bottleneck</strong><a class="headerlink" href="#the-i-o-bottleneck" title="Link to this heading"></a></h6>
+<p>I/O = Input/Output: how fast data is read from or written to disk.</p>
+<ul class="simple">
+<li><p><strong>Local SSDs</strong>: Extremely fast (ideal for GPU processing, simulations, etc.).</p></li>
+<li><p><strong>Remote storage</strong>: Depends on internet speed, protocols, and server load. Often slower and less predictable.</p></li>
+</ul>
+<p>If you’re doing <strong>GPU-intensive computation</strong>, reading data too slowly can cause the GPU to sit idle — wasting expensive compute time.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p class="rubric" id="cooking-metaphor-storage-as-the-pantry"><strong>Cooking Metaphor: Storage as the Pantry</strong></p>
+<ul class="simple">
+<li><p>Your <strong>local disk</strong> is the pantry in your own kitchen — fast, private, limited.</p></li>
+<li><p>Remote storage is like a <strong>warehouse down the street</strong> — it’s bigger, maybe shared, but slower to access.</p></li>
+<li><p>For some tasks, you prep everything from your local pantry.</p></li>
+<li><p>For others, you send someone (like <code class="docutils literal notranslate"><span class="pre">rsync</span></code> or a script) to fetch ingredients in bulk.</p></li>
+</ul>
+<p>Choosing where to store your data affects how fast and efficiently your recipe (research) runs.</p>
+</div>
+</section>
+<section id="security-and-remote-storage">
+<h6><strong>Security and Remote Storage</strong><a class="headerlink" href="#security-and-remote-storage" title="Link to this heading"></a></h6>
+<p>Remote storage also brings <strong>data protection considerations</strong>:</p>
+<ul class="simple">
+<li><p>Is the storage <strong>encrypted</strong>?</p></li>
+<li><p>Who has <strong>access</strong> to it?</p></li>
+<li><p>Is it located in a country with appropriate <strong>legal protections</strong> (important for GDPR)?</p></li>
+<li><p>Does it offer <strong>versioning</strong> or <strong>audit logs</strong>?</p></li>
+</ul>
+<p>Trusted research infrastructures (like CSC, SURF, or institutional servers) are often required for <strong>personal or sensitive data</strong>.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p class="rubric" id="classification-of-information-and-data-storage">Classification of information and data storage</p>
+<p>Many organizations — including universities, research institutes, and government agencies — use a <strong>classification framework</strong> to manage information securely and responsibly. This framework helps determine <strong>where and how different types of data should be stored, accessed, and shared</strong>.</p>
+<p>A widely used (though not universal) classification model includes four categories:</p>
+<ol class="arabic simple">
+<li><p><strong>Public</strong><br />
+Information that is intended for open sharing and has no access restrictions. Examples include published research articles, public websites, and open data. This kind of information can be stored on public servers, shared via email, and posted online without special safeguards.</p></li>
+<li><p><strong>Internal</strong><br />
+Information meant for use within the organization but not intended for public release. It may include internal documentation, draft manuscripts, or general staff communications. Internal data should be stored on organizational platforms (e.g., secure shared drives or institutional cloud services), but doesn’t require encryption or special permissions.</p></li>
+<li><p><strong>Confidential</strong><br />
+Sensitive information that, if exposed, could cause harm to individuals, the institution, or research partners. This includes personal data (e.g., student records, interview transcripts), research data under embargo, or licensed datasets. Confidential data <strong>must be stored in secure environments</strong> — such as encrypted drives, secure servers, or designated trusted research infrastructures — and access must be limited to authorized individuals only.</p></li>
+<li><p><strong>Secret</strong><br />
+Highly restricted information that could result in serious harm if disclosed. It may apply to secondary use of medical data, national security data, defense-related research, or sensitive proprietary data under strict non-disclosure agreements. Secret data typically requires isolated, access-controlled environments with strong encryption and strict auditing.</p></li>
+</ol>
+<p>While this four-level model is common, <strong>each organization may have its own specific definitions, labels, and handling rules</strong> — often aligned with legal or regulatory frameworks (such as GDPR for personal data).</p>
+<p>It is essential to <strong>check your institution’s data classification policy</strong> and follow their guidance when deciding:</p>
+<ul class="simple">
+<li><p>Where to store different types of data,</p></li>
+<li><p>Who is allowed to access it,</p></li>
+<li><p>Whether encryption or special access controls are needed,</p></li>
+<li><p>And how data should be shared or archived.</p></li>
+</ul>
+</div>
+</section>
+<section id="bonus-insight-for-support-teams">
+<h6>Bonus Insight for support teams<a class="headerlink" href="#bonus-insight-for-support-teams" title="Link to this heading"></a></h6>
+<p>Support teams are often responsible for:</p>
+<ul class="simple">
+<li><p>Advising on <strong>where data should live</strong> (local vs. remote),</p></li>
+<li><p>Managing <strong>access permissions and documentation</strong>,</p></li>
+<li><p>Explaining <strong>performance trade-offs</strong> between storage types,</p></li>
+<li><p>Ensuring compliance with policies and data management plans (DMPs).</p></li>
+</ul>
+<p>Understanding remote storage — both <strong>practically</strong> and <strong>strategically</strong> — is key to supporting researchers.</p>
+</section>
+</section>
+<span id="document-build_6"></span><section id="step-6-expand-the-computing-by-connecting-with-other-computers">
+<h5><strong>Step 6: Expand the Computing by Connecting with Other Computers</strong><a class="headerlink" href="#step-6-expand-the-computing-by-connecting-with-other-computers" title="Link to this heading"></a></h5>
+<p>Sometimes, our own computer — even with extra storage — <strong>just isn’t enough</strong> to do what we need. Maybe we’re processing too much data, training a large AI model, or need more memory than we physically have.</p>
+<p>In these cases, we don’t just expand storage — we expand <strong>computation</strong> by connecting to other computers.</p>
+<section id="using-remote-computers">
+<h6><strong>Using Remote Computers</strong><a class="headerlink" href="#using-remote-computers" title="Link to this heading"></a></h6>
+<p>Remote computing means using another machine, typically more powerful than yours, to:</p>
+<ul class="simple">
+<li><p>Run programs,</p></li>
+<li><p>Store data,</p></li>
+<li><p>Train models,</p></li>
+<li><p>Or host services (like dashboards or APIs).</p></li>
+</ul>
+<p>This remote computer could be:</p>
+<ul class="simple">
+<li><p>A <strong>cloud-based virtual machine</strong> (e.g. from CSC, AWS, Azure),</p></li>
+<li><p>A <strong>remote workstation</strong> in your institution,</p></li>
+<li><p>A <strong>computing node</strong> on a cluster or HPC system,</p></li>
+<li><p>Or a <strong>server</strong> that you access over the internet.</p></li>
+</ul>
+<p>You control the remote computer using tools like:</p>
+<ul class="simple">
+<li><p><strong>SSH</strong> (secure shell, text-based),</p></li>
+<li><p><strong>Remote desktop</strong> (GUI-based),</p></li>
+<li><p><strong>Web interfaces</strong> (e.g. JupyterHub, VS Code in the browser, OpenOnDemand https://www.puhti.csc.fi/public/).</p></li>
+</ul>
+</section>
+<section id="offloading-computation-apis">
+<h6><strong>Offloading Computation: APIs</strong><a class="headerlink" href="#offloading-computation-apis" title="Link to this heading"></a></h6>
+<p>In many modern applications, <strong>your computer is only a front-end</strong>, while the work is done elsewhere.</p>
+<p>This is exactly how <strong>APIs (Application Programming Interfaces)</strong> work:</p>
+<ul class="simple">
+<li><p>You send a <strong>request</strong> (e.g. a prompt to ChatGPT),</p></li>
+<li><p>The remote system does all the processing,</p></li>
+<li><p>You get back a <strong>response</strong> (e.g. a completed sentence).</p></li>
+</ul>
+<p>Other examples:</p>
+<ul class="simple">
+<li><p>Image classification via a web API,</p></li>
+<li><p>Weather forecast data fetched from a public government API,</p></li>
+<li><p>Research datasets accessed through SPARQL endpoints or RESTful APIs.</p></li>
+</ul>
+<p>Your laptop just handles the input/output — <strong>the thinking happens remotely</strong>.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p class="rubric" id="an-example-on-the-terminal-to-query-a-remote-api">An example on the terminal to query a remote API</p>
+<p>In research, it’s often useful to retrieve data from external services using APIs (Application Programming Interfaces). Many APIs are <strong>RESTful</strong>, meaning they use standard web protocols (like HTTP) and return data in structured formats, such as JSON. You can query these APIs directly from the terminal using a tool like <code class="docutils literal notranslate"><span class="pre">curl</span></code>.</p>
+<p class="rubric" id="an-example-with-the-nasa-astronomy-picture-of-the-day-apod-service">An example with the <strong>NASA Astronomy Picture of the Day (APOD)</strong> service.</p>
+<p>This API provides information and metadata about astronomy images curated by NASA.</p>
+<p>You can retrieve the latest entry like this:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>curl<span class="w"> </span><span class="s2">&quot;https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY&quot;</span>
+</pre></div>
+</div>
+<p>This command sends a GET request to the NASA APOD API using a public test key (<code class="docutils literal notranslate"><span class="pre">DEMO_KEY</span></code>). The response will be in JSON format and includes the image URL, title, date, and explanation:</p>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+<span class="w">  </span><span class="nt">&quot;date&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2025-04-05&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;title&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Solar Eclipse from the ISS&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;url&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://apod.nasa.gov/apod/image/2504/eclipse_iss.jpg&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;explanation&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;This image from the International Space Station shows...&quot;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>You can save the response to a file for later use:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>curl<span class="w"> </span><span class="s2">&quot;https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY&quot;</span><span class="w"> </span>-o<span class="w"> </span>apod.json
+</pre></div>
+</div>
+<p>While this example uses a public endpoint, many APIs require authentication via API keys, tokens, or other headers — these can be added with curl options (e.g. <code class="docutils literal notranslate"><span class="pre">-H</span> <span class="pre">&quot;Authorization:</span> <span class="pre">Bearer</span> <span class="pre">TOKEN&quot;</span></code>), which we’ll explore later.</p>
+<p>Accessing APIs from the terminal allows researchers to:</p>
+<ul class="simple">
+<li><p>Automate data collection,</p></li>
+<li><p>Build reproducible workflows,</p></li>
+<li><p>Integrate external scientific datasets directly into analysis pipelines.</p></li>
+</ul>
+</div>
+<div class="admonition-discussion discussion important admonition" id="discussion-0">
+<p class="admonition-title">Discussion</p>
+<p><strong>Cooking Metaphor: Borrowing Another Kitchen</strong></p>
+<p>Imagine your kitchen is too small for a banquet. You can:</p>
+<ul class="simple">
+<li><p>Rent space at a <strong>larger kitchen across town</strong> (remote machine),</p></li>
+<li><p>Hire a <strong>chef robot</strong> that cooks on command (API),</p></li>
+<li><p>Or plug into a <strong>remote food factory</strong> using only your computer as a control panel.</p></li>
+</ul>
+<p>Your local computer becomes a <strong>terminal</strong> — a keyboard and a screen — while the real work happens remotely.</p>
+</div>
+</section>
+<section id="cloud-computing-and-virtual-machines">
+<h6><strong>Cloud Computing and Virtual Machines</strong><a class="headerlink" href="#cloud-computing-and-virtual-machines" title="Link to this heading"></a></h6>
+<p>Cloud providers offer <strong>on-demand computing environments</strong>:</p>
+<ul class="simple">
+<li><p>You create a virtual machine (VM) with a few clicks,</p></li>
+<li><p>Choose the number of CPUs, RAM, and even GPUs,</p></li>
+<li><p>Install your tools, run your code, and shut it down when done.</p></li>
+</ul>
+<p>Cloud platforms include:</p>
+<ul class="simple">
+<li><p><strong>General-purpose</strong>: AWS, Google Cloud, Azure</p></li>
+<li><p><strong>Research-focused</strong>: CSC</p></li>
+</ul>
+<p>The upside: scale, flexibility, reproducibility.<br />
+The downside: complexity, cost, and security considerations.</p>
+</section>
+<section id="security-and-compliance">
+<h6><strong>Security and Compliance</strong><a class="headerlink" href="#security-and-compliance" title="Link to this heading"></a></h6>
+<p>Using remote systems for research means:</p>
+<ul class="simple">
+<li><p>Being mindful of <strong>who else can access the system</strong>,</p></li>
+<li><p>Ensuring <strong>data protection</strong> (especially with personal data),</p></li>
+<li><p>Using <strong>strong authentication</strong> (SSH keys, 2FA),</p></li>
+<li><p>Following your institution’s <strong>IT and ethical guidelines</strong>.</p></li>
+</ul>
+</section>
+<section id="bonus-insight-for-support-teams">
+<h6>Bonus Insight for support teams<a class="headerlink" href="#bonus-insight-for-support-teams" title="Link to this heading"></a></h6>
+<p>As a support person, you’ll often help researchers:</p>
+<ul class="simple">
+<li><p>Understand where to run their code or models,</p></li>
+<li><p>Set up SSH access or Jupyter environments,</p></li>
+<li><p>Decide between <strong>on-premises</strong> and <strong>cloud-based</strong> resources,</p></li>
+<li><p>Comply with <strong>data security and legal requirements</strong> when using external computing power.</p></li>
+</ul>
+<p>You don’t need to be a system administrator — but you <em>do</em> need to know what’s possible, what’s allowed, and what questions to ask.</p>
+</section>
+</section>
+<span id="document-build_7"></span><section id="step-7-connect-multiple-computers-together-to-build-the-supercomputer">
+<h5><strong>Step 7: Connect Multiple Computers Together to Build the Supercomputer</strong><a class="headerlink" href="#step-7-connect-multiple-computers-together-to-build-the-supercomputer" title="Link to this heading"></a></h5>
+<p>Now that you understand how to use one remote computer, it’s time to <strong>scale up</strong>.</p>
+<p>A <strong>supercomputer</strong> isn’t one big machine — it’s a <strong>network of many smaller computers (called nodes)</strong> connected with high-speed communication links and managed by special software to behave like one enormous machine.</p>
+<section id="what-is-a-supercomputer-made-of">
+<h6><strong>What Is a Supercomputer Made Of?</strong><a class="headerlink" href="#what-is-a-supercomputer-made-of" title="Link to this heading"></a></h6>
+<p>A typical supercomputer consists of:</p>
+<ul class="simple">
+<li><p><strong>Compute nodes</strong>: Each node is like a standalone computer with CPUs, RAM, and sometimes GPUs.</p></li>
+<li><p><strong>Interconnects</strong>: Fast network cables (e.g., InfiniBand) that let the nodes talk to each other with minimal delay.</p></li>
+<li><p><strong>Storage nodes</strong>: Shared data storage for all the nodes to read/write from.</p></li>
+<li><p><strong>Login nodes</strong>: Where users connect to prepare their jobs.</p></li>
+<li><p><strong>Management system</strong>: To monitor hardware, schedule jobs, and manage user activity.</p></li>
+</ul>
+<p>A supercomputer can include <strong>thousands of nodes</strong>, working together.</p>
+</section>
+<section id="how-does-it-work-in-practice">
+<h6><strong>How Does It Work in Practice?</strong><a class="headerlink" href="#how-does-it-work-in-practice" title="Link to this heading"></a></h6>
+<p>Researchers <strong>submit jobs</strong> to a queue. These jobs might:</p>
+<ul class="simple">
+<li><p>Simulate complex phenomena (e.g. earthquakes, airflow),</p></li>
+<li><p>Process thousands of images or genome files,</p></li>
+<li><p>Train huge machine learning models.</p></li>
+</ul>
+<p>A <strong>job scheduler</strong> (like Slurm, PBS, or Torque) decides:</p>
+<ul class="simple">
+<li><p>When the job runs,</p></li>
+<li><p>Which nodes to assign,</p></li>
+<li><p>How to balance workloads fairly.</p></li>
+</ul>
+<p>Jobs can run in parallel across dozens or hundreds of nodes — <strong>a form of teamwork at digital scale.</strong></p>
+</section>
+<section id="high-speed-connectivity-infiniband">
+<h6><strong>High-Speed Connectivity: InfiniBand</strong><a class="headerlink" href="#high-speed-connectivity-infiniband" title="Link to this heading"></a></h6>
+<p>For nodes to work in parallel efficiently, they must communicate very quickly.<br />
+InfiniBand is a specialized networking technology with <strong>very low latency and high bandwidth</strong>, often used in supercomputers.</p>
+<p>Unlike Wi-Fi or standard Ethernet, InfiniBand ensures that node-to-node communication doesn’t become the bottleneck.</p>
+</section>
+<section id="why-supercomputers-are-shared-resources">
+<h6><strong>Why Supercomputers Are Shared Resources</strong><a class="headerlink" href="#why-supercomputers-are-shared-resources" title="Link to this heading"></a></h6>
+<p>Running and maintaining a supercomputer is expensive and energy-intensive. That’s why most supercomputers:</p>
+<ul class="simple">
+<li><p>Are <strong>shared national or regional infrastructure</strong> (e.g., CSC’s Mahti in Finland),</p></li>
+<li><p>Serve <strong>multiple research groups</strong> at the same time,</p></li>
+<li><p>Are managed by IT teams and access is granted via applications or merit.</p></li>
+</ul>
+<p>This model is not just efficient — it’s <strong>sustainable and equitable</strong>.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p class="rubric" id="understanding-parallelisation-with-a-kitchen-metaphor">Understanding parallelisation with a kitchen metaphor</p>
+<p>If it takes 20 minutes to cook a pasta from beginning to end, having 4 stoves or even 4 entire kitchens does not mean that you can cook pasta in 20 / 4 = 5 minutes. Some part of the process can be parallelised, but the cook (= the program) needs to know what to parallelise.</p>
+<p>See expanded kitchen metaphor <a class="reference external" href="https://docs.google.com/presentation/d/16BTILZlUvEzCt6FfMsB9sSZm0PZHHXLBthE5QfoSrjo/edit?usp=sharing">here</a> and <a class="reference external" href="https://docs.google.com/presentation/d/18bEZ7Dm4NOYuHLgJ_l1XG_hItLFrCgfk6Xr5N0ZYJLs/edit?usp=sharing">here</a>. There are also video version of those slides under <a class="reference external" href="https://www.youtube.com/channel/UCNErdFO1_GzSkDx0bLKWXOA">Aalto Scientific Computing YouTube channel</a>.</p>
+</div>
+<div class="admonition-discussion discussion important admonition" id="discussion-0">
+<p class="admonition-title">Discussion</p>
+<p><strong>Cooking Metaphor: A Shared Industrial Kitchen</strong></p>
+<ul class="simple">
+<li><p>Each node is a <strong>kitchen station</strong>, equipped for specific tasks.</p></li>
+<li><p>They are connected by <strong>a conveyor belt system</strong> (InfiniBand),</p></li>
+<li><p>Coordinated by a <strong>head chef (Slurm)</strong> who decides who cooks what and when.</p></li>
+<li><p>Multiple cooking teams share the kitchen, each getting a time slot.</p></li>
+</ul>
+<p>Instead of every research group building their own kitchen, they <strong>share the industrial space</strong> — everyone gets better tools, and no one wastes energy duplicating them.</p>
+</div>
+</section>
+<section id="bonus-insight-for-support-teams">
+<h6>Bonus Insight for support teams<a class="headerlink" href="#bonus-insight-for-support-teams" title="Link to this heading"></a></h6>
+<p>Your role could involve:</p>
+<ul class="simple">
+<li><p>Helping researchers access HPC resources (e.g., apply for accounts, get computing quotas),</p></li>
+<li><p>Explaining how job scheduling works,</p></li>
+<li><p>Clarifying storage policies and best practices,</p></li>
+<li><p>Assisting with reproducibility (e.g., using containers or version control in HPC pipelines),</p></li>
+<li><p>Navigating the <strong>research governance</strong> around using shared infrastructure.</p></li>
+</ul>
+<p>Supercomputers are powerful — but without good planning and support, they can be hard to use well.</p>
+</section>
+</section>
+<span id="document-build_8"></span><section id="step-8-celebrate-you-now-have-built-a-supercomputer">
+<h5><strong>Step 8: Celebrate! You Now Have Built a Supercomputer!</strong><a class="headerlink" href="#step-8-celebrate-you-now-have-built-a-supercomputer" title="Link to this heading"></a></h5>
+<p>Congratulations — you’ve just walked through the conceptual journey of building a supercomputer!</p>
+<p>You started with:</p>
+<ul class="simple">
+<li><p>A single computer and its parts,</p></li>
+<li><p>Brought it to life with BIOS and an operating system,</p></li>
+<li><p>Installed tools,</p></li>
+<li><p>Expanded with remote storage and remote computing,</p></li>
+<li><p>And finally, <strong>connected many computers into a coordinated, powerful infrastructure</strong>.</p></li>
+</ul>
+<p>You now understand the <strong>fundamentals of computational research infrastructure</strong> — and the role it plays in modern science.</p>
+<section id="what-comes-next">
+<h6><strong>What Comes Next?</strong><a class="headerlink" href="#what-comes-next" title="Link to this heading"></a></h6>
+<p>While building the hardware is important, <strong>building understanding is even more powerful</strong>. As a researcher or research supporter, your next steps could include:</p>
+<section id="learn-how-to-use-supercomputers">
+<h6 aria-level="7">Learn how to <em>use</em> supercomputers:<a class="headerlink" href="#learn-how-to-use-supercomputers" title="Link to this heading"></a></h6>
+<ul class="simple">
+<li><p>Connect to login nodes with <code class="docutils literal notranslate"><span class="pre">ssh</span></code>,</p></li>
+<li><p>Submit jobs with Slurm,</p></li>
+<li><p>Use modules to load software,</p></li>
+<li><p>Explore user guides from national computing centers (e.g., CSC, SURF, NeIC).</p></li>
+</ul>
+</section>
+<section id="learn-about-reproducible-environments">
+<h6 aria-level="7">Learn about reproducible environments:<a class="headerlink" href="#learn-about-reproducible-environments" title="Link to this heading"></a></h6>
+<ul class="simple">
+<li><p>Use containers (Docker, Singularity),</p></li>
+<li><p>Practice setting up workflows with Snakemake or Nextflow,</p></li>
+<li><p>Document tools and versions for long-term reproducibility.</p></li>
+</ul>
+</section>
+<section id="learn-about-responsible-use">
+<h6 aria-level="7">Learn about responsible use:<a class="headerlink" href="#learn-about-responsible-use" title="Link to this heading"></a></h6>
+<ul class="simple">
+<li><p>Understand the legal and ethical frameworks (e.g., GDPR, data classification),</p></li>
+<li><p>Know when personal or sensitive data <strong>can or cannot</strong> be processed remotely,</p></li>
+<li><p>Get familiar with data access policies, security settings, and logging tools.</p></li>
+</ul>
+</section>
+<section id="support-researchers">
+<h6 aria-level="7">Support researchers:<a class="headerlink" href="#support-researchers" title="Link to this heading"></a></h6>
+<ul class="simple">
+<li><p>Help them write better data management plans,</p></li>
+<li><p>Translate their research needs into technical requirements,</p></li>
+<li><p>Connect them with IT and infrastructure services.</p></li>
+</ul>
+<div class="admonition-discussion discussion important admonition" id="discussion-0">
+<p class="admonition-title">Discussion</p>
+<p>You’ve built your own kitchen, learned to borrow others, and now you’re part of a shared cooking facility where world-class science happens.<br />
+You’re not just a user of tools — you help <strong>design kitchens</strong>, <strong>organize workflows</strong>, and <strong>support researchers</strong> in creating sustainable, powerful recipes for discovery.</p>
+</div>
+</section>
+</section>
+<section id="remember-you-are-never-alone">
+<h6>Remember: you are never alone<a class="headerlink" href="#remember-you-are-never-alone" title="Link to this heading"></a></h6>
+<p>High-performance computing is a diverse community of people with various expertise who are very happy to discuss research data analysis workflows and decide together which tool is the most suitable for which case. It can be useful to also learn <a class="reference external" href="https://zenodo.org/records/8392763">“how to ask for help with (super)computers”</a>.</p>
+</section>
+</section>
+</div>
+</section>
+</section>
+</div>
+<div class="toctree-wrapper compound">
+<span id="document-tidy-data"></span><section id="tidy-data-and-dealing-with-messy-data">
+<h3>Tidy data and dealing with messy data<a class="headerlink" href="#tidy-data-and-dealing-with-messy-data" title="Link to this heading"></a></h3>
+<div class="admonition-objectives objectives admonition" id="objectives-0">
+<p class="admonition-title">Objectives</p>
+<ul class="simple">
+<li><p>Knowing about the tidy data format</p></li>
+<li><p>Be able to reformat tabular data into the tidy data format</p></li>
+</ul>
+</div>
+<figure class="align-default" id="id1">
+<img alt="An example spreadsheet not in tidy data format" src="_images/spreadsheet.png" />
+<figcaption>
+<p><span class="caption-text">Example spreadsheet (this is a phantasy dataset, apologies to biology
+students/researchers - this is not my domain).</span><a class="headerlink" href="#id1" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<div class="admonition-what-is-the-problem-with-storing-data-like-this discussion important admonition" id="discussion-0">
+<p class="admonition-title">What is the problem with storing data like this?</p>
+<ul class="simple">
+<li><p>Format: Limited interoperability with other programs</p></li>
+<li><p>Error prone (see e.g. <a class="reference external" href="https://www.washingtonpost.com/news/wonk/wp/2013/04/16/is-the-best-evidence-for-austerity-based-on-an-excel-spreadsheet-error/">this famous example</a>)</p></li>
+<li><p>Difficult to parse (“understand”) by scripts: difficult to automate</p></li>
+<li><p>Not in <em>tidy format</em>: difficult to extend/modify</p></li>
+</ul>
+</div>
+<p>How should we arrange the data?</p>
+<figure class="align-default" id="id2">
+<a class="reference internal image-reference" href="_images/svalbard-compact.png"><img alt="Example data arranged in a compact representation" src="_images/svalbard-compact.png" style="width: 30%;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Attempt 1: Not great since we need to somehow divide at the comma. How should we deal with multiple sightings?</span><a class="headerlink" href="#id2" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<figure class="align-default" id="id3">
+<a class="reference internal image-reference" href="_images/svalbard-wide.png"><img alt="Example data arranged in a wide format" src="_images/svalbard-wide.png" style="width: 60%;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Attempt 2: Adding observation sites will force us to add columns.</span><a class="headerlink" href="#id3" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<figure class="align-default" id="id4">
+<a class="reference internal image-reference" href="_images/svalbard-transposed.png"><img alt="Example data transposed" src="_images/svalbard-transposed.png" style="width: 60%;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Attempt 3: Adding species will force us to add columns.</span><a class="headerlink" href="#id4" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<figure class="align-default" id="id5">
+<a class="reference internal image-reference" href="_images/svalbard-tidy.png"><img alt="Example data arranged in tidy data format" src="_images/svalbard-tidy.png" style="width: 50%;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Tidy data format: Columns are variables, rows are observations/measurements. Easy to add new species and sites.</span><a class="headerlink" href="#id5" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<div class="admonition-tidy-data-format keypoints admonition" id="keypoints-0">
+<p class="admonition-title">Tidy data format</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://vita.had.co.nz/papers/tidy-data.html">Hadley Wickham: Tidy Data</a></p></li>
+<li><p>Columns are variables</p></li>
+<li><p>Rows are observations/measurements</p></li>
+<li><p>“Long form”</p></li>
+<li><p>Order does not matter</p></li>
+<li><p><strong>Easy to extend</strong> with more species and more sites
+without modifying the code</p></li>
+<li><p><strong>Structure for storing data</strong> - this does not mean that this is ideal
+for tables in presentations or publications</p></li>
+<li><p>It is possible to convert between wide form and long form and back
+(e.g. using <code class="docutils literal notranslate"><span class="pre">pandas.melt</span></code> or <code class="docutils literal notranslate"><span class="pre">pandas.pivot</span></code>), see <a class="reference external" href="https://nbviewer.org/github/coderefinery/data-visualization-python/blob/main/notebooks/tidy-data.ipynb">this example notebook</a></p></li>
+</ul>
+</div>
+<section id="use-a-standard-format">
+<h4>Use a standard format<a class="headerlink" href="#use-a-standard-format" title="Link to this heading"></a></h4>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>Species,Observation site,Number of sightings
+arctic fox,A,3
+arctic fox,B,1
+walrus,B,1
+walrus,C,1
+reindeer,B,10
+reindeer,C,1
+polar bear,A,1
+polar bear,C,1
+seal,A,2
+seal,B,1
+seal,C,2
+</pre></div>
+</div>
+<ul class="simple">
+<li><p><strong>Use a format that is standard in your community, don’t invent your own</strong></p></li>
+<li><p>CSV is often a good choice since most visualization tools can read CSV data</p></li>
+</ul>
+<p>There are many more formats (adapted after <a class="reference external" href="https://aaltoscicomp.github.io/python-for-scicomp/work-with-data/">Python for Scientific Computing</a>):</p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Name:</p></th>
+<th class="head"><p>Human<br>
+readable:</p></th>
+<th class="head"><p>Space<br>
+efficiency:</p></th>
+<th class="head"><p>Arbitrary<br>
+data:</p></th>
+<th class="head"><p>Tidy<br>
+data:</p></th>
+<th class="head"><p>Array<br>
+data:</p></th>
+<th class="head"><p>Long term<br>
+storage/sharing:</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference external" href="https://en.wikipedia.org/wiki/Comma-separated_values">CSV</a></p></td>
+<td><p>✅</p></td>
+<td><p>❌</p></td>
+<td><p>❌</p></td>
+<td><p>✅</p></td>
+<td><p>🟨</p></td>
+<td><p>✅</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://arrow.apache.org/docs/python/feather.html">Feather</a></p></td>
+<td><p>❌</p></td>
+<td><p>✅</p></td>
+<td><p>❌</p></td>
+<td><p>✅</p></td>
+<td><p>❌</p></td>
+<td><p>❌</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://parquet.apache.org/">Parquet</a></p></td>
+<td><p>❌</p></td>
+<td><p>✅</p></td>
+<td><p>🟨</p></td>
+<td><p>✅</p></td>
+<td><p>🟨</p></td>
+<td><p>✅</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://numpy.org/doc/stable/reference/generated/numpy.lib.format.html">NPY</a></p></td>
+<td><p>❌</p></td>
+<td><p>🟨</p></td>
+<td><p>❌</p></td>
+<td><p>❌</p></td>
+<td><p>✅</p></td>
+<td><p>❌</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://en.wikipedia.org/wiki/Hierarchical_Data_Format">HDF5</a></p></td>
+<td><p>❌</p></td>
+<td><p>✅</p></td>
+<td><p>❌</p></td>
+<td><p>❌</p></td>
+<td><p>✅</p></td>
+<td><p>✅</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://www.unidata.ucar.edu/software/netcdf/">NetCDF</a></p></td>
+<td><p>❌</p></td>
+<td><p>✅</p></td>
+<td><p>❌</p></td>
+<td><p>❌</p></td>
+<td><p>✅</p></td>
+<td><p>✅</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://en.wikipedia.org/wiki/JSON">JSON</a></p></td>
+<td><p>✅</p></td>
+<td><p>❌</p></td>
+<td><p>🟨</p></td>
+<td><p>❌</p></td>
+<td><p>❌</p></td>
+<td><p>✅</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://geojson.org/">GeoJSON</a></p></td>
+<td><p>✅</p></td>
+<td><p>❌</p></td>
+<td><p>🟨</p></td>
+<td><p>❌</p></td>
+<td><p>❌</p></td>
+<td><p>✅</p></td>
+</tr>
+<tr class="row-even"><td><p>Excel</p></td>
+<td><p>❌</p></td>
+<td><p>❌</p></td>
+<td><p>❌</p></td>
+<td><p>🟨</p></td>
+<td><p>❌</p></td>
+<td><p>🟨</p></td>
+</tr>
+<tr class="row-odd"><td><p>Graph formats</p></td>
+<td><p>🟨</p></td>
+<td><p>🟨</p></td>
+<td><p>❌</p></td>
+<td><p>❌</p></td>
+<td><p>❌</p></td>
+<td><p>✅</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://en.wikipedia.org/wiki/SQL">SQL</a></p></td>
+<td><p>❌</p></td>
+<td><p>🟨</p></td>
+<td><p>❌</p></td>
+<td><p>❌</p></td>
+<td><p>❌</p></td>
+<td><p>❌</p></td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<ul class="simple">
+<li><p>✅ : Good</p></li>
+<li><p>🟨 : Ok / depends on a case</p></li>
+<li><p>❌ : Bad</p></li>
+</ul>
+</div>
+<div class="admonition-exercise exercise important admonition" id="exercise-0">
+<p class="admonition-title">Exercise</p>
+<p>We have been given a dataset so that for a given book we know how many copies we have stored in the main public libraries in Helsinki</p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Book Title</p></th>
+<th class="head"><p>Pasila Library</p></th>
+<th class="head"><p>Oodi Library</p></th>
+<th class="head"><p>Kallio Library</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Risto Räppääjä ja kauhea makkara</p></td>
+<td><p>2</p></td>
+<td><p>1</p></td>
+<td><p>3</p></td>
+</tr>
+<tr class="row-odd"><td><p>Heinähattu ja Vilttitossu</p></td>
+<td><p>1</p></td>
+<td><p>0</p></td>
+<td><p>2</p></td>
+</tr>
+<tr class="row-even"><td><p>Tatu ja Patu Helsingissä</p></td>
+<td><p>3</p></td>
+<td><p>2</p></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-odd"><td><p>Risto Räppääjä saa isän</p></td>
+<td><p>2</p></td>
+<td><p>2</p></td>
+<td><p>0</p></td>
+</tr>
+<tr class="row-even"><td><p>Herra Hakkarainen maailmalla</p></td>
+<td><p>1</p></td>
+<td><p>3</p></td>
+<td><p>2</p></td>
+</tr>
+<tr class="row-odd"><td><p>Koiramäen talossa</p></td>
+<td><p>0</p></td>
+<td><p>2</p></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-even"><td><p>Ella ja kaverit salaisessa palveluksessa</p></td>
+<td><p>3</p></td>
+<td><p>1</p></td>
+<td><p>2</p></td>
+</tr>
+</tbody>
+</table>
+<ul class="simple">
+<li><p>Is the data <strong>tidy</strong>?</p></li>
+<li><p>What is the tidy version of that data?</p></li>
+</ul>
+<div class="admonition-solution solution important dropdown admonition" id="solution-0">
+<p class="admonition-title">Solution</p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Book Title</p></th>
+<th class="head"><p>Library</p></th>
+<th class="head"><p>Copies</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Risto Räppääjä ja kauhea makkara</p></td>
+<td><p>Pasila Library</p></td>
+<td><p>2</p></td>
+</tr>
+<tr class="row-odd"><td><p>Risto Räppääjä ja kauhea makkara</p></td>
+<td><p>Oodi Library</p></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-even"><td><p>Risto Räppääjä ja kauhea makkara</p></td>
+<td><p>Kallio Library</p></td>
+<td><p>3</p></td>
+</tr>
+<tr class="row-odd"><td><p>Heinähattu ja Vilttitossu</p></td>
+<td><p>Pasila Library</p></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-even"><td><p>Heinähattu ja Vilttitossu</p></td>
+<td><p>Oodi Library</p></td>
+<td><p>0</p></td>
+</tr>
+<tr class="row-odd"><td><p>Heinähattu ja Vilttitossu</p></td>
+<td><p>Kallio Library</p></td>
+<td><p>2</p></td>
+</tr>
+<tr class="row-even"><td><p>Tatu ja Patu Helsingissä</p></td>
+<td><p>Pasila Library</p></td>
+<td><p>3</p></td>
+</tr>
+<tr class="row-odd"><td><p>Tatu ja Patu Helsingissä</p></td>
+<td><p>Oodi Library</p></td>
+<td><p>2</p></td>
+</tr>
+<tr class="row-even"><td><p>Tatu ja Patu Helsingissä</p></td>
+<td><p>Kallio Library</p></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-odd"><td><p>Risto Räppääjä saa isän</p></td>
+<td><p>Pasila Library</p></td>
+<td><p>2</p></td>
+</tr>
+<tr class="row-even"><td><p>Risto Räppääjä saa isän</p></td>
+<td><p>Oodi Library</p></td>
+<td><p>2</p></td>
+</tr>
+<tr class="row-odd"><td><p>Risto Räppääjä saa isän</p></td>
+<td><p>Kallio Library</p></td>
+<td><p>0</p></td>
+</tr>
+<tr class="row-even"><td><p>Herra Hakkarainen maailmalla</p></td>
+<td><p>Pasila Library</p></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-odd"><td><p>Herra Hakkarainen maailmalla</p></td>
+<td><p>Oodi Library</p></td>
+<td><p>3</p></td>
+</tr>
+<tr class="row-even"><td><p>Herra Hakkarainen maailmalla</p></td>
+<td><p>Kallio Library</p></td>
+<td><p>2</p></td>
+</tr>
+<tr class="row-odd"><td><p>Koiramäen talossa</p></td>
+<td><p>Pasila Library</p></td>
+<td><p>0</p></td>
+</tr>
+<tr class="row-even"><td><p>Koiramäen talossa</p></td>
+<td><p>Oodi Library</p></td>
+<td><p>2</p></td>
+</tr>
+<tr class="row-odd"><td><p>Koiramäen talossa</p></td>
+<td><p>Kallio Library</p></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-even"><td><p>Ella ja kaverit salaisessa palveluksessa</p></td>
+<td><p>Pasila Library</p></td>
+<td><p>3</p></td>
+</tr>
+<tr class="row-odd"><td><p>Ella ja kaverit salaisessa palveluksessa</p></td>
+<td><p>Oodi Library</p></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-even"><td><p>Ella ja kaverit salaisessa palveluksessa</p></td>
+<td><p>Kallio Library</p></td>
+<td><p>2</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="docutils">
+</div>
+</section>
+</section>
+</div>
+<div class="toctree-wrapper compound">
+<span id="document-reference"></span><section id="reference">
+<h3>Reference<a class="headerlink" href="#reference" title="Link to this heading"></a></h3>
+<p>Some reference page</p>
+</section>
+</div>
+</section>
+<section id="credit">
+<h2>Credit<a class="headerlink" href="#credit" title="Link to this heading"></a></h2>
+<p>When preparing this lesson, we have reused these resources:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://coderefinery.github.io/data-visualization-python/">https://coderefinery.github.io/data-visualization-python/</a></p></li>
+<li><p><a class="reference external" href="https://aaltoscicomp.github.io/python-for-scicomp/">https://aaltoscicomp.github.io/python-for-scicomp/</a></p></li>
+</ul>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright CodeRefinery project.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
