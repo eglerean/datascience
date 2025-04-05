@@ -1,5 +1,12 @@
 # **Building a Supercomputer**
 
+:::{warning}
+This material is **work in progress**. 
+
+* Writing technical materials as a technical person falls into the fallacy of assuming the reader shares the same background knowledge, leading to explanations that skip essential context, use jargon without clarification, and unintentionally exclude non-expert audiences. **Please ask to expand and explain obscure concepts, jargon, unclear things**
+* It is difficult to find CC0 graphics to reuse so the materials right now are not too visual. Please suggest if you have any good source for graphics.
+:::
+
 In this episode, we try to build a supercomputer — starting from a single computer and scaling it up, step by step. Along the way, we’ll see why researchers use powerful computers and how the infrastructure behind research computing actually works.
 
 
