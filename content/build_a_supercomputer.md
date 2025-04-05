@@ -2,24 +2,6 @@
 
 In this episode, we try to build a supercomputer — starting from a single computer and scaling it up, step by step. Along the way, we’ll see why researchers use powerful computers and how the infrastructure behind research computing actually works.
 
-![A computing node](https://raw.githubusercontent.com/eglerean/eglerean.github.io/master/files/AComputingNode.svg)
-*The architecture of a computer (or computing node)*
-
-```{toctree}
----
-caption: How to build a supercomputer
-maxdepth: 1
----
-
-build_1.md
-build_2.md
-build_3.md
-build_4.md
-build_5.md
-build_6.md
-build_7.md
-build_8.md
-```
 
 ## **Motivation: Why Do We Need Computers?**
 
@@ -150,6 +132,26 @@ Research software engineers along with data stewards can help researchers **deci
 
 Understanding the **computational scale of the problem** is a critical support skill.
 
+## Let's build a supercomputer then!
+
+![A computing node](https://raw.githubusercontent.com/eglerean/eglerean.github.io/master/files/AComputingNode.svg)
+*The architecture of a computer (or computing node)*
+
+```{toctree}
+---
+caption: How to build a supercomputer
+maxdepth: 1
+---
+
+build_1.md
+build_2.md
+build_3.md
+build_4.md
+build_5.md
+build_6.md
+build_7.md
+build_8.md
+```
 
 
 

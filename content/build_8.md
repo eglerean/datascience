@@ -43,5 +43,5 @@ You're not just a user of tools — you help **design kitchens**, **organize wor
 :::
 
 ## Remember: you are never alone
-High-performance computing is a diverse community of people with various expertise who are very happy to discuss research data analysis workflows and decide together which tool is the most suitable for which case. It can be useful to also learn []"how to ask for help with (super)computers"](https://zenodo.org/records/8392763).
+High-performance computing is a diverse community of people with various expertise who are very happy to discuss research data analysis workflows and decide together which tool is the most suitable for which case. It can be useful to also learn ["how to ask for help with (super)computers"](https://zenodo.org/records/8392763).
 
