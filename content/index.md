@@ -32,7 +32,7 @@ Let's answer to a couple of *icebreakers*
 List of content:
 - {doc}`datascience`
 - {doc}`lifecycle`
-- {doc}`tidy-data`
+- {doc}`build_a_supercomputer`
 
 ```{toctree}
 :maxdepth: 1
@@ -41,8 +41,16 @@ List of content:
 
 datascience.md
 lifecycle.md
+build_a_supercomputer.md
+```
+
+```{toctree}
+:maxdepth: 1
+:caption: Extras
+
 tidy-data.md
 ```
+
 
 ```{toctree}
 :maxdepth: 1
