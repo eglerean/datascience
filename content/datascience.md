@@ -80,7 +80,7 @@ Neither approach is "better" — they serve different purposes and are often use
 :alt: Flowchart illustrating the two-stage registered report review process
 :width: 80%
 
-The registered report workflow: study design and methods are peer reviewed *before* data collection begins. [Center for Open Science]
+The registered report workflow: study design and methods are peer reviewed *before* data collection begins. Center for Open Science, CC BY 4.0.
 ```
 
 - Prepare manuscript with: Introduction, Proposed Methods & Analyses, and — if applicable — Pilot data with a power analysis (Power > 90%)
