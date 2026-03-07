@@ -4,7 +4,14 @@ So far, we've assembled the physical components of a computer — the *kitchen* 
 
 This is where **firmware** and **boot systems** come into play.
 
-## 🧬 **What Is BIOS (or UEFI)?**
+## **What Is BIOS (or UEFI)?**
+
+```{figure} img/build_2/bios_post.svg
+:alt: Illustration of a BIOS/UEFI boot screen showing system initialization
+:width: 70%
+
+BIOS/UEFI boot screen — the first software to run when a computer powers on.
+```
 
 The **BIOS** (Basic Input/Output System) is a small program stored on a chip on the motherboard. It runs **immediately when the computer is powered on** — before any operating system is loaded.
 
@@ -29,7 +36,7 @@ The BIOS only prepares the computer to load a **real operating system** (like Li
 
 We’ll install the OS in the next step — but first, let’s talk about early-stage **security**.
 
-### 🔐 **Security Already Starts Here: Disk Encryption**
+### **Security Already Starts Here: Disk Encryption**
 
 At the BIOS/UEFI level, we can:
 - Set a password to **prevent unauthorized access to the firmware settings**,
@@ -57,3 +64,19 @@ Why this matters:
   - Ensure laptops comply with institutional data protection policies.
 
 Understanding BIOS/UEFI is not about being a technician — it’s about knowing **where trust begins** in the system.
+
+:::{note}
+### Common disk encryption tools
+
+- **BitLocker** (Windows): Built-in disk encryption that is widely used in enterprise and institutional settings. Often centrally managed by IT departments.
+- **FileVault** (macOS): Apple’s built-in full-disk encryption, enabled easily in System Preferences.
+- **LUKS (Linux Unified Key Setup)**: The standard for disk encryption on Linux systems; often set up during OS installation.
+
+Most universities and research institutions **require** that laptops handling sensitive or personal data have full-disk encryption enabled. Check with your IT or data protection office to confirm your institution’s policy.
+:::
+
+:::{keypoints}
+- The BIOS/UEFI is the first software that runs when a computer powers on; it prepares hardware for the operating system.
+- Disk encryption protects data at rest — even if a device is lost or stolen, encrypted data cannot be read without the key.
+- Security begins before the OS loads; BIOS settings and encryption are foundational protections.
+:::

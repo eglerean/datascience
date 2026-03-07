@@ -18,38 +18,18 @@ Examples:
 - **Linux** (used widely in research environments and HPC),
 
 
-``````{discussion} Kitchen analogy
+:::{discussion} Kitchen analogy
 
-Just for fun: which operating systems do the following example kitchens represent?
-  `````{tabs}
-    ````{tab} 1
-      ```{figure} https://coderefinery.github.io/reproducible-research/_images/macos.png 
-      :alt: Generated image of a kitchen
-      :width: 50%
+If operating systems were kitchens, what would they look like?
 
-      [Midjourney, CC-BY-NC 4.0]
-      ```
-    ````
+| Operating System | Kitchen style |
+|---|---|
+| **macOS** | A sleek, minimalist kitchen with polished surfaces. Everything is beautifully designed and works seamlessly out of the box — but you can only use appliances approved by the kitchen manufacturer. Customization is limited but the user experience is smooth. |
+| **Windows** | A large, well-stocked kitchen familiar to most people. It supports almost every appliance ever made. Occasionally cluttered or slow, but there is always a setting somewhere to fix the problem. |
+| **Linux** | An open workshop kitchen — you have access to every tool, can rearrange everything, and build custom appliances from scratch. Incredibly powerful, but it helps to read the manual (or know someone who has). |
 
-    ````{tab} 2
-      ```{figure} https://coderefinery.github.io/reproducible-research/_images/windows.png
-      :alt: Generated image of a kitchen
-      :width: 50%
-
-      [Midjourney, CC-BY-NC 4.0]
-      ```
-    ````
-
-    ````{tab} 3
-      ```{figure} https://coderefinery.github.io/reproducible-research/_images/linux.png
-      :alt: Generated image of a kitchen
-      :width: 50%
-
-      [Midjourney, CC-BY-NC 4.0]
-      ```
-    ````
-  `````
-``````
+In research computing, **Linux** is the dominant operating system for servers, HPC clusters, and cloud VMs — precisely because it is customizable, efficient, and free. Most supercomputers worldwide run Linux.
+:::
 
 
 ## **How Programs Work With the OS**
@@ -168,4 +148,11 @@ Consider taking [the Shell Crash Course](https://scicomp.aalto.fi/scicomp/shell/
 Why this matters for your role:
 - Researchers will ask you **why they can’t install a tool** or **access a folder** — this often comes down to OS permissions.
 - In secure environments (e.g., working with personal data), understanding **user roles** and **access controls** is crucial for compliance.
-- If you support computational research, you'll often interact with **Linux-based systems** and need to understand how users and files are managed there.
+- If you support computational research, you’ll often interact with **Linux-based systems** and need to understand how users and files are managed there.
+
+:::{keypoints}
+- An operating system (OS) manages hardware, runs programs, controls user access, and provides interfaces.
+- Linux is the dominant OS in research computing, HPC, and cloud environments.
+- File permissions (read, write, execute) and user roles (admin vs. regular user) are core OS security mechanisms.
+- The command-line terminal is a powerful tool for automation, remote access, and reproducibility.
+:::

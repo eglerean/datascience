@@ -1,10 +1,9 @@
 # **Building a Supercomputer**
 
-:::{warning}
-This material is **work in progress**. 
+:::{note}
+This episode is designed for **non-technical audiences** — researchers, research support staff, data stewards, and anyone curious about computing infrastructure. You do not need a background in computer science to follow along.
 
-* Writing technical materials as a technical person falls into the fallacy of assuming the reader shares the same background knowledge, leading to explanations that skip essential context, use jargon without clarification, and unintentionally exclude non-expert audiences. **Please ask to expand and explain obscure concepts, jargon, unclear things**
-* It is difficult to find CC0 graphics to reuse so the materials right now are not too visual. Please suggest if you have any good source for graphics.
+Technical jargon is explained when introduced. If anything is still unclear, please ask — the goal is that every concept is accessible to a curious newcomer.
 :::
 
 In this episode, we try to build a supercomputer — starting from a single computer and scaling it up, step by step. Along the way, we’ll see why researchers use powerful computers and how the infrastructure behind research computing actually works.
@@ -131,7 +130,7 @@ Understanding what you need to solve your computing problems is not trivial. Som
 
 ### Key Takeaway for support teams
 
-Research software engineers along with data stewards can help researchers **decide where to run what** with the perspective of the copmuting needed and the data usage. This includes:
+Research software engineers along with data stewards can help researchers **decide where to run what** with the perspective of the computing needed and the data usage. This includes:
 - Estimating whether a task needs local or remote computing (e.g. for using larger storage or more secure storage),
 - Helping select platforms (e.g. supercomputer, cloud VM, remote workstation),
 - Explaining trade-offs (e.g. cost, speed, access, learning curve),

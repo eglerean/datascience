@@ -1,0 +1,117 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 550 400" width="550" height="400">
+  <title>HPC Supercomputer Cluster</title>
+  <desc>Illustration of a high-performance computing supercomputer cluster with multiple node racks</desc>
+  <rect width="550" height="400" fill="#dde"/>
+  <!-- Floor -->
+  <rect x="0" y="320" width="550" height="80" fill="#bbb"/>
+  <!-- Rack 1 -->
+  <rect x="20" y="60" width="90" height="260" fill="#3a3a4a" rx="4"/>
+  <rect x="28" y="68" width="74" height="244" fill="#2a2a3a" rx="2"/>
+  <!-- nodes in rack 1 -->
+  <rect x="32" y="72" width="66" height="8" fill="#1a4a6a" rx="1"/>
+  <circle cx="40" cy="76" r="2" fill="#00ff88"/>
+  <rect x="32" y="84" width="66" height="8" fill="#1a4a6a" rx="1"/>
+  <circle cx="40" cy="88" r="2" fill="#00ff88"/>
+  <rect x="32" y="96" width="66" height="8" fill="#1a4a6a" rx="1"/>
+  <circle cx="40" cy="100" r="2" fill="#00ff88"/>
+  <rect x="32" y="108" width="66" height="8" fill="#1a4a6a" rx="1"/>
+  <circle cx="40" cy="112" r="2" fill="#00ff88"/>
+  <rect x="32" y="120" width="66" height="8" fill="#1a4a6a" rx="1"/>
+  <circle cx="40" cy="124" r="2" fill="#00ff88"/>
+  <rect x="32" y="132" width="66" height="8" fill="#1a4a6a" rx="1"/>
+  <rect x="32" y="144" width="66" height="8" fill="#1a4a6a" rx="1"/>
+  <rect x="32" y="156" width="66" height="8" fill="#1a4a6a" rx="1"/>
+  <rect x="32" y="168" width="66" height="8" fill="#1a4a6a" rx="1"/>
+  <rect x="32" y="180" width="66" height="8" fill="#1a4a6a" rx="1"/>
+  <rect x="32" y="192" width="66" height="8" fill="#1a4a6a" rx="1"/>
+  <rect x="32" y="204" width="66" height="8" fill="#1a4a6a" rx="1"/>
+  <rect x="32" y="216" width="66" height="8" fill="#1a4a6a" rx="1"/>
+  <rect x="32" y="228" width="66" height="8" fill="#1a4a6a" rx="1"/>
+  <rect x="32" y="240" width="66" height="8" fill="#1a4a6a" rx="1"/>
+  <rect x="32" y="252" width="66" height="8" fill="#1a4a6a" rx="1"/>
+  <rect x="32" y="264" width="66" height="8" fill="#1a4a6a" rx="1"/>
+  <rect x="32" y="276" width="66" height="8" fill="#1a4a6a" rx="1"/>
+  <rect x="32" y="288" width="66" height="8" fill="#1a4a6a" rx="1"/>
+  <text x="65" y="318" text-anchor="middle" font-family="monospace" font-size="8" fill="#99a">Rack 1</text>
+  <!-- Rack 2 -->
+  <rect x="120" y="60" width="90" height="260" fill="#3a3a4a" rx="4"/>
+  <rect x="128" y="68" width="74" height="244" fill="#2a2a3a" rx="2"/>
+  <rect x="132" y="72" width="66" height="8" fill="#1a4a6a" rx="1"/>
+  <rect x="132" y="84" width="66" height="8" fill="#1a4a6a" rx="1"/>
+  <rect x="132" y="96" width="66" height="8" fill="#1a4a6a" rx="1"/>
+  <rect x="132" y="108" width="66" height="8" fill="#1a4a6a" rx="1"/>
+  <rect x="132" y="120" width="66" height="8" fill="#1a4a6a" rx="1"/>
+  <rect x="132" y="132" width="66" height="8" fill="#1a4a6a" rx="1"/>
+  <rect x="132" y="144" width="66" height="8" fill="#1a4a6a" rx="1"/>
+  <rect x="132" y="156" width="66" height="8" fill="#1a4a6a" rx="1"/>
+  <rect x="132" y="168" width="66" height="8" fill="#1a4a6a" rx="1"/>
+  <rect x="132" y="180" width="66" height="8" fill="#1a4a6a" rx="1"/>
+  <rect x="132" y="192" width="66" height="8" fill="#1a4a6a" rx="1"/>
+  <rect x="132" y="204" width="66" height="8" fill="#1a4a6a" rx="1"/>
+  <rect x="132" y="216" width="66" height="8" fill="#1a4a6a" rx="1"/>
+  <rect x="132" y="228" width="66" height="8" fill="#1a4a6a" rx="1"/>
+  <rect x="132" y="240" width="66" height="8" fill="#1a4a6a" rx="1"/>
+  <rect x="132" y="252" width="66" height="8" fill="#1a4a6a" rx="1"/>
+  <rect x="132" y="264" width="66" height="8" fill="#1a4a6a" rx="1"/>
+  <rect x="132" y="276" width="66" height="8" fill="#1a4a6a" rx="1"/>
+  <rect x="132" y="288" width="66" height="8" fill="#1a4a6a" rx="1"/>
+  <text x="165" y="318" text-anchor="middle" font-family="monospace" font-size="8" fill="#99a">Rack 2</text>
+  <!-- Rack 3 -->
+  <rect x="220" y="60" width="90" height="260" fill="#3a3a4a" rx="4"/>
+  <rect x="228" y="68" width="74" height="244" fill="#2a2a3a" rx="2"/>
+  <rect x="232" y="72" width="66" height="8" fill="#4a1a6a" rx="1"/>
+  <rect x="232" y="84" width="66" height="8" fill="#4a1a6a" rx="1"/>
+  <rect x="232" y="96" width="66" height="8" fill="#4a1a6a" rx="1"/>
+  <rect x="232" y="108" width="66" height="8" fill="#4a1a6a" rx="1"/>
+  <rect x="232" y="120" width="66" height="8" fill="#4a1a6a" rx="1"/>
+  <rect x="232" y="132" width="66" height="8" fill="#4a1a6a" rx="1"/>
+  <rect x="232" y="144" width="66" height="8" fill="#4a1a6a" rx="1"/>
+  <rect x="232" y="156" width="66" height="8" fill="#4a1a6a" rx="1"/>
+  <rect x="232" y="168" width="66" height="8" fill="#4a1a6a" rx="1"/>
+  <rect x="232" y="180" width="66" height="8" fill="#4a1a6a" rx="1"/>
+  <rect x="232" y="192" width="66" height="8" fill="#4a1a6a" rx="1"/>
+  <rect x="232" y="204" width="66" height="8" fill="#4a1a6a" rx="1"/>
+  <text x="265" y="318" text-anchor="middle" font-family="monospace" font-size="8" fill="#99a">GPU Rack</text>
+  <!-- Rack 4 -->
+  <rect x="320" y="60" width="90" height="260" fill="#3a3a4a" rx="4"/>
+  <rect x="328" y="68" width="74" height="244" fill="#2a2a3a" rx="2"/>
+  <rect x="332" y="72" width="66" height="8" fill="#1a4a6a" rx="1"/>
+  <rect x="332" y="84" width="66" height="8" fill="#1a4a6a" rx="1"/>
+  <rect x="332" y="96" width="66" height="8" fill="#1a4a6a" rx="1"/>
+  <rect x="332" y="108" width="66" height="8" fill="#1a4a6a" rx="1"/>
+  <rect x="332" y="120" width="66" height="8" fill="#1a4a6a" rx="1"/>
+  <rect x="332" y="132" width="66" height="8" fill="#1a4a6a" rx="1"/>
+  <rect x="332" y="144" width="66" height="8" fill="#1a4a6a" rx="1"/>
+  <rect x="332" y="156" width="66" height="8" fill="#1a4a6a" rx="1"/>
+  <rect x="332" y="168" width="66" height="8" fill="#1a4a6a" rx="1"/>
+  <rect x="332" y="180" width="66" height="8" fill="#1a4a6a" rx="1"/>
+  <rect x="332" y="192" width="66" height="8" fill="#1a4a6a" rx="1"/>
+  <rect x="332" y="204" width="66" height="8" fill="#1a4a6a" rx="1"/>
+  <rect x="332" y="216" width="66" height="8" fill="#1a4a6a" rx="1"/>
+  <rect x="332" y="228" width="66" height="8" fill="#1a4a6a" rx="1"/>
+  <rect x="332" y="240" width="66" height="8" fill="#1a4a6a" rx="1"/>
+  <rect x="332" y="252" width="66" height="8" fill="#1a4a6a" rx="1"/>
+  <rect x="332" y="264" width="66" height="8" fill="#1a4a6a" rx="1"/>
+  <rect x="332" y="276" width="66" height="8" fill="#1a4a6a" rx="1"/>
+  <rect x="332" y="288" width="66" height="8" fill="#1a4a6a" rx="1"/>
+  <text x="365" y="318" text-anchor="middle" font-family="monospace" font-size="8" fill="#99a">Rack 4</text>
+  <!-- Rack 5 (storage) -->
+  <rect x="420" y="60" width="110" height="260" fill="#4a3a2a" rx="4"/>
+  <rect x="428" y="68" width="94" height="244" fill="#3a2a1a" rx="2"/>
+  <rect x="432" y="72" width="86" height="20" fill="#2a1a0a" rx="1"/>
+  <rect x="432" y="96" width="86" height="20" fill="#2a1a0a" rx="1"/>
+  <rect x="432" y="120" width="86" height="20" fill="#2a1a0a" rx="1"/>
+  <rect x="432" y="144" width="86" height="20" fill="#2a1a0a" rx="1"/>
+  <rect x="432" y="168" width="86" height="20" fill="#2a1a0a" rx="1"/>
+  <rect x="432" y="192" width="86" height="20" fill="#2a1a0a" rx="1"/>
+  <rect x="432" y="216" width="86" height="20" fill="#2a1a0a" rx="1"/>
+  <rect x="432" y="240" width="86" height="20" fill="#2a1a0a" rx="1"/>
+  <rect x="432" y="264" width="86" height="20" fill="#2a1a0a" rx="1"/>
+  <rect x="432" y="288" width="86" height="20" fill="#2a1a0a" rx="1"/>
+  <text x="475" y="318" text-anchor="middle" font-family="monospace" font-size="8" fill="#a98">Storage</text>
+  <!-- Interconnect cables at top -->
+  <line x1="65" y1="60" x2="475" y2="60" stroke="#4af" stroke-width="3"/>
+  <text x="270" y="45" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#446" font-style="italic">High-Speed Interconnect (InfiniBand)</text>
+  <text x="275" y="350" text-anchor="middle" font-family="Arial,sans-serif" font-size="14" font-weight="bold" fill="#334">HPC Cluster / Supercomputer</text>
+  <text x="275" y="368" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#556">~2,048 CPU cores | 32 GPUs | 128TB Storage</text>
+</svg>

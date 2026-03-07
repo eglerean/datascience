@@ -1,9 +1,19 @@
 # Tidy data and dealing with messy data
 
 ```{objectives}
-- Knowing about the tidy data format
-- Be able to reformat tabular data into the tidy data format
+- Understand what the tidy data format is and why it matters
+- Recognize the difference between tidy and non-tidy data structures
+- Know how to reformat tabular data into the tidy data format
+- Choose appropriate file formats for different types of research data
 ```
+
+**Tidy data** is a way of organizing tabular data that makes it easier to analyze, visualize, and share. The concept was formalized by statistician Hadley Wickham in 2014, and it has since become a foundational principle in data science.
+
+The core idea is simple: **each variable gets its own column, each observation gets its own row**. When data is organized this way, tools can process it consistently — without needing custom code for every different arrangement.
+
+:::{note}
+This section focuses on how data is **structured**, not what file format it is saved in. Tidy data principles apply regardless of whether your data is in a CSV, Excel spreadsheet, or database table. We cover file formats separately later in this section.
+:::
 
 ```{figure} img/tidy-data/spreadsheet.png
 :alt: An example spreadsheet not in tidy data format
@@ -243,4 +253,33 @@ We have been given a dataset so that for a given book we know how many copies we
 
 ::::
 
+:::
+
+## Why tidy data matters for research
+
+Tidy data is not just a technical preference — it has practical consequences for the entire research lifecycle:
+
+**Interoperability**: Tools in Python (pandas), R (tidyverse), and most statistical software expect data in a consistent, tidy format. Non-tidy data requires custom preprocessing before any standard tool can use it.
+
+**Reproducibility**: When data is consistently structured, analysis scripts are simpler and less likely to contain format-specific hacks. Another researcher can pick up your code and understand what the data represents.
+
+**Extensibility**: Adding a new species to the Svalbard dataset? In the tidy format, you just add more rows — no need to add columns or modify the analysis code. This is a major practical advantage for ongoing data collection.
+
+**Visualization**: Most visualization libraries (ggplot2, seaborn, Altair) are designed to work naturally with tidy data. Non-tidy data requires significant reshaping before plotting.
+
+:::{note}
+### Tidy data vs. presentation tables
+
+Tidy data is ideal for **storage and analysis**, but not always ideal for **reading and presentation**. For example, a wide-format table is often easier for humans to read at a glance:
+
+| Species | Site A | Site B | Site C |
+|---|---|---|---|
+| Arctic fox | 3 | 1 | 0 |
+| Walrus | 0 | 1 | 1 |
+
+This is fine for a publication table — but for analysis, you would convert it to tidy format first. The conversion is straightforward using tools like `pandas.melt()` in Python or `pivot_longer()` in R.
+:::
+
+:::{discussion}
+Think of a dataset you work with or are familiar with. Is it in tidy format? If not, what would need to change to make it tidy? Would making it tidy make it easier or harder to work with?
 :::

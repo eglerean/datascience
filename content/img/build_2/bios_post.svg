@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 350" width="500" height="350">
+  <title>BIOS POST Screen</title>
+  <desc>Illustration of a UEFI BIOS Power-On Self-Test (POST) screen</desc>
+  <!-- Monitor bezel -->
+  <rect width="500" height="350" fill="#222" rx="12"/>
+  <!-- Screen -->
+  <rect x="30" y="25" width="440" height="280" fill="#001a00"/>
+  <!-- BIOS POST text content -->
+  <text x="45" y="55" font-family="monospace" font-size="13" fill="#00cc00">UEFI BIOS - Version 3.2.1</text>
+  <text x="45" y="72" font-family="monospace" font-size="11" fill="#00aa00">Copyright (C) 2024 Motherboard Manufacturer</text>
+  <line x1="45" y1="80" x2="455" y2="80" stroke="#005500" stroke-width="1"/>
+  <text x="45" y="98" font-family="monospace" font-size="11" fill="#00cc00">CPU: AMD Ryzen 9 7950X @ 4.5GHz</text>
+  <text x="45" y="114" font-family="monospace" font-size="11" fill="#00cc00">Memory: 64GB DDR5-6000 (4 x 16GB)</text>
+  <text x="45" y="130" font-family="monospace" font-size="11" fill="#00cc00">Checking memory...  </text>
+  <text x="265" y="130" font-family="monospace" font-size="11" fill="#00ff00">OK</text>
+  <text x="45" y="146" font-family="monospace" font-size="11" fill="#00cc00">Initializing storage controllers...</text>
+  <text x="370" y="146" font-family="monospace" font-size="11" fill="#00ff00">OK</text>
+  <text x="45" y="162" font-family="monospace" font-size="11" fill="#00cc00">NVMe SSD: 2TB Samsung 990 Pro</text>
+  <text x="45" y="178" font-family="monospace" font-size="11" fill="#00cc00">USB devices detected: 3</text>
+  <text x="45" y="194" font-family="monospace" font-size="11" fill="#00cc00">Network: Intel 2.5G LAN</text>
+  <line x1="45" y1="205" x2="455" y2="205" stroke="#005500" stroke-width="1"/>
+  <text x="45" y="222" font-family="monospace" font-size="11" fill="#00cc00">Boot Priority:</text>
+  <text x="45" y="238" font-family="monospace" font-size="11" fill="#00aa00">  1. NVMe SSD</text>
+  <text x="45" y="254" font-family="monospace" font-size="11" fill="#00aa00">  2. USB</text>
+  <text x="45" y="270" font-family="monospace" font-size="11" fill="#00aa00">  3. Network (PXE)</text>
+  <text x="45" y="290" font-family="monospace" font-size="11" fill="#ffff00">Press DEL to enter Setup | F12 for Boot Menu</text>
+  <!-- Monitor stand -->
+  <rect x="220" y="305" width="60" height="15" fill="#333" rx="2"/>
+  <rect x="190" y="318" width="120" height="10" fill="#444" rx="3"/>
+</svg>

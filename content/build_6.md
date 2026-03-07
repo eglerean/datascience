@@ -6,6 +6,13 @@ In these cases, we don’t just expand storage — we expand **computation** by 
 
 ## **Using Remote Computers**
 
+```{figure} img/build_6/servers.svg
+:alt: Illustration of remote servers in a data center used for cloud computing
+:width: 70%
+
+Remote servers in a data center — the infrastructure behind cloud computing and remote research environments.
+```
+
 Remote computing means using another machine, typically more powerful than yours, to:
 - Run programs,
 - Store data,
@@ -129,3 +136,10 @@ As a support person, you’ll often help researchers:
 - Comply with **data security and legal requirements** when using external computing power.
 
 You don’t need to be a system administrator — but you *do* need to know what’s possible, what’s allowed, and what questions to ask.
+
+:::{keypoints}
+- Remote computing means running programs on another machine, accessed over the network — your local computer is just the control interface.
+- APIs let your computer send work to a remote service and receive results — the computation happens elsewhere.
+- Cloud VMs offer flexible, on-demand computing; research-focused platforms (CSC, SURF) often have better data protection agreements than commercial cloud.
+- Strong authentication (SSH keys, 2FA) and institutional policies govern who can access remote systems and what data can be processed there.
+:::

@@ -7,12 +7,28 @@ A modern computer is a collection of hardware pieces that work together to proce
 
 ## **Essential Hardware Components**
 
-### **CPU (Central Processing Unit)**  
+### **CPU (Central Processing Unit)**
+
+```{figure} img/build_1/cpu_chip.svg
+:alt: Schematic illustration of a CPU chip showing the integrated circuit layout
+:width: 50%
+
+CPU (Central Processing Unit) — the sequential logic processor at the heart of every computer.
+```
+
 - Often called the *brain* of the computer.
 - Executes instructions from programs, one after another or across multiple cores.
 - Controls the flow of operations — calculations, logic, and decision-making.
 
-### **GPU (Graphics Processing Unit)**  
+### **GPU (Graphics Processing Unit)**
+
+```{figure} img/build_1/gpu_card.svg
+:alt: Schematic illustration of a GPU graphics card
+:width: 50%
+
+GPU (Graphics Processing Unit) — highly parallel processor used for AI, imaging, and scientific simulations.
+```
+
 - Originally for graphics, now essential for **parallel computing**.
 - Contains many cores optimized for similar repetitive tasks — such as training AI models or processing thousands of images.
 - Useful in research tasks that involve **matrix operations** or **large-scale data parallelism**.
@@ -24,7 +40,15 @@ A short video that intuitively explains the difference between CPUs and GPUs
 <iframe width="560" height="315" src="https://www.youtube.com/embed/-P28LKWTzrI?si=szqQGAK0porJIF6i" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 :::
 
-### **RAM (Random Access Memory)**  
+### **RAM (Random Access Memory)**
+
+```{figure} img/build_1/ram_sticks.svg
+:alt: Illustration of RAM memory sticks
+:width: 50%
+
+RAM (Random Access Memory) — fast temporary memory that holds actively running programs and data.
+```
+
 - Temporary, fast memory used while your programs are running.
 - Holds **active data** and **code in use**.
 - Not the same as storage! RAM is cleared when the computer is turned off.
@@ -106,7 +130,15 @@ When using cloud storage or remote servers, a **slow connection can become a bot
 ### **Power Supply Unit (PSU)**  
 - Converts electricity from the wall into usable power for your components.
 
-### **Motherboard**  
+### **Motherboard**
+
+```{figure} img/build_1/motherboard.svg
+:alt: Schematic illustration of a computer motherboard showing component slots
+:width: 60%
+
+Motherboard — the main circuit board connecting all components.
+```
+
 - The main circuit board where all components plug in.
 - Handles communication between the CPU, RAM, storage, and peripherals.
 
@@ -144,3 +176,33 @@ Understanding these components helps you:
 - Read tech specs with confidence,
 - Talk with IT teams or vendors,
 - Support researchers with realistic expectations about performance.
+
+:::{note}
+### How to read hardware specifications
+
+When a researcher asks for help evaluating a computer or server, you will encounter specifications like:
+
+```
+Intel Core i9-13900K, 32 cores, 3.0 GHz base / 5.8 GHz boost
+64 GB DDR5 RAM
+2 TB NVMe SSD + 8 TB HDD
+NVIDIA RTX 4090 (24 GB VRAM)
+10 GbE network interface
+```
+
+What does this mean?
+- **32 cores**: The CPU can handle 32 tasks simultaneously (good for parallel workloads).
+- **64 GB RAM**: Data processed in active memory — affects how large a dataset can be loaded at once.
+- **NVMe SSD**: Very fast local storage (ideal for active computation); the HDD provides slower bulk storage.
+- **24 GB VRAM**: GPU memory — important for machine learning models; larger models require more VRAM.
+- **10 GbE**: 10 Gigabit Ethernet — fast network connection for data transfer to/from remote storage.
+
+You do not need to memorize these — but knowing what each component does helps you have productive conversations with IT teams and researchers.
+:::
+
+:::{keypoints}
+- A computer is made of specialized components: CPU (logic), GPU (parallel tasks), RAM (active memory), storage (long-term files), NIC (networking), and motherboard (connection hub).
+- CPUs excel at sequential tasks; GPUs excel at parallel tasks like image processing and AI model training.
+- RAM is temporary — it is cleared when the computer is off. Storage is permanent.
+- Network speed (NIC) affects how fast data can be transferred to and from remote systems.
+:::

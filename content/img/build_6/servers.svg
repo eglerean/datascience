@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 350" width="500" height="350">
+  <title>Cloud Computing Servers</title>
+  <desc>Illustration of cloud computing infrastructure with data centers and network</desc>
+  <rect width="500" height="350" fill="#e8f4ff"/>
+  <!-- Cloud shape -->
+  <ellipse cx="250" cy="80" rx="140" ry="55" fill="white" stroke="#aaccff" stroke-width="2"/>
+  <ellipse cx="170" cy="95" rx="70" ry="45" fill="white" stroke="#aaccff" stroke-width="2"/>
+  <ellipse cx="330" cy="95" rx="70" ry="45" fill="white" stroke="#aaccff" stroke-width="2"/>
+  <!-- Cloud text -->
+  <text x="250" y="75" text-anchor="middle" font-family="Arial,sans-serif" font-size="16" font-weight="bold" fill="#2266cc">☁ Cloud</text>
+  <text x="250" y="95" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" fill="#4488aa">Computing</text>
+  <!-- Network lines from cloud to servers -->
+  <line x1="150" y1="135" x2="80" y2="185" stroke="#6699cc" stroke-width="2" stroke-dasharray="6,3"/>
+  <line x1="250" y1="135" x2="250" y2="185" stroke="#6699cc" stroke-width="2" stroke-dasharray="6,3"/>
+  <line x1="350" y1="135" x2="420" y2="185" stroke="#6699cc" stroke-width="2" stroke-dasharray="6,3"/>
+  <!-- Server 1 (left) -->
+  <rect x="30" y="185" width="100" height="80" fill="#2a4a6a" rx="4"/>
+  <rect x="38" y="193" width="84" height="15" fill="#1a3a5a" rx="1"/>
+  <circle cx="45" cy="200" r="3" fill="#00ff88"/>
+  <rect x="38" y="213" width="84" height="12" fill="#1a3a5a" rx="1"/>
+  <circle cx="45" cy="219" r="3" fill="#00ff88"/>
+  <rect x="38" y="230" width="84" height="12" fill="#1a3a5a" rx="1"/>
+  <circle cx="45" cy="236" r="3" fill="#ffaa00"/>
+  <text x="80" y="280" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#446688">Region: US-East</text>
+  <!-- Server 2 (center) -->
+  <rect x="200" y="185" width="100" height="80" fill="#2a4a6a" rx="4"/>
+  <rect x="208" y="193" width="84" height="15" fill="#1a3a5a" rx="1"/>
+  <circle cx="215" cy="200" r="3" fill="#00ff88"/>
+  <rect x="208" y="213" width="84" height="12" fill="#1a3a5a" rx="1"/>
+  <circle cx="215" cy="219" r="3" fill="#00ff88"/>
+  <rect x="208" y="230" width="84" height="12" fill="#1a3a5a" rx="1"/>
+  <circle cx="215" cy="236" r="3" fill="#00ff88"/>
+  <text x="250" y="280" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#446688">Region: EU-West</text>
+  <!-- Server 3 (right) -->
+  <rect x="370" y="185" width="100" height="80" fill="#2a4a6a" rx="4"/>
+  <rect x="378" y="193" width="84" height="15" fill="#1a3a5a" rx="1"/>
+  <circle cx="385" cy="200" r="3" fill="#00ff88"/>
+  <rect x="378" y="213" width="84" height="12" fill="#1a3a5a" rx="1"/>
+  <circle cx="385" cy="219" r="3" fill="#00ff88"/>
+  <rect x="378" y="230" width="84" height="12" fill="#1a3a5a" rx="1"/>
+  <circle cx="385" cy="236" r="3" fill="#00ff88"/>
+  <text x="420" y="280" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#446688">Region: AP-East</text>
+  <!-- Laptop/user device at bottom -->
+  <rect x="200" y="305" width="100" height="30" fill="#555" rx="3"/>
+  <rect x="190" y="335" width="120" height="5" fill="#666" rx="2"/>
+  <line x1="250" y1="305" x2="250" y2="265" stroke="#6699cc" stroke-width="2" stroke-dasharray="6,3"/>
+  <text x="250" y="330" text-anchor="middle" font-family="monospace" font-size="9" fill="#aaa">Your Computer</text>
+</svg>

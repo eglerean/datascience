@@ -6,6 +6,13 @@ A **supercomputer** isn’t one big machine — it’s a **network of many small
 
 ## **What Is a Supercomputer Made Of?**
 
+```{figure} img/build_7/supercomputer.svg
+:alt: Illustration of a supercomputer cluster showing multiple compute node racks interconnected by high-speed networks
+:width: 80%
+
+A supercomputer cluster: many compute nodes connected by high-speed networks (InfiniBand), coordinated by a job scheduler.
+```
+
 A typical supercomputer consists of:
 
 - **Compute nodes**: Each node is like a standalone computer with CPUs, RAM, and sometimes GPUs.
@@ -81,3 +88,22 @@ Your role could involve:
 - Navigating the **research governance** around using shared infrastructure.
 
 Supercomputers are powerful — but without good planning and support, they can be hard to use well.
+
+:::{note}
+### Well-known supercomputers in European research
+
+- **CSC Mahti and Puhti** (Finland): National HPC resources operated by CSC — IT Center for Science, available to Finnish researchers and collaborators.
+- **SURF Snellius** (Netherlands): The Dutch national supercomputer, supporting academic research across many disciplines.
+- **LUMI** (Finland/EU): One of the world's most powerful supercomputers, operated by CSC on behalf of a consortium of European countries. Specifically designed for AI and data-intensive research. Uses energy from hydropower.
+- **MareNostrum** (Spain): Operated by BSC (Barcelona Supercomputing Center), one of the largest in Southern Europe.
+- **Leonardo** (Italy): Operated by CINECA, one of the top systems in Europe for AI and climate science.
+
+Access to these systems is typically granted through national allocation calls or European research infrastructure programs like EuroHPC.
+:::
+
+:::{keypoints}
+- A supercomputer is a network of many computers (nodes) that work together, coordinated by job schedulers (like Slurm).
+- High-speed interconnects (like InfiniBand) allow nodes to communicate efficiently — essential for parallel computing.
+- Supercomputers are shared national or regional infrastructure; access requires an application or quota.
+- Not all problems benefit from parallelization — the code must be written to take advantage of multiple processors.
+:::

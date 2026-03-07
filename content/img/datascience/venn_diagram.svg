@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 400" width="500" height="400">
+  <title>Data Science Venn Diagram</title>
+  <desc>Venn diagram showing Data Science as the intersection of Statistics, Computer Science, and Domain Expertise</desc>
+  <!-- Background -->
+  <rect width="500" height="400" fill="#f8f9fa"/>
+  <!-- Three overlapping circles -->
+  <circle cx="200" cy="160" r="130" fill="#4e9af1" fill-opacity="0.4" stroke="#2171c7" stroke-width="2"/>
+  <circle cx="300" cy="160" r="130" fill="#f15a4e" fill-opacity="0.4" stroke="#c72d21" stroke-width="2"/>
+  <circle cx="250" cy="255" r="130" fill="#4ef1a0" fill-opacity="0.4" stroke="#21c770" stroke-width="2"/>
+  <!-- Labels -->
+  <text x="155" y="100" text-anchor="middle" font-family="Arial,sans-serif" font-size="15" font-weight="bold" fill="#1a1a2e">Statistics</text>
+  <text x="345" y="100" text-anchor="middle" font-family="Arial,sans-serif" font-size="15" font-weight="bold" fill="#1a1a2e">Computer</text>
+  <text x="345" y="118" text-anchor="middle" font-family="Arial,sans-serif" font-size="15" font-weight="bold" fill="#1a1a2e">Science</text>
+  <text x="250" y="360" text-anchor="middle" font-family="Arial,sans-serif" font-size="15" font-weight="bold" fill="#1a1a2e">Domain Expertise</text>
+  <!-- Center label -->
+  <text x="250" y="200" text-anchor="middle" font-family="Arial,sans-serif" font-size="14" font-weight="bold" fill="#1a1a2e">Data</text>
+  <text x="250" y="218" text-anchor="middle" font-family="Arial,sans-serif" font-size="14" font-weight="bold" fill="#1a1a2e">Science</text>
+  <!-- Intersection labels -->
+  <text x="190" y="230" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" fill="#333">Machine</text>
+  <text x="190" y="244" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" fill="#333">Learning</text>
+  <text x="312" y="230" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" fill="#333">Research</text>
+</svg>

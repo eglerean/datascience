@@ -19,6 +19,13 @@ Many datasets in research **exceed local capacity**:
 
 ## **What Is Remote Storage?**
 
+```{figure} img/build_5/server_rack.svg
+:alt: Illustration of a server rack providing network-attached storage
+:width: 60%
+
+A server rack providing network-attached storage (NAS) for research data.
+```
+
 Remote storage refers to **data stored on another machine** that your computer can access over a network. This includes:
 - **Network drives** (e.g., NFS, SMB),
 - **Institutional data services** (e.g., CSC Allas object storage),
@@ -100,3 +107,10 @@ Support teams are often responsible for:
 - Ensuring compliance with policies and data management plans (DMPs).
 
 Understanding remote storage — both **practically** and **strategically** — is key to supporting researchers.
+
+:::{keypoints}
+- Local storage is fast but limited; remote storage is larger and shareable but slower due to network speed.
+- I/O speed (how fast data can be read/written) is often a hidden bottleneck in data-intensive research.
+- Sensitive data (personal, confidential) must be stored in secure, approved environments — not personal laptops or generic public cloud services.
+- Organizations classify data by sensitivity level (Public, Internal, Confidential, Secret); understanding these classifications is essential for support staff.
+:::

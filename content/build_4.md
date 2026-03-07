@@ -84,3 +84,24 @@ Why this matters for your support role:
   - When to escalate to IT or request a license.
 
 You can help by maintaining a list of pre-approved tools, recommended packages, or links to shared containers.
+
+:::{note}
+### Why reproducible software environments matter
+
+When a researcher publishes a paper, anyone trying to reproduce the results needs to use **the same software versions** — not just the same code. Dependencies change over time, and a script that worked in 2022 may fail in 2025 if libraries have been updated or removed.
+
+**Best practices for reproducible environments:**
+- Record all installed packages and their versions (e.g., in a `requirements.txt` for Python or `renv.lock` for R).
+- Use **conda environments** or **virtualenv** to isolate project dependencies from the system.
+- Use **containers** (Docker, Singularity) to capture the complete computing environment.
+- Publish the environment configuration alongside your code and data.
+
+This is especially important for long-term projects and for research that others will build upon.
+:::
+
+:::{keypoints}
+- Software must be installed before it can be used — this involves dependencies, configuration, and permissions.
+- Package managers (apt, conda, pip, brew) simplify installation but behave differently on different systems.
+- On shared or HPC systems, regular users typically cannot install system-wide software — use conda or containers instead.
+- Containers (Docker, Singularity) package software and its dependencies into a portable, reproducible environment.
+:::
