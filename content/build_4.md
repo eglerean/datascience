@@ -18,6 +18,13 @@ Examples:
 
 ## **Package Managers and Installers**
 
+```{figure} https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Pms.svg/474px-Pms.svg.png
+:alt: Diagram showing a package manager retrieving software packages from a repository and installing them
+:width: 60%
+
+How a package manager works: like a kitchen supply catalog, it fetches the right tools from a trusted repository and installs them for you. Wikimedia Commons, CC-BY-SA.
+```
+
 Operating systems often come with tools to simplify installation:
 
 - **Linux**:

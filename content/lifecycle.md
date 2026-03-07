@@ -522,6 +522,13 @@ These steps are closely aligned with the **FAIR principles** — a set of guidin
 
 ### FAIR Data Principles
 
+```{figure} https://upload.wikimedia.org/wikipedia/commons/a/aa/FAIR_data_principles.svg
+:alt: Diagram of the four FAIR data principles: Findable, Accessible, Interoperable, Reusable
+:width: 70%
+
+The FAIR data principles. Wikimedia Commons, CC-BY-SA 4.0.
+```
+
 The FAIR principles were published in 2016 ([Wilkinson et al., Scientific Data](https://www.nature.com/articles/sdata201618)) and define what it means for data to be well-managed and reusable:
 
 **Findable**

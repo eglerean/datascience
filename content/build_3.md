@@ -31,6 +31,13 @@ If operating systems were kitchens, what would they look like?
 In research computing, **Linux** is the dominant operating system for servers, HPC clusters, and cloud VMs — precisely because it is customizable, efficient, and free. Most supercomputers worldwide run Linux.
 :::
 
+```{figure} https://upload.wikimedia.org/wikipedia/commons/3/35/Tux.svg
+:alt: Tux, the Linux mascot — a cartoon penguin
+:width: 25%
+
+Tux, the mascot of Linux. Larry Ewing and Simon Budig, freely redistributable.
+```
+
 
 ## **How Programs Work With the OS**
 
