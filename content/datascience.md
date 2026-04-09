@@ -3,6 +3,7 @@
 ```{objectives}
 - Understanding what is meant with data science in relationship to other types of research paradigms
 - Distinguishing between exploratory and confirmatory research
+- Recognizing data science as a complement to traditional scientific inquiry
 ```
 
 ## What is data science?
@@ -11,18 +12,28 @@ Data science is an interdisciplinary field that focuses on extracting knowledge 
 
 Data science is a term also used outside academia to describe those professional roles where data exploration is fundamental to gain insights about products or other metrics that a company is producing. In research, data science -- also called *data-driven research* -- provides a computational complement to traditional scientific inquiry. It allows researchers to work with much larger and more complex datasets than ever before.
 
-![The data science lifecycle - (c) sudeep.co](https://analyticstraininghub.com/wp-content/uploads/2022/10/data-science.png)
+![The data science lifecycle - (c) sudeep.co](img/data-science.png)
 
 
 ## What is the scientific method?
 
-The scientific method is the process through which science advances, building on prior knowledge and unifying understanding over time. It played a key role in the Scientific Revolution. The method involves forming hypotheses, making predictions, and testing them through experiments. While often shown as a fixed sequence, it's better seen as a set of general principles that vary in order and application across different inquiries.
+The scientific method is the process through which science advances, building on prior knowledge and unifying understanding over time. It played a key role in the Scientific Revolution. The method involves forming hypotheses, making predictions, and testing them through experiments. While often shown as a fixed sequence, it's better understood as a set of general principles that vary in order and application across different inquiries.
 
-![The scientific method - Wikimedia](https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/The_Scientific_Method_as_an_Ongoing_Process.svg/1456px-The_Scientific_Method_as_an_Ongoing_Process.svg.png?20161231121344)
+```{figure} img/The_Scientific_Method_as_an_Ongoing_Process.svg
+:alt: The scientific method shown as an ongoing cyclic process
+:width: 100%
+
+The scientific method as an ongoing process. [Wikimedia Commons, CC-BY-SA 4.0]
+```
 
 
 :::{discussion}
 What are the similarities and the differences between data science and the scientific method?
+
+Consider:
+- In which step does data science "enter" the traditional scientific method?
+- Can data science generate hypotheses, or does it only test them?
+- What does reproducibility mean in each framework? 
 :::
 
 ## Confirmatory (hypothesis driven) versus exploratory (data driven) research
@@ -34,19 +45,22 @@ What are the similarities and the differences between data science and the scien
 | **Methods** | Visualizations, clustering, dimension reduction, etc. | Statistical tests, regression models, experiments | 
 | **Common Tools** | EDA (Exploratory Data Analysis), unsupervised ML | Inferential statistics, causal inference methods | 
 | **Typical Output** | Insights, patterns, questions | Confirmed or rejected hypotheses |
+| **Risk of Bias** | Higher (patterns can emerge by chance) | Lower if pre-registered, higher if hypotheses changed after data collection |
 
-
+:::{note}
+Neither approach is "better" — they serve different purposes and are often used together in the same research project. Exploratory work can spark ideas that are later tested with confirmatory methods.
+:::
 
 
 :::{note} 
 ### Have you heard about registered reports?
 
-> *"Which part of	a research	study do you believe should	be beyond your control as a scientist? **The result**.*
-> *Which part of	a research study do	you	believe	is most	important	for	advancing	your	career?	**The	results**"* ([Chris Chambers, slides](https://osf.io/gs6tp/download))
+> *"Which part of a research study do you believe should be beyond your control as a scientist? **The result**.*
+> *Which part of a research study do you believe is most important for advancing your career? **The results**"* ([Chris Chambers, slides](https://osf.io/gs6tp/download))
 
 ### Registered reports in a nutshell
 ([source](https://www.cos.io/initiatives/registered-reports))
-![Registered reports process](https://cdn.cos.io/media/images/registered_reports.width-800.png)
+![Registered reports process](img/registered_reports.width-800.png)
 - Prepare manuscript with: Introduction, Proposed	Methods	& Analyses,	and	- if applicable - Pilot data with a power analysis (Power > 90%)
 - Stage 1 peer review
 - **In principle acceptance** after Stage 1 peer review
@@ -54,7 +68,7 @@ What are the similarities and the differences between data science and the scien
 - Write the report (basically same Introduction and Methods, Results and Discussion are new; data and code are deposited and made accessible)
 - Stage 2 peer review to confirm
 - Done!
-- Bonus step: include non-planned analyses (exploratory analyses) 
+- Bonus step: include non-planned analyses (exploratory analyses, clearly labelled as such) 
 
 *For history about Registered reports please see [Chambers & Tzavella, Nature 2021](https://www.nature.com/articles/s41562-021-01193-7).*
 
@@ -80,6 +94,10 @@ We will often use cooking related metaphors.
 
 **Qualitative, Data-Driven**
 > _Foraging and inventing a dish_: You explore the landscape (interviews, observations), gather rich ingredients (quotes, themes), and create a new dish (theory) based on what you find. 
+:::
 
-
+:::{keypoints}
+- Data science is an interdisciplinary field combining statistics, computing, and domain knowledge.
+- Exploratory research generates hypotheses; confirmatory research tests them. Both are valuable.
+- Registered reports reduce publication bias by separating study design from results.
 :::
