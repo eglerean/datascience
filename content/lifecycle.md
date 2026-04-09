@@ -1,8 +1,16 @@
 # Data science on the data life-cycle
 
--   The data lifecycle considers 7 steps in relationship to data.
--   Each step however could be accompanied with choices of the methods and tools used along with the data
--   Can we expand the considerations that we are familiar with from data management to methods and tools?
+```{objectives}
+- Understand the seven stages of the research data lifecycle
+- Recognize how computational methods and tools apply at each lifecycle stage
+- Identify key practices for preserving and sharing data responsibly
+```
+
+The data lifecycle is a framework for thinking about data throughout the entire span of a research project — not just during analysis. Each stage shapes the quality, usability, and longevity of the research output:
+
+- The data lifecycle considers 7 steps in relationship to data.
+- Each step however could be accompanied with choices of the methods and tools used along with the data
+- Can we expand the considerations that we are familiar with from data management to methods and tools?
 
 ## The Research Data Lifecycle
 
@@ -34,13 +42,19 @@ Example: - Neuroscience: Prepare all documents for ethical review and personal d
 
 ````{discussion} 
 
-The cooking analogy for working with data and software 
+The cooking analogy for working with data and software
 
-* Software \<-\> recipe
-* Data \<-\> ingredients
-* Libraries \<-\> pots/tools
-* Operating system \<-\> style of kitchen we are working with
-* Hardware \<-\> the actual kitchen with the stove, fridge, cupboards
+Research computing follows the same logic as cooking. Once you learn the analogy, it becomes much easier to explain technical concepts to non-experts:
+
+| Research computing | Cooking equivalent |
+|---|---|
+| **Software / code** | The recipe — a step-by-step set of instructions |
+| **Data** | The ingredients — the raw material being transformed |
+| **Libraries / packages** | Kitchen tools: pots, pans, a blender — reusable tools others have made |
+| **Operating system** | The style of kitchen — the environment where everything takes place |
+| **Hardware** | The kitchen itself — the physical space with stove, fridge, and cupboards |
+
+Just as a recipe written in an unfamiliar language is hard to follow even with the right ingredients, **code without documentation is hard to reproduce** — even with the same data. And just as chefs build on techniques from cookbooks (libraries), researchers build on code and methods from others.
 
 
 ```{figure} https://coderefinery.github.io/reproducible-research/_images/recipe.png 
@@ -85,6 +99,33 @@ Typical activities in the planning phase include:
 ![Workflow of data collection and analysis for "Bodily Maps of Emotion (2014)"](https://www.pnas.org/cms/10.1073/pnas.1321664111/asset/dcc3da97-2288-4f1c-a175-cad39b111aab/assets/graphic/pnas.1321664111fig01.jpeg)
 
 From [*Nummenmaa, L., Glerean, E., Hari, R., & Hietanen, J. K. (2014). Bodily maps of emotions. Proceedings of the National Academy of Sciences, 111(2), 646-651.*](https://www.pnas.org/doi/abs/10.1073/pnas.1321664111)
+:::
+
+### Data Management Plans (DMPs)
+
+A **Data Management Plan (DMP)** is a formal document that describes how data will be collected, organized, stored, protected, and shared throughout — and after — a research project. Writing a DMP is increasingly required by research funders (such as the European Research Council, Academy of Finland, NIH, and Horizon Europe) before funding is granted.
+
+A typical DMP answers these questions:
+
+- **What data will be collected or produced?** (Types, volumes, formats)
+- **How will it be organized and documented?** (File naming conventions, metadata standards)
+- **Where will it be stored during the project?** (Local server, institutional cloud, HPC)
+- **How will data be backed up and protected?** (Encryption, access controls, security classification)
+- **Who will have access to the data during and after the project?**
+- **What will happen to the data after the project ends?** (Archive, delete, publish)
+- **Will data be shared openly?** (Which repository, which license, when)
+- **Are there legal or ethical constraints?** (Personal data, sensitive data, third-party licensing)
+
+:::{note}
+### Why funders require DMPs
+
+Research funders invest public money in science and expect that the outputs — data, code, and findings — are **preserved and accessible** so society gets long-term value from that investment. DMPs also encourage researchers to plan ahead, reducing the risk of data loss or compliance issues at the end of a project.
+
+Many universities offer DMP templates and guidance. Tools like [DMP Online](https://dmponline.dcc.ac.uk/) and [Argos](https://argos.openaire.eu/) help researchers write compliant plans.
+:::
+
+:::{discussion}
+Think of a research project you know (yours or someone else's). What types of data does it produce? Who should be able to access that data — during the project, and 10 years from now? What are the main risks if the data is lost or not documented properly?
 :::
 
 ## Collecting data
