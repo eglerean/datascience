@@ -12,8 +12,12 @@ Data science is an interdisciplinary field that focuses on extracting knowledge 
 
 Data science is a term also used outside academia to describe those professional roles where data exploration is fundamental to gain insights about products or other metrics that a company is producing. In research, data science -- also called *data-driven research* -- provides a computational complement to traditional scientific inquiry. It allows researchers to work with much larger and more complex datasets than ever before.
 
-![The data science lifecycle - (c) sudeep.co](img/data-science.png)
+```{figure} img/data-science.png
+:alt: The data science lifecycle - (c) sudeep.co
+:width: 90%
 
+A visualisation of the data science lifecycle in the context of a business.
+```
 
 ## What is the scientific method?
 
