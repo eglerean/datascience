@@ -21,7 +21,7 @@ A modern computer is a collection of hardware pieces that work together to proce
 ### What is the difference between CPU and GPU?
 A short video that intuitively explains the difference between CPUs and GPUs
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/-P28LKWTzrI?si=szqQGAK0porJIF6i" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ZrJeYFxpUyQ?si=e_lTjd_8JKJm0_GO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 :::
 
 ### **RAM (Random Access Memory)**  
