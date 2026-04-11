@@ -18,6 +18,11 @@ A modern computer is a collection of hardware pieces that work together to proce
 
 CPU (Central Processing Unit) — the sequential logic processor at the heart of every computer.
 ```
+:::{note} How does a CPU work?
+A CPU processes tasks **sequentially** — like a single very fast worker handling a to-do list one item at a time. In any given moment, it might be: checking input from the keyboard, updating a system clock, calculating `1 + 1` for your program, then refreshing a small part of the screen. Each task gets a tiny time slice, one after the other, so fast that it *feels* simultaneous — but under the hood, it's doing things in order. This is why a CPU is great at complex, varied tasks that require decision-making, but not ideal when you need to do the *same simple thing* thousands of times at once.
+
+*Actually...* modern CPUs are not purely serial. Even a single core can process multiple instructions per clock cycle (via pipelining and superscalar execution), and most CPUs today have multiple cores (4–16 on laptops, 64+ on servers) that genuinely work in parallel. But compared to a GPU, the parallelism is modest — optimized for handling *different complex tasks* rather than *thousands of identical simple ones*.
+:::
 
 
 
@@ -33,7 +38,11 @@ CPU (Central Processing Unit) — the sequential logic processor at the heart of
 GPU (Graphics Processing Unit) — highly parallel processor used for AI, imaging, and scientific simulations.
 ```
 
+:::{note} How does a GPU work?
+A GPU takes the opposite approach: instead of one fast worker, imagine **thousands of simpler workers all doing their small task at the same time**. For example, to display an image on your screen, every pixel needs a color value. A CPU would calculate pixel 1, then pixel 2, then pixel 3… A GPU calculates the color of *all pixels at once*, in parallel. This is why GPUs were originally built for graphics — a 1920×1080 screen has over 2 million pixels to update many times per second. The same "do one simple operation across a massive dataset" pattern is exactly what makes GPUs so powerful for AI training, where you need to multiply millions of numbers in large matrices simultaneously.
 
+*Actually...* a GPU doesn't compute all pixels truly simultaneously. A typical GPU has thousands of cores, but a Full HD screen has over 2 million pixels — so the work is processed in large batches. Also, GPU cores follow a "Single Instruction, Multiple Threads" model: they are most efficient when all cores do the *same operation* on different data. When different cores need to do different things (branching), performance drops. This is exactly why GPUs complement CPUs rather than replace them.
+:::
 
 
 :::{note}
