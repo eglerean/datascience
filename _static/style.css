@@ -1,0 +1,89 @@
+.rst-content .objectives {
+    background: #fee0d2;
+}
+.rst-content .objectives > .admonition-title {
+    background: #fc9272;
+}
+
+
+.rst-content .prereq {
+    background: #fee0d2;
+}
+.rst-content .prereq > .admonition-title {
+    background: #fc9272;
+}
+
+
+.rst-content .instructor-note {
+    background: #f0f0f0;
+}
+.rst-content .instructor-note > .admonition-title {
+    background: #bdbdbd;
+}
+
+
+.rst-content .keypoints {
+    background: #e5f5e0;
+}
+.rst-content .keypoints > .admonition-title {
+    background: #a1d99b;
+}
+
+
+.rst-content .discussion {
+    background: #fee6ce;
+}
+.rst-content .discussion > .admonition-title {
+    background: #fdae6b;
+}
+
+
+table {
+  width: 100%;
+}
+
+
+
+table {
+  width: 100%;
+  max-width: 100%;
+}
+
+table td, table th {
+  overflow-wrap: break-word;
+  word-break: break-all;
+  white-space: normal;
+  max-width: 0;
+}
+
+
+.wy-table-responsive {
+  overflow-x: visible;
+}
+
+.wy-table-responsive table {
+  width: 100%;
+}
+
+.wy-table-responsive table td,
+.wy-table-responsive table th {
+  white-space: normal;
+  overflow-wrap: break-word;
+}
+
+
+.command-table {
+  width: 100%;
+  table-layout: fixed;
+}
+
+.command-table th:first-child,
+.command-table td:first-child {
+  width: 25%;
+}
+
+.command-table td,
+.command-table th {
+  white-space: normal;
+  overflow-wrap: break-word;
+}

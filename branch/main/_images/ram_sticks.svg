@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 250" width="400" height="250">
+  <title>RAM Memory Sticks</title>
+  <desc>Illustration of DDR RAM memory modules</desc>
+  <rect width="400" height="250" fill="#e8e8e8"/>
+  <!-- First RAM stick -->
+  <rect x="50" y="40" width="130" height="170" fill="#2e6b2e" rx="3"/>
+  <rect x="60" y="50" width="110" height="120" fill="#1a4a1a" rx="2"/>
+  <!-- RAM chips on stick 1 -->
+  <rect x="68" y="58" width="25" height="18" fill="#333" rx="1"/>
+  <rect x="100" y="58" width="25" height="18" fill="#333" rx="1"/>
+  <rect x="132" y="58" width="18" height="18" fill="#333" rx="1"/>
+  <rect x="68" y="84" width="25" height="18" fill="#333" rx="1"/>
+  <rect x="100" y="84" width="25" height="18" fill="#333" rx="1"/>
+  <rect x="132" y="84" width="18" height="18" fill="#333" rx="1"/>
+  <rect x="68" y="110" width="25" height="18" fill="#333" rx="1"/>
+  <rect x="100" y="110" width="25" height="18" fill="#333" rx="1"/>
+  <rect x="132" y="110" width="18" height="18" fill="#333" rx="1"/>
+  <!-- Gold connector -->
+  <rect x="50" y="195" width="130" height="15" fill="#d4a020" rx="1"/>
+  <text x="115" y="230" text-anchor="middle" font-family="monospace" font-size="9" fill="#333">DDR5-6000</text>
+  <text x="115" y="242" text-anchor="middle" font-family="monospace" font-size="9" fill="#333">32GB</text>
+  <!-- Second RAM stick -->
+  <rect x="220" y="40" width="130" height="170" fill="#2e6b2e" rx="3"/>
+  <rect x="230" y="50" width="110" height="120" fill="#1a4a1a" rx="2"/>
+  <!-- RAM chips on stick 2 -->
+  <rect x="238" y="58" width="25" height="18" fill="#333" rx="1"/>
+  <rect x="270" y="58" width="25" height="18" fill="#333" rx="1"/>
+  <rect x="302" y="58" width="18" height="18" fill="#333" rx="1"/>
+  <rect x="238" y="84" width="25" height="18" fill="#333" rx="1"/>
+  <rect x="270" y="84" width="25" height="18" fill="#333" rx="1"/>
+  <rect x="302" y="84" width="18" height="18" fill="#333" rx="1"/>
+  <rect x="238" y="110" width="25" height="18" fill="#333" rx="1"/>
+  <rect x="270" y="110" width="25" height="18" fill="#333" rx="1"/>
+  <rect x="302" y="110" width="18" height="18" fill="#333" rx="1"/>
+  <!-- Gold connector -->
+  <rect x="220" y="195" width="130" height="15" fill="#d4a020" rx="1"/>
+  <text x="285" y="230" text-anchor="middle" font-family="monospace" font-size="9" fill="#333">DDR5-6000</text>
+  <text x="285" y="242" text-anchor="middle" font-family="monospace" font-size="9" fill="#333">32GB</text>
+</svg>

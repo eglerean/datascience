@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" width="300" height="300">
+  <title>CPU Chip</title>
+  <desc>Illustration of a CPU (Central Processing Unit) integrated circuit chip</desc>
+  <rect width="300" height="300" fill="#e8e8e8"/>
+  <!-- Chip body -->
+  <rect x="80" y="80" width="140" height="140" fill="#2c2c2c" rx="5"/>
+  <!-- Chip core markings -->
+  <rect x="100" y="100" width="100" height="100" fill="#444" rx="2"/>
+  <rect x="110" y="110" width="80" height="80" fill="#1a1a1a" rx="2"/>
+  <text x="150" y="148" text-anchor="middle" font-family="monospace" font-size="11" fill="#00ff88">CPU</text>
+  <text x="150" y="163" text-anchor="middle" font-family="monospace" font-size="8" fill="#888">x86-64</text>
+  <!-- Pins left -->
+  <rect x="55" y="100" width="20" height="4" fill="#c0a030" rx="1"/>
+  <rect x="55" y="112" width="20" height="4" fill="#c0a030" rx="1"/>
+  <rect x="55" y="124" width="20" height="4" fill="#c0a030" rx="1"/>
+  <rect x="55" y="136" width="20" height="4" fill="#c0a030" rx="1"/>
+  <rect x="55" y="148" width="20" height="4" fill="#c0a030" rx="1"/>
+  <rect x="55" y="160" width="20" height="4" fill="#c0a030" rx="1"/>
+  <rect x="55" y="172" width="20" height="4" fill="#c0a030" rx="1"/>
+  <rect x="55" y="184" width="20" height="4" fill="#c0a030" rx="1"/>
+  <!-- Pins right -->
+  <rect x="225" y="100" width="20" height="4" fill="#c0a030" rx="1"/>
+  <rect x="225" y="112" width="20" height="4" fill="#c0a030" rx="1"/>
+  <rect x="225" y="124" width="20" height="4" fill="#c0a030" rx="1"/>
+  <rect x="225" y="136" width="20" height="4" fill="#c0a030" rx="1"/>
+  <rect x="225" y="148" width="20" height="4" fill="#c0a030" rx="1"/>
+  <rect x="225" y="160" width="20" height="4" fill="#c0a030" rx="1"/>
+  <rect x="225" y="172" width="20" height="4" fill="#c0a030" rx="1"/>
+  <rect x="225" y="184" width="20" height="4" fill="#c0a030" rx="1"/>
+  <!-- Pins top -->
+  <rect x="100" y="55" width="4" height="20" fill="#c0a030" rx="1"/>
+  <rect x="112" y="55" width="4" height="20" fill="#c0a030" rx="1"/>
+  <rect x="124" y="55" width="4" height="20" fill="#c0a030" rx="1"/>
+  <rect x="136" y="55" width="4" height="20" fill="#c0a030" rx="1"/>
+  <rect x="148" y="55" width="4" height="20" fill="#c0a030" rx="1"/>
+  <rect x="160" y="55" width="4" height="20" fill="#c0a030" rx="1"/>
+  <rect x="172" y="55" width="4" height="20" fill="#c0a030" rx="1"/>
+  <rect x="184" y="55" width="4" height="20" fill="#c0a030" rx="1"/>
+  <!-- Pins bottom -->
+  <rect x="100" y="225" width="4" height="20" fill="#c0a030" rx="1"/>
+  <rect x="112" y="225" width="4" height="20" fill="#c0a030" rx="1"/>
+  <rect x="124" y="225" width="4" height="20" fill="#c0a030" rx="1"/>
+  <rect x="136" y="225" width="4" height="20" fill="#c0a030" rx="1"/>
+  <rect x="148" y="225" width="4" height="20" fill="#c0a030" rx="1"/>
+  <rect x="160" y="225" width="4" height="20" fill="#c0a030" rx="1"/>
+  <rect x="172" y="225" width="4" height="20" fill="#c0a030" rx="1"/>
+  <rect x="184" y="225" width="4" height="20" fill="#c0a030" rx="1"/>
+  <text x="150" y="285" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" fill="#555">Central Processing Unit</text>
+</svg>
