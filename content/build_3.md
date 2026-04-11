@@ -161,7 +161,44 @@ In short, while it may seem intimidating at first, the shell becomes an essentia
 Consider taking [the Shell Crash Course](https://scicomp.aalto.fi/scicomp/shell/)
 :::
 
+:::{discussion}
+### BASH mini-cheatsheet
 
+Command | Explanation
+--------|----
+**hostname**  |  shows you the hostname of your current system
+**ls** | lists the contents of a folder "see what is where you are"
+**cd homeintheshell** | change directory : change the current directory "change where you are" to homeintheshell
+**cat README.md** |  concatenate : shows the content of a file, in this case README.md
+**less README.md** | another way of showing the content of a file; exit by typing the key `q`
+**more filename** | `more` is `less` (but `less` is more... meaning that `less` has more features than `more` :))
+**cd ..** | change directory to one level higher (the parent directory, the parent directory is called .. "dot dot", the current directory is called . "dot") 
+**history** | lists all the commands you have typed so far
+**history > 2026-04-11.txt** | creates a txt file with name `05-04-2025.txt` with all the commands you have typed so far. ">" is the "redirect output to"; note that this stores the file in your Noppe environment, you still need to download it to your computer to be able to upload it to Moodle! (find the file in the file browser left, rightclick the file 05-04-2025.txt and click download)
+**ls -l** | same as ls but with the option "-l" which means "long" as in "give me a long list"
+**ls -a** | same as ls but with the option "-a" which means "all" as in "show me ALL the files, even the hidden ones"
+**ls -al** | the two options combined "show me ALL the files  in a long list format"
+**CTRL+c** | I dunno what is going on and just let me get out
+**unzip** | Extract the content of a zip file (= a filename ending with ".zip")
+**unzip -l** | Check what is inside a zip file but do not extract it
+**pwd** | Display the absolute path of where I am now in the filesystem
+
+:::
+
+::: {exercise}
+### What can you cook today? Practice interactive terminal commands.
+
+Make sure you have access to "homeintheshell" repository. Be a creative chef, move through the kitchen subfolders and check if you have some ingredients that are NOT expired to cook something. What can you cook? What can you throw away?
+
+:::
+
+:::{note} Why is README written in all caps?
+The [Jargon File](http://catb.org/jargon/html/index.html) — a public-domain compendium of hacker slang, folklore, and tradition maintained since the early days of Unix culture — explains this nicely.
+
+By Unix tradition, source files use all-lowercase names while all-uppercase is reserved for metadata files. This is also functional: since `A` sorts before `a` in ASCII, a file named `README` appears at the top of directory listings, before any source file. The convention is humorously linked to the "Eat Me" and "Drink Me" labels in Lewis Carroll's *Alice's Adventures in Wonderland*.
+
+Source: [The Jargon File – README file](http://catb.org/jargon/html/R/README-file.html)
+:::
 
 ## Bonus insight for support teams
 
