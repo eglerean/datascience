@@ -141,7 +141,7 @@ Understanding the **computational scale of the problem** is a critical support s
 
 ## Let's build a supercomputer then!
 
-![A computing node](https://raw.githubusercontent.com/eglerean/eglerean.github.io/master/files/AComputingNode.svg)
+![A computing node](https://raw.githubusercontent.com/eglerean/eglereanold.github.io/master/files/AComputingNode.svg)
 *The architecture of a computer (or computing node)*
 
 ```{toctree}
