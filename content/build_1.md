@@ -12,10 +12,29 @@ A modern computer is a collection of hardware pieces that work together to proce
 - Executes instructions from programs, one after another or across multiple cores.
 - Controls the flow of operations — calculations, logic, and decision-making.
 
+```{figure} img/build_1/cpu_chip.svg
+:alt: Schematic illustration of a CPU chip showing the integrated circuit layout
+:width: 50%
+
+CPU (Central Processing Unit) — the sequential logic processor at the heart of every computer.
+```
+
+
+
 ### **GPU (Graphics Processing Unit)**  
 - Originally for graphics, now essential for **parallel computing**.
 - Contains many cores optimized for similar repetitive tasks — such as training AI models or processing thousands of images.
 - Useful in research tasks that involve **matrix operations** or **large-scale data parallelism**.
+
+```{figure} img/build_1/gpu_card.svg
+:alt: Schematic illustration of a GPU graphics card
+:width: 50%
+
+GPU (Graphics Processing Unit) — highly parallel processor used for AI, imaging, and scientific simulations.
+```
+
+
+
 
 :::{note}
 ### What is the difference between CPU and GPU?
@@ -28,6 +47,15 @@ A short video that intuitively explains the difference between CPUs and GPUs
 - Temporary, fast memory used while your programs are running.
 - Holds **active data** and **code in use**.
 - Not the same as storage! RAM is cleared when the computer is turned off.
+
+
+```{figure} img/build_1/ram_sticks.svg
+:alt: Illustration of RAM memory sticks
+:width: 50%
+
+RAM (Random Access Memory) — fast temporary memory that holds actively running programs and data.
+```
+
 
 :::{note}
 ### RAM is not the only memory in the computer
@@ -109,6 +137,14 @@ When using cloud storage or remote servers, a **slow connection can become a bot
 ### **Motherboard**  
 - The main circuit board where all components plug in.
 - Handles communication between the CPU, RAM, storage, and peripherals.
+
+```{figure} img/build_1/motherboard.svg
+:alt: Schematic illustration of a computer motherboard showing component slots
+:width: 60%
+
+Motherboard — the main circuit board connecting all components.
+```
+
 
 ### **Interfaces for the User**
 
