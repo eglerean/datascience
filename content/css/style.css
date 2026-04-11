@@ -37,4 +37,53 @@
     background: #fdae6b;
 }
 
-table { width: 100px;}
+
+table {
+  width: 100%;
+}
+
+
+
+table {
+  width: 100%;
+  max-width: 100%;
+}
+
+table td, table th {
+  overflow-wrap: break-word;
+  word-break: break-all;
+  white-space: normal;
+  max-width: 0;
+}
+
+
+.wy-table-responsive {
+  overflow-x: visible;
+}
+
+.wy-table-responsive table {
+  width: 100%;
+}
+
+.wy-table-responsive table td,
+.wy-table-responsive table th {
+  white-space: normal;
+  overflow-wrap: break-word;
+}
+
+
+.command-table {
+  width: 100%;
+  table-layout: fixed;
+}
+
+.command-table th:first-child,
+.command-table td:first-child {
+  width: 25%;
+}
+
+.command-table td,
+.command-table th {
+  white-space: normal;
+  overflow-wrap: break-word;
+}

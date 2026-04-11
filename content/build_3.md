@@ -197,7 +197,7 @@ The [Jargon File](http://catb.org/jargon/html/index.html) — a public-domain co
 
 By Unix tradition, source files use all-lowercase names while all-uppercase is reserved for metadata files. This is also functional: since `A` sorts before `a` in ASCII, a file named `README` appears at the top of directory listings, before any source file. The convention is humorously linked to the "Eat Me" and "Drink Me" labels in Lewis Carroll's *Alice's Adventures in Wonderland*.
 
-Source: [The Jargon File – README file](http://catb.org/jargon/html/R/README-file.html)
+Source about README: [The Jargon File – README file](http://catb.org/jargon/html/R/README-file.html)
 :::
 
 ## Bonus insight for support teams
